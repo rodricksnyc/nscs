@@ -342,21 +342,35 @@ span.blue {
 }
 
 .landing-panel.new {
-    /* z-index: 2; */
-    /* max-width: 48rem; */
     margin: 0;
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 0px;
-    /* position: relative; */
-    /* box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.15); */
     -webkit-box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
-  -moz-box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
-  box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
-        padding: 2em 4em 2em  4em;
+    -moz-box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
+    box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
+    padding: 2em 4em 2em 4em;
     background-repeat: no-repeat;
     background-position: center 1.5rem;
     transition: 0.4s all;
     opacity:.75;
+    max-height: 540px;
+    min-height: 540px;
+}
+
+.landing-panel.new2 {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 0px;
+    -webkit-box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
+    -moz-box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
+    box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
+    padding: 2em 4em 2em 4em;
+    background-repeat: no-repeat;
+    background-position: center 1.5rem;
+    transition: 0.4s all;
+    opacity:.75;
+    max-height: 425px;
+    min-height: 425px;
 }
 
 .about1 {
@@ -364,13 +378,12 @@ span.blue {
   top: 10%;
   z-index:9;
   right:0;
+  padding: 1em 5em;
+  max-height:474px;
 }
 
 .about2 {
-  position: absolute;
-  top: 10%;
-  z-index:9;
-  left:0;
+  max-width:500px;
 }
 
 .lightGray {
@@ -401,13 +414,58 @@ span.blue {
     top: -83px;
 }
 
+.print2 {
+    max-width: 250px;
+    position: absolute;
+    right: 107px;
+    top: 200px;
+}
+
 .mb5 {
   margin-bottom:5em;
 }
 
-.p15 {
-  padding-left:15px;
-  padding-right:15px;
+/* .p15 {
+  margin-left:35px;
+  margin-right:35px;
+} */
+
+
+ul.papaya {
+  list-style: none; /* Remove default bullets */
+  font-size:22px;
+  color:#404040;
+  font-weight:400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul.papaya li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #CB4C45; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.indent {
+  margin-left:2em;
+}
+
+.grayBox {
+  background:#F1F1F1;
+  padding-left: 10em;
+  padding-top: 3em;
+  max-height: 425px;
+  min-height: 425px;
+}
+
+.grayBox2 {
+  background:#F1F1F1;
+  padding-left: 10em;
+  padding-top: 3em;
+  max-height: 540px;
+  min-height: 540px;
 }
 
 </style>
@@ -501,9 +559,9 @@ span.blue {
 
 </div>
 
+</div>
 
-
-
+<div class="container-fluid">
 <div class="row">
   <div class="col-lg-12 col-xs-12">
 
@@ -516,13 +574,13 @@ span.blue {
 
 
 
-<div class="row p15">
+<div class="row p35">
 
 <div class="lightGray">
 
   <div class="fingerprint"><img src="images/finger_print_icon.svg" class="img-responsive print"></div>
 
-<div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1">
+<div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 padding-0">
   <div class="landing-panel new">
 <h2 class="smaller">What is the National Survey of Crime and Safety?</h2>
 <p class="small">The NSCS is a national survey that is collecting information on crime
@@ -541,8 +599,8 @@ crime and safety and develop policies.</p>
 
 </div>
 
-<div class="col-lg-5 col-md-5 about1">
-<img src="images/About_01.svg" class="img-responsive">
+<div class="col-lg-4 col-md-5 grayBox2 padding-0">
+<img src="images/About_01.svg" class="img-responsive about1">
 
 </div>
 
@@ -612,7 +670,7 @@ crime and safety and develop policies.</p>
 </div>
 
 
-<div class="row p15">
+<div class="row p35 mb5">
 
 <div class="lightGray">
 
@@ -621,29 +679,67 @@ crime and safety and develop policies.</p>
 
 
 
-  <div class="col-lg-5 col-lg-offset-1">
-  <img src="images/About_02.svg" class="img-responsive">
+  <div class="col-lg-5 col-lg-offset-1 padding-0 grayBox">
+  <img src="images/About_02.svg" class="img-responsive about2">
 
   </div>
 
-<div class="col-lg-6">
-  <div class="landing-panel new">
+<div class="col-lg-6 padding-0">
+  <div class="landing-panel new2">
 <h2 class="smaller">What information is collected on this survey?</h2>
+<p class="small"></p>
+  </div>
+
+</div>
+
+
+
+  <div class="fingerprint2"><img src="images/finger_print_icon2.png" class="img-responsive print2"></div>
+
+</div>
+
+</div>
+
+
+
+<div class="row p35 mb5">
+
+<div class="lightGray">
+
+  <!-- <div class="fingerprint"><img src="images/finger_print_icon.svg" class="img-responsive print"></div> -->
+
+
+
+
+
+<div class="col-lg-5 col-lg-offset-1  padding-0">
+  <div class="landing-panel new2">
+<h2 class="smaller">Why should I participate?</h2>
 <ul class="papaya">
 <li>Types and numbers of crimes experienced</li>
 <li> Details of crimes, including:</li>
 
+<div class="indent">
 <li>When and where crimes occur</li>
 <li>Economic loss</li>
 <li>Injuries</li>
 <li>Police involvement</li>
 <li>Weapons used</li>
-
+</div>
 </ul>
   </div>
 
 </div>
 
+
+  <div class="col-lg-6 padding-0 grayBox">
+  <img src="images/About_02.svg" class="img-responsive about2">
+
+  </div>
+
+
+<!--
+  <div class="fingerprint2"><img src="images/finger_print_icon2.png" class="img-responsive print2"></div> -->
 
 </div>
 
