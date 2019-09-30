@@ -1,0 +1,671 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css5/normalize.css">
+</head>
+
+
+<style>
+
+.tealStripe {
+  background:#00AAAA;
+  height:8px;
+  width:100%;
+}
+
+.padding-0{
+  padding-right:0;
+  padding-left:0;
+}
+
+.padding-0.new{
+  padding-right:2px;
+  padding-left:0;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size:35px;
+  color:#004568;
+  font-weight:400;
+}
+
+h2.smaller {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    color: #004568;
+    font-weight: 600;
+    margin-bottom:30px;
+}
+
+header {
+  background:#f2f4f5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+h1 {
+  font-size:48px;
+  color:#CB4C45;
+  font-weight:600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1.small {
+  font-size:36px;
+  color:#CB4C45;
+  font-weight:400;
+  font-family: 'Montserrat', sans-serif;
+border-bottom: 2px solid #004568;
+}
+
+h1.smaller {
+  font-size:32px;
+  color:#CB4C45;
+  font-weight:400;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.title {
+  font-size:50px;
+  font-family: 'Montserrat', sans-serif;
+  color:#004568;
+}
+
+p, label {
+  font-size:22px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:100;
+  color: #404040;
+}
+
+p.small {
+  font-size:20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:100;
+  color: #404040;
+}
+
+
+p.smaller {
+  font-size:16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:100;
+  color:grey;
+  color: #404040;
+}
+.hero-image {
+  background-size: cover;
+	background-position: center center!important;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+  background-image: url(images/landing-image.jpg);
+
+}
+
+.hero-img-container {
+    height: calc(100vh - 4rem);
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 40rem;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+.hero-img {
+    background-image: url(images/landing-image.jpg);
+    height: inherit;
+    min-height: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.landing-panel {
+    z-index: 2;
+    /* max-width: 48rem; */
+    margin: -8rem auto 0rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+
+    position: relative;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.15);
+    padding:5em 10em;
+    background-repeat: no-repeat;
+    background-position: center 1.5rem;
+    transition: 0.4s all;
+}
+
+
+.doj {
+
+    position: absolute;
+    z-index: 6;
+    width: 100px;
+    height: 100px;
+    top:-50px;
+    vertical-align: middle;
+  filter: drop-shadow(0px -3px 7px rgba(255,255,255,1));
+
+}
+
+.form-control.access-pin {
+    border: 1px solid #E2E2E2;
+
+}
+
+::placeholder {
+  color:#404040 !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(4rem + 2px);
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .5rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.t-teal {
+  color:#008488;
+}
+
+.button-default {
+    margin: .5rem auto 1rem;
+    display: block;
+    padding: .5em 1em;
+    background-color: #DEDEDE;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: .25em;
+    border: 2px solid transparent;
+}
+
+.button-default:hover {
+    margin: .5rem auto 1rem;
+    display: block;
+    padding: .5em 1em;
+    background-image: linear-gradient(to top, #404040, #505050, #606060, #727272, #838383);
+
+
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+
+    border-radius: .25em;
+
+    border: 2px solid #404040;
+    color: white;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+}
+
+.tealBox {
+  background:#008488;
+  height:auto;
+  padding: 3em;
+  color:white;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.tealBox:hover {
+  background: rgb(64,64,64);
+  background: radial-gradient(circle, rgba(64,64,64,1) 0%, rgba(179,179,179,1) 0%, rgba(64,64,64,1) 100%);
+  height:auto;
+  padding: 3em;
+  color:white;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+
+}
+
+.landing-panel .checkbox label {
+    width: 100%;
+    text-align: right;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.center{
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flexbox;
+display:flex;
+-webkit-justify-content: center;
+-moz-justify-content: center;
+-ms-justify-content: center;
+justify-content: center;
+-webkit-align-items: center;
+-moz-align-items: center;
+-ms-align-items: center;
+align-items: center;
+
+}
+
+.around{
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flexbox;
+display:flex;
+-webkit-justify-content: space-around;
+-moz-justify-content: space-around;
+-ms-justify-content: space-around;
+justify-content: space-around;
+-webkit-align-items: center;
+-moz-align-items: center;
+-ms-align-items: center;
+align-items: center;
+
+
+}
+
+.vertical {
+  display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flexbox;
+display:flex;
+-webkit-flex-direction: column;
+-moz-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-align-items: center;
+-moz-align-items: center;
+-ms-align-items: center;
+align-items: center;
+}
+
+#MainContent_txtAccessCode1 {
+  max-width:700px;
+}
+
+span.blue {
+  color:#004568;
+  font-weight:600;
+}
+.landing-panel .checkbox label input {
+    display: none;
+}
+.mr-1, .mx-1 {
+    margin-right: 4px!important;
+    margin-top: -2px;
+}
+
+.about {
+  max-height:50px
+}
+
+.p1 {
+  padding: 1em 0em;
+}
+
+.p2 {
+  padding: 1em 0em .5em 0em;
+}
+
+.whiteStrong {
+  color:white;
+  font-weight:600;
+  font-size:28px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.landing-panel.new {
+    /* z-index: 2; */
+    /* max-width: 48rem; */
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 0px;
+    /* position: relative; */
+    /* box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.15); */
+    -webkit-box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
+  -moz-box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
+  box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
+        padding: 2em 4em 2em  4em;
+    background-repeat: no-repeat;
+    background-position: center 1.5rem;
+    transition: 0.4s all;
+    opacity:.75;
+}
+
+.about1 {
+  position: absolute;
+  top: 10%;
+  z-index:9;
+  right:0;
+}
+
+.about2 {
+  position: absolute;
+  top: 10%;
+  z-index:9;
+  left:0;
+}
+
+.lightGray {
+
+    position: relative;
+}
+
+.w800 {
+  max-width:1200px;
+}
+
+.pie {
+  min-width:430px
+}
+
+.mr3 {
+  margin-right:3em;
+}
+
+.right {
+  float:right;
+}
+
+.print {
+    max-width: 250px;
+    position: absolute;
+    left: 107px;
+    top: -83px;
+}
+
+.mb5 {
+  margin-bottom:5em;
+}
+
+.p15 {
+  padding-left:15px;
+  padding-right:15px;
+}
+
+</style>
+
+
+
+
+
+
+
+
+<body>
+
+<div class="container-fluid padding-0">
+<div class="row">
+<div class="col-xs-12 col-lg-12">
+<header class="landing">
+<div class="tealStripe">
+</div>
+<div class="title text-center">National Survey Of Crime And Safety</div>
+</header>
+
+
+
+
+
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-lg-12">
+<div class="hero-img-container">
+  <div class="hero-img"></div>
+  <div class="landing-panel">
+
+      <div class="center"><img src="images/doj.svg" class="img-responsive doj"></div>
+
+
+    <p class="smaller text-center">Sponsored by the US Department of Justice,<br>Bureau of Justice Statistics</p>
+    <p class="text-center">Welcome to the <span class="blue">National Survey Of Crime And Safety (NSCS).</span><br>A national survey on crime and safety issues.<br>To start your survey, please enter the Access Code which was<br>included in red in your invitation letter</p>
+    <div class="form-signin my-3 text-center">
+      <label for="MainContent_txtAccessCode1" id="MainContent_Label1" class="form-signin-heading mb-2">Please enter your Access Code to begin</label>
+
+        <div>
+          <center>
+          <input name="ctl00$MainContent$txtAccessCode1" type="password" maxlength="50" size="5" id="MainContent_txtAccessCode1" class="form-control access-pin" placeholder="XXXXXXX" autocomplete="false">
+        </center>
+          <div class="checkbox">
+            <label class="t-teal">
+              <input id="togglepwd" type="checkbox" value="1" onchange="showPWD()">
+              <img src="images/show-access.svg" alt="Icon for Show Access Code" width="16" height="16" class="mr-1">Show Access Code</label>
+          </div>
+        </div>
+
+        <input type="submit" name="ctl00$MainContent$btnContinue" value="Start Survey" id="MainContent_btnContinue" class="button-default">
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 padding-0 new">
+<div class="tealBox">
+  <div class="vertical">
+<img class="img-responsive about" src="images/About_button_icon.svg">
+<h1 class="whiteStrong">About the Survey</h1>
+</div>
+</div>
+
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 padding-0 new">
+  <div class="tealBox">
+    <div class="vertical">
+    <img class="img-responsive about" src="images/FAQ_button_icon.svg">
+    <h1 class="whiteStrong">FAQ</h1>
+  </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 padding-0 new">
+  <div class="tealBox">
+    <div class="vertical">
+    <img class="img-responsive about" src="images/Contact_button_icon.svg">
+    <h1 class="whiteStrong">Contact</h1>
+  </div>
+  </div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="row">
+  <div class="col-lg-12 col-xs-12">
+
+    <center>
+      <h1 class="p1">About the Survey</h1>
+    </center>
+
+  </div>
+</div>
+
+
+
+<div class="row p15">
+
+<div class="lightGray">
+
+  <div class="fingerprint"><img src="images/finger_print_icon.svg" class="img-responsive print"></div>
+
+<div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1">
+  <div class="landing-panel new">
+<h2 class="smaller">What is the National Survey of Crime and Safety?</h2>
+<p class="small">The NSCS is a national survey that is collecting information on crime
+and safety issues in communities in the United States.</p>
+<p class="small">The primary goal of the NSCS is to provide information about people’s
+experiences with victimization and crime in the past year. The NSCS is
+adapted from the National Crime Victimization Survey (NCVS), administered by the U.S. Bureau of the Census for the Bureau of Justice
+Statistics (BJS). The NCVS is the nation’s only source of information
+about crime victimization not reported to the police.</p>
+<p class="small">Current NCVS content was developed in 1992; our communities and
+the nature of crime have changed in the years since then; the NSCS
+has been designed to fill these gaps.</p>
+<p class="small">NCVS data, like those shown in Figure 1, are used to track trends in
+crime and safety and develop policies.</p>
+  </div>
+
+</div>
+
+<div class="col-lg-5 col-md-5 about1">
+<img src="images/About_01.svg" class="img-responsive">
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="row">
+  <div class="col-lg-9 col-lg-offset-2 col-md-9 col-md-offset-2">
+
+      <h1 class="small p2">Figure 1.</h1>
+  </div>
+
+</div>
+
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <div class="vertical">
+    <h1 class="smaller">2017 Personal Crimes</h1>
+    <img src="images/PERSONAL_crimes.svg" class="img-responsive">
+    </div>
+  </div>
+
+
+  <div class="col-lg-4 col-lg-offset-1">
+    <div class="vertical">
+      <h1 class="smaller">2017 Property Crimes</h1>
+      <img src="images/PROPERTY_crimes.svg" class="img-responsive">
+    </div>
+  </div>
+
+</div>
+
+<!-- <center>
+<div class="row w800">
+    <div class="col-lg-12">
+
+      <div class="around">
+
+        <div class="vertical mr3">
+        <h1 class="smaller">2017 Personal Crimes</h1>
+        <img src="images/PERSONAL_crimes.svg" class="img-responsive pie">
+        </div>
+
+        <div class="vertical">
+        <h1 class="smaller">2017 Property Crimes</h1>
+        <img src="images/PROPERTY_crimes.svg" class="img-responsive pie">
+        </div>
+
+      </div>
+      </div>
+
+
+</div>
+</center> -->
+
+
+<div class="row mb5">
+  <div class="col-lg-9 col-lg-offset-2 col-md-9 col-md-offset-2">
+
+      <h1 class="small p2"></h1>
+      <p class="small right">Source: Bureau of Justice Statistics, National Crime Victimization Survey, 2017 </p>
+  </div>
+
+</div>
+
+
+<div class="row p15">
+
+<div class="lightGray">
+
+  <!-- <div class="fingerprint"><img src="images/finger_print_icon.svg" class="img-responsive print"></div> -->
+
+
+
+
+  <div class="col-lg-5 col-lg-offset-1">
+  <img src="images/About_02.svg" class="img-responsive">
+
+  </div>
+
+<div class="col-lg-6">
+  <div class="landing-panel new">
+<h2 class="smaller">What information is collected on this survey?</h2>
+<ul class="papaya">
+<li>Types and numbers of crimes experienced</li>
+<li> Details of crimes, including:</li>
+
+<li>When and where crimes occur</li>
+<li>Economic loss</li>
+<li>Injuries</li>
+<li>Police involvement</li>
+<li>Weapons used</li>
+
+</ul>
+  </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<br><br><br><br>
+
+</div>
+
+
+
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+
+
+
+</body>
+</html>
