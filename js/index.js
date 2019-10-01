@@ -92,6 +92,75 @@ $(document).ready(function () {
    });
 
 
+   if ($(document).innerWidth() >= 992) {
+
+
+     $(window).on('scroll', function() {
+     var screenTop = $(window).scrollTop();
+     var screenBottom = $(window).scrollTop() + window.innerHeight;
+
+     $('section').each(function() {
+         var elementTop = $(this).offset().top;
+         var elementBottom = $(this).offset().top + $(this).outerHeight();
+
+         if ((screenBottom > elementTop + ($(this).find('.heros').height() + 100)) && (screenTop < elementBottom)) {
+             $('section').removeClass('active')
+             $(this).addClass('active')
+         }
+         else {
+             $(this).removeClass('active')
+         }
+       })
+
+
+       $('main').each(function() {
+           var elementTop = $(this).offset().top;
+           var elementBottom = $(this).offset().top + $(this).outerHeight();
+
+           if ((screenBottom > elementTop + ($(this).find('.heros2').height() - 200 )) && (screenTop < elementBottom)) {
+               $('main').removeClass('active2')
+               $(this).addClass('active2')
+           }
+           else {
+               $(this).removeClass('active2')
+           }
+         })
+
+
+
+
+  if ($('.sticky').hasClass('active')) {
+
+         $('.content-top').removeClass('transparent').addClass('animated fadeInUp');
+
+
+
+     }
+
+      if ($('.top').hasClass('active2')) {
+
+            $('.content-top').addClass('transparent');
+
+        }
+
+
+
+
+   });
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
 
 
 });
