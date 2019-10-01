@@ -9,7 +9,7 @@ $(document).ready(function () {
       event.preventDefault();
       $('html, body').stop().animate({
         scrollTop: target.offset().top
-      }, 1000);
+      }, 1500);
     }
 
   });
@@ -22,7 +22,7 @@ $(document).ready(function () {
       event.preventDefault();
       $('html, body').stop().animate({
         scrollTop: target.offset().top
-      }, 1000);
+      }, 1500);
     }
 
   });
@@ -37,7 +37,7 @@ $(document).ready(function () {
       event.preventDefault();
       $('html, body').stop().animate({
         scrollTop: target.offset().top
-      }, 1000);
+      }, 1500);
     }
 
   });
@@ -50,7 +50,7 @@ $(document).ready(function () {
       event.preventDefault();
       $('html, body').stop().animate({
         scrollTop: target.offset().top
-      }, 1000);
+      }, 1500);
     }
 
   });
@@ -63,7 +63,20 @@ $(document).ready(function () {
       event.preventDefault();
       $('html, body').stop().animate({
         scrollTop: target.offset().top
-      }, 1000);
+      }, 1500);
+    }
+
+  });
+
+  $('a[href^="#veryVeryTop"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 1500);
     }
 
   });
@@ -76,7 +89,7 @@ $(document).ready(function () {
       event.preventDefault();
       $('html, body').stop().animate({
         scrollTop: target.offset().top
-      }, 1000);
+      }, 1500);
     }
 
   });
@@ -103,7 +116,7 @@ $(document).ready(function () {
          var elementTop = $(this).offset().top;
          var elementBottom = $(this).offset().top + $(this).outerHeight();
 
-         if ((screenBottom > elementTop + ($(this).find('.heros').height() + 100)) && (screenTop < elementBottom)) {
+         if ((screenBottom > elementTop + ($(this).find('.heros').height() )) && (screenTop < elementBottom)) {
              $('section').removeClass('active')
              $(this).addClass('active')
          }
@@ -133,8 +146,6 @@ $(document).ready(function () {
 
          $('.content-top').removeClass('transparent').addClass('animated fadeInUp');
 
-
-
      }
 
       if ($('.top').hasClass('active2')) {
@@ -144,23 +155,39 @@ $(document).ready(function () {
         }
 
 
-
-
    });
-
-
-
 
 
 }
 
 
+$('#MainContent_txtAccessCode1').keydown(function(event) {
+  $('.button-default').css('background', '#008488');
 
 
+  $(".button-default").mouseenter(function() {
+    $(this).css('background-image' , 'linear-gradient(to top, #404040, #505050, #606060, #727272, #838383')
+  });
 
 
+    $(".button-default").mouseleave(function() {
+      $(this).css('background', '#008488')
+    });
 
+  });
 
+  const togglePassword = document.getElementById('togglePassword');
+
+  const showOrHidePassword = () => {
+    const password = document.getElementById('MainContent_txtAccessCode1');
+    if (password.type === 'MainContent_txtAccessCode1') {
+      password.type = 'text';
+    } else {
+      password.type = 'MainContent_txtAccessCode1';
+    }
+  };
+
+  togglePassword.addEventListener('change', showOrHidePassword);
 
 
 });
