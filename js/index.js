@@ -205,14 +205,14 @@ $(document).ready(function () {
 
 
 
-    var sticky = document.getElementById('stickyBottom');
-
-    console.log(window.getComputedStyle(sticky).height);
-
-
-    $(".westat-footer").css({
-      'bottom': ($(sticky).height() + 'px')
-    });
+    // var sticky = document.getElementById('stickyBottom');
+    //
+    // console.log(window.getComputedStyle(sticky).height);
+    //
+    //
+    // $(".westat-footer").css({
+    //   'bottom': ($(sticky).height() + 'px')
+    // });
 
 
 
