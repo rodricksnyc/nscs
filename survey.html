@@ -17,51 +17,564 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
+<style>
 
+#slideOut {
+  position: fixed;
+  width: auto;
+  height: 800px;
+  top: 100px;
+  /* right: auto; */
+  /* Animation  */
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  z-index:9999;
+}
+.modal-content {
+    position: relative;
+    background: #F1F1F1;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: none;
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: none;
+    z-index: 999999;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: none;
+}
+
+#slideOut2 {
+  position: fixed;
+  width: 300px;
+  height: 800px;
+  top: 300px;
+  right: -300px;
+  /* Animation  */
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  z-index:99;
+}
+
+/* Display slideOut */
+
+.showSlideOut {
+  right: 0px !important;
+}
+
+.panel-title>a, .panel-title>a:active {
+    display: block;
+    padding: 10px;
+    color: #004568;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    text-decoration: none;
+    background: white;
+    /* min-width: 900px; */
+    background: white !important;
+}
+.panel-title>a, .panel-title>a:active {
+    display: block;
+    padding: 10px;
+    color: #008488;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    text-decoration: none;
+    background: white !important;
+    /* min-width: 900px; */
+}
+.wrapper {
+    width: 96%;
+}
+.panel-heading a:before {
+    font-family: FontAwesome;
+    content: "\f0d7";
+    font-weight: 100;
+    font-size: 28px;
+    line-height: .8em;
+    color: #00AAAA;
+    float: right;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+p.small {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    color: #404040;
+}
+
+#bigWrapper {
+  max-width:900px;
+}
+
+.slideOutTab {
+  margin-top: 20px;
+  position: absolute;
+  left: -40px;
+  /* height: 400px;
+  width: 40px; */
+  /* -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5); */
+  /* background: #008488; */
+
+}
+
+.slideOutTab.one {
+/* -webkit-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79);
+-moz-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79);
+box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79); */
+}
+.slideOutTab div#one {
+  text-align: center;
+  position: relative;
+  right: 70px;
+  top: 90px;
+  background: #008488;
+  width: 180px;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  writing-mode: lr-tb;
+  padding-top:7px;
+  padding-bottom:4px;
+  -webkit-box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
+  -moz-box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
+  box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
+  z-index:99999;
+}
+
+.slideOutTab div#two {
+  text-align: center;
+  position: relative;
+  right: 70px;
+  top: 218px;
+  background: #008488;
+  width: 180px;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  writing-mode: lr-tb;
+  padding-top:7px;
+  padding-bottom:4px;
+    z-index:99;
+}
+
+.vertical3 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #00467F;
+    opacity: .85;
+    height: 100%;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+body,
+html {
+  background: #b3c9d1;
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+section:nth-child(2) {
+  background: #7876A0;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+}
+
+.modal-body {
+  height: 400px;
+}
+
+section {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+ .intro {
+        display: table-cell;
+        vertical-align: middle;
+
+  }
+
+  .hero-img-container5 {
+    /* height: calc(100vh - 4rem); */
+    position: absolute;
+    /* display: flex; */
+    /* align-items: center; */
+    min-height: 50px;
+    /* padding-right: 1em; */
+    margin-bottom: 0em;
+    bottom: 0;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    max-height: 50px;
+}
+
+.hero-img5 {
+    background-image: url(images/footer.jpg);
+    height: inherit;
+    min-height: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    /* height: 35px; */
+    padding-top: 14em;
+    margin-top: 0em;
+    background-position: 0px 48%;
+    bottom: 0;
+}
+
+p.white {
+  color:white;
+}
+
+.cent {
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+  background:white;
+      padding: 20em 30em;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: none;
+}
+.westat-footer2 {
+    background-color: #00467F;
+    position: absolute;
+    bottom: 0px;
+    z-index: 8;
+    right: 0;
+    width: 100%;
+    opacity: .89;
+    /* padding-top: 1em; */
+    /* padding-bottom: 1em; */
+}
+
+.fa.fa-envelope-o {
+  margin-left:5px
+}
+
+h1#smaller {
+    font-size: 26px !important;
+    color: #CB4C45;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom:0px
+}
+
+@media (max-width:767px) {
+  .title2 {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f2f4f5;
+    padding: 10px;
+}
+.wrapper {
+    width: 100%;
+}
+}
+
+
+</style>
 
 <body>
   <a href="#content" class="skipNav">Skip to main content</a>
   <div id="wrapper">
 
+    <a name="content"></a>
+
+      <div class="container-fluid padding-0">
+        <div class="row heros2">
+          <div class="col-xs-12 col-lg-12">
+            <header class="landing2">
+
+              <div class="title2 text-center">National Survey Of Crime And Safety</div>
+            </header>
+
+          </div>
+        </div>
 
 
 
+        <div class="row heros2">
+          <div class="col-xs-12 col-lg-12">
+<div id="bigWrapper">
+    <div id="slideOut">
+
+      <div class="slideOutTab one">
+        <div id="one">
+          <p class="white">FAQ ?</p>
+        </div>
+        <div id="two">
+          <p class="white">Contact <i class="fa fa-envelope-o"></i></p>
+        </div>
+      </div>
 
 
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span id="close" aria-hidden="true">×</span>
+          </button>
+          <center>
+            <h1 class="p1" id="smaller">Frequently Asked Questions</h1>
+          </center>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-12 col-lg-12">
 
+              <div class="wrapper center-block">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          What is this survey about?
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <p class="small">The NSCS asks about people&rsquo;s experiences with crime in the last 12 months, regardless of whether these experiences were reported to the police. The survey is asked of adults and youth age 12 or older in selected U.S. households.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Who is conducting this survey?
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <p class="small">The Bureau of Justice Statistics within the Department of Justice has asked Westat, a research organization based in Rockville, Maryland, to conduct the study.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          How is the information collected?
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="small">Someone from Westat will come to your home to interview you and other members of your household.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          How was I selected for this study?
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                      <div class="panel-body">
+                        <p class="small">Your address was scientifically selected to be a part of our sample.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          How long will the interview take?
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                      <div class="panel-body">
+                        <p class="small">Between 20 &ndash; 40 minutes, depending on your experiences with crime.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          How will my privacy be protected?
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                      <div class="panel-body">
+                        <p class="small">All the information you give to this study will be kept private.</p>
+                        <ul class="papaya">
+                          <li>Your answers will not be connected with your name.</li>
+                          <li>Your name and contact information will be kept separately in secure computer files.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal-footer"> </div>
+      </div>
+    </div>
+
+
+    <div class="cent">
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 
 
 
     <div class="row">
       <div class="col-xs-12 col-lg-12 bottom">
-        <div class="hero-img-container4">
-          <div class="hero-img4"></div>
-        </div>
 
 
       </div>
     </div>
 
-    <footer class="westat-footer">
-      <div class="center">
-        <img src="images/doj.svg" class="img-responsive footer">
-        <img src="images/Westat_logo_white.svg" class="img-responsive footer">
+
+    <footer class="westat-footer2">
+      <div class="vertical3">
+        <div class="center">
+          <img src="images/doj.svg" class="img-responsive footer1" alt="Department of Justice logo graphic">
+          <img src="images/Westat_logo_white.svg" class="img-responsive footer2" alt="Westat white logo graphic">
+        </div>
+      </div>
+
+      <div class="hero-img-container5">
+        <div class="hero-img5"></div>
       </div>
     </footer>
-
-
 </div>
 
 
+
 <script
-src="http://code.jquery.com/jquery-3.3.1.min.js"
+src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
 
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
+<script>
 
+
+// this.$slideOut = $('#slideOut');
+//
+// this.$slideOut.find('.slideOutTab').on('click', function() {
+//   $("#slideOut").toggleClass('showSlideOut');
+// });
+
+$('#one').on('click', function() {
+
+$('.modal-content').addClass('opened')
+$("#slideOut").toggleClass('showSlideOut');
+$('#one').css('background', '#F1F1F1');
+$('#one p.white').css('color', '#008488');
+
+})
+
+
+
+
+
+
+
+if ($('#slideOut').is('.showSlideOut')   || $('.modal-content').is('.opened') ) {
+
+  $('#one').on('click', function() {
+
+    console.log('siefyuvievg')
+
+  $('.modal-content').removeClass('opened')
+  $("#slideOut").toggleClass('showSlideOut');
+  $('#one').css('background', '#008488');
+  $('#one p.white').css('color', 'white');
+
+})
+
+}
+
+
+
+
+
+$('#close').on('click', function() {
+  $("#slideOut").removeClass('showSlideOut');
+  $('#one').css('background', '#008488');
+  $('#one p.white').css('color', 'white');
+})
+
+
+
+var modal1 = document.getElementById('slideOut');
+
+console.log(window.getComputedStyle(modal1).width);
+
+
+
+$( document ).ready(function() {
+    $("#slideOut").css("right" , -$('#bigWrapper').outerWidth());
+
+
+    $(".modal-content").width($('#bigWrapper').width());
+
+})
+
+</script>
 
 
 </body>

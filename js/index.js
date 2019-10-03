@@ -1,7 +1,15 @@
 $(document).ready(function () {
 
+
+
+
+
   //scroll magic
   $('a[href^="#top"]').on('click', function(event) {
+
+      $('.circle.first').addClass('activate');
+      $('.circle.second').removeClass('activate');
+      $('.circle.third').removeClass('activate');
 
     var target = $(this.getAttribute('href'));
 
@@ -13,6 +21,17 @@ $(document).ready(function () {
     }
 
   });
+
+
+  $('a[href^="#top"]').on('hover', function(event) {
+
+      $('.circle.first').addClass('activate');
+      $('.circle.second').removeClass('activate');
+      $('.circle.third').removeClass('activate');
+
+
+  });
+
 
   $('a[href^="#topOccupations"]').on('click', function(event) {
 
@@ -31,6 +50,10 @@ $(document).ready(function () {
 
   $('a[href^="#topLastAnchor"]').on('click', function(event) {
 
+    $('.circle.first').removeClass('activate');
+    $('.circle.second').removeClass('activate');
+    $('.circle.third').addClass('activate');
+
     var target = $(this.getAttribute('href'));
 
     if( target.length ) {
@@ -39,6 +62,16 @@ $(document).ready(function () {
         scrollTop: target.offset().top
       }, 1500);
     }
+
+  });
+
+  $('a[href^="#topLastAnchor"]').on('hover', function(event) {
+
+    $('.circle.first').removeClass('activate');
+    $('.circle.second').removeClass('activate');
+    $('.circle.third').addClass('activate');
+
+
 
   });
 
@@ -57,6 +90,10 @@ $(document).ready(function () {
 
   $('a[href^="#veryTop"]').on('click', function(event) {
 
+    $('.circle.first').removeClass('activate');
+    $('.circle.second').addClass('activate');
+      $('.circle.third').removeClass('activate');
+
     var target = $(this.getAttribute('href'));
 
     if( target.length ) {
@@ -67,6 +104,18 @@ $(document).ready(function () {
     }
 
   });
+
+  $('a[href^="#veryTop"]').on('hover', function(event) {
+
+    $('.circle.first').removeClass('activate');
+    $('.circle.second').addClass('activate');
+      $('.circle.third').removeClass('activate');
+
+
+
+  });
+
+
 
   $('a[href^="#veryVeryTop"]').on('click', function(event) {
 
@@ -116,7 +165,7 @@ $(document).ready(function () {
       var elementTop = $(this).offset().top;
       var elementBottom = $(this).offset().top + $(this).outerHeight();
 
-      if ((screenBottom > elementTop + ($(this).find('.heros').height() - 1000 )) && (screenTop < elementBottom)) {
+      if ((screenBottom > elementTop + ($(this).find('.heros').height() )) && (screenTop < elementBottom)) {
         $('section').removeClass('active')
         $(this).addClass('active')
       }
@@ -130,7 +179,7 @@ $(document).ready(function () {
       var elementTop = $(this).offset().top;
       var elementBottom = $(this).offset().top + $(this).outerHeight();
 
-      if ((screenBottom > elementTop + ($(this).find('.heros2').height()  )) && (screenTop < elementBottom)) {
+      if ((screenBottom > elementTop + ($(this).find('.heros2').height() - 500 )) && (screenTop < elementBottom)) {
         $('main').removeClass('active2')
         $(this).addClass('active2')
       }
@@ -141,23 +190,35 @@ $(document).ready(function () {
 
 
     if ($('.sticky').hasClass('active')) {
-      $('.content-top').removeClass('transparent').addClass('animated fadeInUp');
+      $('.content-top').removeClass('transparent').addClass('animated fadeIn');
 
     }
+
+
 
     if ($('.top').hasClass('active2')) {
       $('.content-top').addClass('transparent');
 
     }
 
+    // if (!$('.sticky').hasClass('active')) {
+    //
+    //   $('.content-top').removeClass('animated fadeIn');
+    //
+    //   $('.content-top').addClass('transparent').addClass('animated fadeOut');
+    //
+    // }
+
 
   });
+
+
 
 
   // }
 
 
-  $('#MainContent_txtAccessCode1').keydown(function(event) {
+  $('#accessCode1').keydown(function(event) {
     $('.button-default').css('background', '#008488');
 
 
@@ -173,36 +234,103 @@ $(document).ready(function () {
   });
 
   if ($(document).innerWidth() >= 768) {
-    const togglePassword = document.getElementById('togglePassword');
+    // const togglePassword = document.getElementById('togglePassword');
+    //
+    // const showOrHidePassword = () => {
+    //   const password = document.getElementById('accessCode1');
+    //   if (password.type === 'accessCode1') {
+    //     password.type = 'text';
+    //   } else {
+    //     password.type = 'accessCode1';
+    //   }
+    // };
+    //
+    // togglePassword.addEventListener('change', showOrHidePassword);
 
-    const showOrHidePassword = () => {
-      const password = document.getElementById('MainContent_txtAccessCode1');
-      if (password.type === 'MainContent_txtAccessCode1') {
-        password.type = 'text';
-      } else {
-        password.type = 'MainContent_txtAccessCode1';
-      }
-    };
 
-    togglePassword.addEventListener('change', showOrHidePassword);
+    function show() {
+    var p = document.getElementById('accessCode1');
+    p.setAttribute('type', 'text');
+}
+
+function hide() {
+    var p = document.getElementById('accessCode1');
+    p.setAttribute('type', 'password');
+}
+
+var pwShown = 0;
+
+document.getElementById("togglePassword").addEventListener("click", function () {
+    if (pwShown == 0) {
+        pwShown = 1;
+        show();
+
+        $("#eye").attr('src',"images/close-eye.png");
+
+
+        $('#access').html('Hide Access Code')
+
+    } else {
+        pwShown = 0;
+        hide();
+
+        $("#eye").attr('src',"images/show-access.svg");
+
+          $('#access').html('Show Access Code')
+    }
+}, false);
 
 
   }
 
   if ($(document).innerWidth() <= 767) {
-    const togglePassword2 = document.getElementById('togglePassword2');
+    // const togglePassword2 = document.getElementById('togglePassword2');
+    //
+    // const showOrHidePassword2 = () => {
+    //   const password2 = document.getElementById('accessCode1');
+    //   if (password2.type === 'accessCode1') {
+    //     password2.type = 'text';
+    //   } else {
+    //     password2.type = 'accessCode1';
+    //   }
+    // };
+    //
+    // togglePassword2.addEventListener('click', showOrHidePassword2);
 
-    const showOrHidePassword2 = () => {
-      const password2 = document.getElementById('MainContent_txtAccessCode1');
-      if (password2.type === 'MainContent_txtAccessCode1') {
-        password2.type = 'text';
-      } else {
-        password2.type = 'MainContent_txtAccessCode1';
-      }
-    };
 
-    togglePassword2.addEventListener('click', showOrHidePassword2);
+    function show() {
+    var p = document.getElementById('accessCode1');
+    p.setAttribute('type', 'text');
+}
 
+function hide() {
+    var p = document.getElementById('accessCode1');
+    p.setAttribute('type', 'password');
+}
+
+var pwShown = 0;
+
+document.getElementById("togglePassword2").addEventListener("click", function () {
+    if (pwShown == 0) {
+        pwShown = 1;
+        show();
+
+
+  $("#closedEye").attr('src',"images/close-eye.png");
+
+
+
+        // $('#access').html('Hide Access Code')
+
+    } else {
+        pwShown = 0;
+        hide();
+
+          $("#closedEye").attr('src',"images/show-access.svg");
+
+          // $('#access').html('Show Access Code')
+    }
+}, false);
 
 
     // var sticky = document.getElementById('stickyBottom');
