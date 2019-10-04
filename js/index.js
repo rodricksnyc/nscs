@@ -5,9 +5,9 @@ $(document).ready(function () {
   //scroll magic
   $('a[href^="#top"]').on('click', function(event) {
 
-      $('.circle.first').addClass('activate');
-      $('.circle.second').removeClass('activate');
-      $('.circle.third').removeClass('activate');
+    $('.circle.first').addClass('activate');
+    $('.circle.second').removeClass('activate');
+    $('.circle.third').removeClass('activate');
 
     var target = $(this.getAttribute('href'));
 
@@ -23,9 +23,9 @@ $(document).ready(function () {
 
   $('a[href^="#top"]').on('hover', function(event) {
 
-      $('.circle.first').addClass('activate');
-      $('.circle.second').removeClass('activate');
-      $('.circle.third').removeClass('activate');
+    $('.circle.first').addClass('activate');
+    $('.circle.second').removeClass('activate');
+    $('.circle.third').removeClass('activate');
 
 
   });
@@ -90,7 +90,7 @@ $(document).ready(function () {
 
     $('.circle.first').removeClass('activate');
     $('.circle.second').addClass('activate');
-      $('.circle.third').removeClass('activate');
+    $('.circle.third').removeClass('activate');
 
     var target = $(this.getAttribute('href'));
 
@@ -107,7 +107,7 @@ $(document).ready(function () {
 
     $('.circle.first').removeClass('activate');
     $('.circle.second').addClass('activate');
-      $('.circle.third').removeClass('activate');
+    $('.circle.third').removeClass('activate');
 
 
 
@@ -179,76 +179,76 @@ $(document).ready(function () {
     if ($('.block4').hasClass('active')) {
 
 
-    setTimeout(function() {
-    $('.block4 .content-top').removeClass('transparent-opacity').addClass('animated fadeIn')
+      setTimeout(function() {
+        $('.block4 .content-top').removeClass('transparent-opacity').addClass('animated fadeIn')
 
-  }, 100)
+      }, 100)
 
-    setTimeout(function() {
-           $('.block4 .content-middle').removeClass('transparent').addClass('animated  fadeIn')
+      setTimeout(function() {
+        $('.block4 .content-middle').removeClass('transparent').addClass('animated  fadeIn')
 
-     }, 200)
+      }, 160)
 
-     setTimeout(function() {
-           $('.block4 .content-bottom').removeClass('transparent').addClass('animated fadeIn')
-
-
-         }, 300)
+      setTimeout(function() {
+        $('.block4 .content-bottom').removeClass('transparent').addClass('animated fadeIn')
 
 
-           setTimeout(function() {
-             $('.block4 .content-last').removeClass('transparent').addClass('animated fadeIn')
+      }, 220)
 
 
-           }, 400)
-
-           setTimeout(function() {
-             $('.block4 .content-secondLast').removeClass('transparent').addClass('animated  fadeIn')
+      setTimeout(function() {
+        $('.block4 .content-last').removeClass('transparent').addClass('animated fadeIn')
 
 
-           }, 500)
+      }, 400)
 
-           setTimeout(function() {
-             $('.block4 .content-thirdLast').removeClass('transparent').addClass('animated  fadeIn')
-
-
-           }, 600)
-
-           setTimeout(function() {
-             $('.block4 .content-fourthLast').removeClass('transparent').addClass('animated  fadeIn')
+      setTimeout(function() {
+        $('.block4 .content-secondLast').removeClass('transparent').addClass('animated  fadeIn')
 
 
-           }, 700)
+      }, 500)
 
-           setTimeout(function() {
-             $('.block4 .content-fifthLast').removeClass('transparent').addClass('animated  fadeIn')
-
-
-           }, 800)
-
-           setTimeout(function() {
-             $('.block4 .content-sixthLast').removeClass('transparent').addClass('animated  fadeIn')
+      setTimeout(function() {
+        $('.block4 .content-thirdLast').removeClass('transparent').addClass('animated  fadeIn')
 
 
-           }, 900)
+      }, 600)
 
-           setTimeout(function() {
-             $('.block4 .content-seventhLast').removeClass('transparent').addClass('animated  fadeIn')
-
-
-           }, 1000)
-
-           setTimeout(function() {
-             $('.block4 .content-eighthLast').removeClass('transparent').addClass('animated  fadeIn')
+      setTimeout(function() {
+        $('.block4 .content-fourthLast').removeClass('transparent').addClass('animated  fadeIn')
 
 
-           }, 1100)
+      }, 700)
 
-           setTimeout(function() {
-             $('.blocks4 .content-ninthLast').removeClass('transparent').addClass('animated fadeIn')
+      setTimeout(function() {
+        $('.block4 .content-fifthLast').removeClass('transparent').addClass('animated  fadeIn')
 
 
-           }, 1200)
+      }, 800)
+
+      setTimeout(function() {
+        $('.block4 .content-sixthLast').removeClass('transparent').addClass('animated  fadeIn')
+
+
+      }, 900)
+
+      setTimeout(function() {
+        $('.block4 .content-seventhLast').removeClass('transparent').addClass('animated  fadeIn')
+
+
+      }, 1000)
+
+      setTimeout(function() {
+        $('.block4 .content-eighthLast').removeClass('transparent').addClass('animated  fadeIn')
+
+
+      }, 1100)
+
+      setTimeout(function() {
+        $('.blocks4 .content-ninthLast').removeClass('transparent').addClass('animated fadeIn')
+
+
+      }, 1200)
 
 
     }
@@ -311,294 +311,294 @@ $(document).ready(function () {
     })
 
 
-  if ($('.fade1').hasClass('active')) {
-
-
-  setTimeout(function() {
-  $('.fade1 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
-
-  }, 20)
-
-}
-
-// if ($('.block4').hasClass('active')) {
-//
-//
-//   setTimeout(function() {
-//      $('.block4 .content-top').removeClass('transparent').addClass('animated slideInLeft')
-//
-//    }, 10)
-//
-//      // setTimeout(function() {
-//      //   $('.block4 .content-middle').removeClass('transparent').addClass('animated  infinite pulse')
-//      //
-//      //
-//      // }, 30)
-//      //
-//      // setTimeout(function() {
-//      //   $('.block4 .content-bottom').removeClass('transparent').addClass('animated  infinite pulse')
-//      //
-//      //
-//      // }, 70)
-//      //
-//      //
-//      //   setTimeout(function() {
-//      //     $('.block4 .content-last').removeClass('transparent').addClass('animated  infinite pulse')
-//      //
-//      //
-//      //   }, 100)
-//      //
-//      //   setTimeout(function() {
-//      //     $('.block4 .content-secondLast').removeClass('transparent').addClass('animated  infinite pulse')
-//      //
-//      //
-//      //   }, 130)
-//      //
-//      //   setTimeout(function() {
-//      //     $('.block4 .content-thirdLast').removeClass('transparent').addClass('animated  infinite pulse')
-//      //
-//      //
-//      //   }, 150)
-//      //
-//      //   setTimeout(function() {
-//      //     $('.block4 .content-fourthLast').removeClass('transparent').addClass('animated  infinite pulse')
-//      //
-//      //
-//      //   }, 180)
-//      //
-//      //   setTimeout(function() {
-//      //     $('.block4 .content-fifthLast').removeClass('transparent').addClass('animated  infinite pulse')
-//      //
-//      //
-//      //   }, 210)
-//      //
-//      //   setTimeout(function() {
-//      //     $('.block4 .content-sixthLast').removeClass('transparent').addClass('animated  infinite pulse')
-//      //
-//      //
-//      //   }, 230)
-//      //
-//      //   setTimeout(function() {
-//      //     $('.block4 .content-seventhLast').removeClass('transparent').addClass('animated  infinite pulse')
-//      //
-//      //
-//      //   }, 260)
-//      //
-//      //   setTimeout(function() {
-//      //     $('.block4 .content-eighthLast').removeClass('transparent').addClass('animated  infinite pulse')
-//      //
-//      //
-//      //   }, 300)
-//      //
-//      //   setTimeout(function() {
-//      //     $('.blocks4 .content-ninthLast').removeClass('transparent').addClass('animated  infinite pulse')
-//      //
-//      //
-//      //   }, 330)
-//
-// }
-
-// if ($('.block4').hasClass('active')) {
-//
-//
-// setTimeout(function() {
-// $('.block4 .content-top').removeClass('transparent-opacity').addClass('animated fadeIn')
-//
-// })
-//
-// setTimeout(function() {
-//        $('.block4 .content-middle').removeClass('transparent').addClass('animated  fadeIn')
-//
-//  }, 90)
-//
-//  setTimeout(function() {
-//        $('.block4 .content-bottom').removeClass('transparent').addClass('animated fadeIn')
-//
-//
-//      }, 180)
-//
-//
-//        setTimeout(function() {
-//          $('.block4 .content-last').removeClass('transparent').addClass('animated fadeIn')
-//
-//
-//        }, 260)
-//
-//        setTimeout(function() {
-//          $('.block4 .content-secondLast').removeClass('transparent').addClass('animated  fadeIn')
-//
-//
-//        }, 340)
-//
-//        setTimeout(function() {
-//          $('.block4 .content-thirdLast').removeClass('transparent').addClass('animated  fadeIn')
-//
-//
-//        }, 400)
-//
-//        setTimeout(function() {
-//          $('.block4 .content-fourthLast').removeClass('transparent').addClass('animated  fadeIn')
-//
-//
-//        }, 480)
-//
-//        setTimeout(function() {
-//          $('.block4 .content-fifthLast').removeClass('transparent').addClass('animated  fadeIn')
-//
-//
-//        }, 550)
-//
-//        setTimeout(function() {
-//          $('.block4 .content-sixthLast').removeClass('transparent').addClass('animated  fadeIn')
-//
-//
-//        }, 630)
-//
-//        setTimeout(function() {
-//          $('.block4 .content-seventhLast').removeClass('transparent').addClass('animated  fadeIn')
-//
-//
-//        }, 710)
-//
-//        setTimeout(function() {
-//          $('.block4 .content-eighthLast').removeClass('transparent').addClass('animated  fadeIn')
-//
-//
-//        }, 790)
-//
-//        setTimeout(function() {
-//          $('.blocks4 .content-ninthLast').removeClass('transparent').addClass('animated fadeIn')
-//
-//
-//        }, 850)
-//
-//
-// }
+    if ($('.fade1').hasClass('active')) {
+
+
+      setTimeout(function() {
+        $('.fade1 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
+
+      }, 20)
+
+    }
+
+    // if ($('.block4').hasClass('active')) {
+    //
+    //
+    //   setTimeout(function() {
+    //      $('.block4 .content-top').removeClass('transparent').addClass('animated slideInLeft')
+    //
+    //    }, 10)
+    //
+    //      // setTimeout(function() {
+    //      //   $('.block4 .content-middle').removeClass('transparent').addClass('animated  infinite pulse')
+    //      //
+    //      //
+    //      // }, 30)
+    //      //
+    //      // setTimeout(function() {
+    //      //   $('.block4 .content-bottom').removeClass('transparent').addClass('animated  infinite pulse')
+    //      //
+    //      //
+    //      // }, 70)
+    //      //
+    //      //
+    //      //   setTimeout(function() {
+    //      //     $('.block4 .content-last').removeClass('transparent').addClass('animated  infinite pulse')
+    //      //
+    //      //
+    //      //   }, 100)
+    //      //
+    //      //   setTimeout(function() {
+    //      //     $('.block4 .content-secondLast').removeClass('transparent').addClass('animated  infinite pulse')
+    //      //
+    //      //
+    //      //   }, 130)
+    //      //
+    //      //   setTimeout(function() {
+    //      //     $('.block4 .content-thirdLast').removeClass('transparent').addClass('animated  infinite pulse')
+    //      //
+    //      //
+    //      //   }, 150)
+    //      //
+    //      //   setTimeout(function() {
+    //      //     $('.block4 .content-fourthLast').removeClass('transparent').addClass('animated  infinite pulse')
+    //      //
+    //      //
+    //      //   }, 180)
+    //      //
+    //      //   setTimeout(function() {
+    //      //     $('.block4 .content-fifthLast').removeClass('transparent').addClass('animated  infinite pulse')
+    //      //
+    //      //
+    //      //   }, 210)
+    //      //
+    //      //   setTimeout(function() {
+    //      //     $('.block4 .content-sixthLast').removeClass('transparent').addClass('animated  infinite pulse')
+    //      //
+    //      //
+    //      //   }, 230)
+    //      //
+    //      //   setTimeout(function() {
+    //      //     $('.block4 .content-seventhLast').removeClass('transparent').addClass('animated  infinite pulse')
+    //      //
+    //      //
+    //      //   }, 260)
+    //      //
+    //      //   setTimeout(function() {
+    //      //     $('.block4 .content-eighthLast').removeClass('transparent').addClass('animated  infinite pulse')
+    //      //
+    //      //
+    //      //   }, 300)
+    //      //
+    //      //   setTimeout(function() {
+    //      //     $('.blocks4 .content-ninthLast').removeClass('transparent').addClass('animated  infinite pulse')
+    //      //
+    //      //
+    //      //   }, 330)
+    //
+    // }
+
+    // if ($('.block4').hasClass('active')) {
+    //
+    //
+    // setTimeout(function() {
+    // $('.block4 .content-top').removeClass('transparent-opacity').addClass('animated fadeIn')
+    //
+    // })
+    //
+    // setTimeout(function() {
+    //        $('.block4 .content-middle').removeClass('transparent').addClass('animated  fadeIn')
+    //
+    //  }, 90)
+    //
+    //  setTimeout(function() {
+    //        $('.block4 .content-bottom').removeClass('transparent').addClass('animated fadeIn')
+    //
+    //
+    //      }, 180)
+    //
+    //
+    //        setTimeout(function() {
+    //          $('.block4 .content-last').removeClass('transparent').addClass('animated fadeIn')
+    //
+    //
+    //        }, 260)
+    //
+    //        setTimeout(function() {
+    //          $('.block4 .content-secondLast').removeClass('transparent').addClass('animated  fadeIn')
+    //
+    //
+    //        }, 340)
+    //
+    //        setTimeout(function() {
+    //          $('.block4 .content-thirdLast').removeClass('transparent').addClass('animated  fadeIn')
+    //
+    //
+    //        }, 400)
+    //
+    //        setTimeout(function() {
+    //          $('.block4 .content-fourthLast').removeClass('transparent').addClass('animated  fadeIn')
+    //
+    //
+    //        }, 480)
+    //
+    //        setTimeout(function() {
+    //          $('.block4 .content-fifthLast').removeClass('transparent').addClass('animated  fadeIn')
+    //
+    //
+    //        }, 550)
+    //
+    //        setTimeout(function() {
+    //          $('.block4 .content-sixthLast').removeClass('transparent').addClass('animated  fadeIn')
+    //
+    //
+    //        }, 630)
+    //
+    //        setTimeout(function() {
+    //          $('.block4 .content-seventhLast').removeClass('transparent').addClass('animated  fadeIn')
+    //
+    //
+    //        }, 710)
+    //
+    //        setTimeout(function() {
+    //          $('.block4 .content-eighthLast').removeClass('transparent').addClass('animated  fadeIn')
+    //
+    //
+    //        }, 790)
+    //
+    //        setTimeout(function() {
+    //          $('.blocks4 .content-ninthLast').removeClass('transparent').addClass('animated fadeIn')
+    //
+    //
+    //        }, 850)
+    //
+    //
+    // }
 
-if ($('.block5').hasClass('active')) {
+    if ($('.block5').hasClass('active')) {
 
 
-setTimeout(function() {
-$('.block5 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block5 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-},10)
+      },10)
 
-setTimeout(function() {
-$('.block5 .content-middle').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block5 .content-middle').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-}, 100)
+      }, 100)
 
-setTimeout(function() {
-$('.block5 .content-bottom').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block5 .content-bottom').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-}, 500)
+      }, 500)
 
-}
+    }
 
-if ($('.block11').hasClass('active')) {
+    if ($('.block11').hasClass('active')) {
 
 
-setTimeout(function() {
-$('.block11 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block11 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-},10)
+      },10)
 
-setTimeout(function() {
-$('.block11 .content-middle').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block11 .content-middle').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-}, 500)
+      }, 500)
 
-setTimeout(function() {
-$('.block11 .content-bottom').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block11 .content-bottom').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-}, 700)
+      }, 700)
 
-}
+    }
 
-if ($('.block12').hasClass('active')) {
+    if ($('.block12').hasClass('active')) {
 
 
-setTimeout(function() {
-$('.block12 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block12 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-},10)
+      },10)
 
-setTimeout(function() {
-$('.block12 .content-middle').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block12 .content-middle').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-}, 200)
+      }, 200)
 
 
 
-}
+    }
 
 
-if ($('.block6').hasClass('active')) {
+    if ($('.block6').hasClass('active')) {
 
 
-setTimeout(function() {
-$('.block6 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block6 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-})
+      })
 
-}
+    }
 
-if ($('.block7').hasClass('active')) {
+    if ($('.block7').hasClass('active')) {
 
 
-setTimeout(function() {
-$('.block7 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block7 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-})
+      })
 
-}
+    }
 
-if ($('.block8').hasClass('active')) {
+    if ($('.block8').hasClass('active')) {
 
 
-setTimeout(function() {
-$('.block8 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block8 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-})
+      })
 
-}
+    }
 
 
-if ($('.block9').hasClass('active')) {
+    if ($('.block9').hasClass('active')) {
 
 
-setTimeout(function() {
-$('.block9 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block9 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-})
+      })
 
-}
+    }
 
-if ($('.block10').hasClass('active')) {
+    if ($('.block10').hasClass('active')) {
 
 
-setTimeout(function() {
-$('.block10 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block10 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-})
+      })
 
-setTimeout(function() {
-$('.block10 .content-middle').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block10 .content-middle').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-}, 600)
+      }, 600)
 
-}
+    }
 
 
-if ($('.block100').hasClass('active')) {
+    if ($('.block100').hasClass('active')) {
 
 
-setTimeout(function() {
-$('.block100 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
+      setTimeout(function() {
+        $('.block100 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
 
-},10)
+      },10)
 
-}
+    }
 
 
     if ($('.sticky').hasClass('active3')) {
@@ -671,19 +671,19 @@ $('.block100 .content-top').removeClass('transparent-opacity').addClass('animate
 
 
     function show() {
-    var p = document.getElementById('accessCode1');
-    p.setAttribute('type', 'text');
-}
+      var p = document.getElementById('accessCode1');
+      p.setAttribute('type', 'text');
+    }
 
-function hide() {
-    var p = document.getElementById('accessCode1');
-    p.setAttribute('type', 'password');
-}
+    function hide() {
+      var p = document.getElementById('accessCode1');
+      p.setAttribute('type', 'password');
+    }
 
-var pwShown = 0;
+    var pwShown = 0;
 
-document.getElementById("togglePassword").addEventListener("click", function () {
-    if (pwShown == 0) {
+    document.getElementById("togglePassword").addEventListener("click", function () {
+      if (pwShown == 0) {
         pwShown = 1;
         show();
 
@@ -692,17 +692,17 @@ document.getElementById("togglePassword").addEventListener("click", function () 
 
         $('#access').html('Hide Access Code')
 
-    } else {
+      } else {
         pwShown = 0;
         hide();
 
-          $("#eye").attr('src',"images/show-access.svg");
+        $("#eye").attr('src',"images/show-access.svg");
 
-          $('.mr-1').css('margin-top', '-2px');
+        $('.mr-1').css('margin-top', '-2px');
 
-          $('#access').html('Show Access Code')
-    }
-}, false);
+        $('#access').html('Show Access Code')
+      }
+    }, false);
 
 
   }
@@ -723,24 +723,24 @@ document.getElementById("togglePassword").addEventListener("click", function () 
 
 
     function show() {
-    var p = document.getElementById('accessCode1');
-    p.setAttribute('type', 'text');
-}
+      var p = document.getElementById('accessCode1');
+      p.setAttribute('type', 'text');
+    }
 
-function hide() {
-    var p = document.getElementById('accessCode1');
-    p.setAttribute('type', 'password');
-}
+    function hide() {
+      var p = document.getElementById('accessCode1');
+      p.setAttribute('type', 'password');
+    }
 
-var pwShown = 0;
+    var pwShown = 0;
 
-document.getElementById("togglePassword2").addEventListener("click", function () {
-    if (pwShown == 0) {
+    document.getElementById("togglePassword2").addEventListener("click", function () {
+      if (pwShown == 0) {
         pwShown = 1;
         show();
 
 
-  $("#closedEye").attr('src',"images/close-eye.svg");
+        $("#closedEye").attr('src',"images/close-eye.svg");
 
 
 
@@ -748,15 +748,15 @@ document.getElementById("togglePassword2").addEventListener("click", function ()
 
         // $('#access').html('Hide Access Code')
 
-    } else {
+      } else {
         pwShown = 0;
         hide();
 
-          $("#closedEye").attr('src',"images/show-access.svg");
+        $("#closedEye").attr('src',"images/show-access.svg");
 
-          // $('#access').html('Show Access Code')
-    }
-}, false);
+        // $('#access').html('Show Access Code')
+      }
+    }, false);
 
 
     var sticky = document.getElementById('stickyBottom');

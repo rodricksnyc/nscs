@@ -20,10 +20,14 @@
 <style>
 
 #wrapper {
-background: #b3c9d1;
-overflow: visible;
-height: 100%;
-width: 100%;
+  background: #b3c9d1;
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow:hidden;
 }
 
 #slideOut {
@@ -40,36 +44,36 @@ width: 100%;
   z-index:9999;
 }
 .modal-content {
-    position: relative;
-    background: #F1F1F1;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #999;
-    border: none;
-    border-radius: 6px;
-    outline: 0;
-    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-    box-shadow: none;
-    z-index: 999999;
-    padding-bottom: 4em;
+  position: relative;
+  background: #F1F1F1;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: none;
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+  box-shadow: none;
+  z-index: 999999;
+  padding-bottom: 4em;
 }
 
 .modal-header {
-    padding: 15px;
-    border-bottom: none;
+  padding: 15px;
+  border-bottom: none;
 }
 
 ul.papaya {
-    list-style: none;
-    font-size: 17px;
-    color: #404040;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  font-size: 17px;
+  color: #404040;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
-    border-top: none !important;
-    background: white !important;
+  border-top: none !important;
+  background: white !important;
 }
 
 #slideOut2 {
@@ -92,51 +96,51 @@ ul.papaya {
 }
 
 .panel-title>a, .panel-title>a:active {
-    display: block;
-    padding: 10px;
-    color: #004568;
-    font-size: 19px;
-    font-weight: 600;
-    text-transform: capitalize;
-    letter-spacing: 0px;
-    word-spacing: 0px;
-    text-decoration: none;
-    background: white;
-    /* min-width: 900px; */
-    background: white !important;
+  display: block;
+  padding: 10px;
+  color: #004568;
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  text-decoration: none;
+  background: white;
+  /* min-width: 900px; */
+  background: white !important;
 }
 .panel-title>a, .panel-title>a:active {
-    display: block;
-    padding: 10px;
-    color: #008488;
-    font-size: 17px;
-    font-weight: 600;
-    text-transform: capitalize;
-    letter-spacing: 0px;
-    word-spacing: 0px;
-    text-decoration: none;
-    background: white !important;
-    /* min-width: 900px; */
+  display: block;
+  padding: 10px;
+  color: #008488;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  text-decoration: none;
+  background: white !important;
+  /* min-width: 900px; */
 }
 .wrapper {
-    width: 96%;
+  width: 96%;
 }
 .panel-heading a:before {
-    font-family: FontAwesome;
-    content: "\f0d7";
-    font-weight: 100;
-    font-size: 28px;
-    line-height: .8em;
-    color: #00AAAA;
-    float: right;
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
+  font-family: FontAwesome;
+  content: "\f0d7";
+  font-weight: 100;
+  font-size: 28px;
+  line-height: .8em;
+  color: #00AAAA;
+  float: right;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 p.small {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    color: #404040;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  color: #404040;
 }
 
 #bigWrapper {
@@ -156,9 +160,9 @@ p.small {
 }
 
 .slideOutTab.one {
-/* -webkit-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79);
--moz-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79);
-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79); */
+  /* -webkit-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79);
+  -moz-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79);
+  box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79); */
 }
 .slideOutTab div#one {
   text-align: center;
@@ -192,24 +196,24 @@ box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79); */
   writing-mode: lr-tb;
   padding-top:7px;
   padding-bottom:4px;
-    z-index:99;
+  z-index:99;
 }
 
 .vertical3 {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #00467F;
-    opacity: .85;
-    height: 100%;
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 1em;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #00467F;
+  opacity: .85;
+  height: 100%;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 
@@ -229,47 +233,47 @@ section {
 }
 
 section {
-    display: table;
-    width: 100%;
-    height: 100%;
+  display: table;
+  width: 100%;
+  height: 100%;
 }
- .intro {
-        display: table-cell;
-        vertical-align: middle;
+.intro {
+  display: table-cell;
+  vertical-align: middle;
 
-  }
+}
 
-  .hero-img-container5 {
-    /* height: calc(100vh - 4rem); */
-    position: absolute;
-    /* display: flex; */
-    /* align-items: center; */
-    min-height: 50px;
-    /* padding-right: 1em; */
-    margin-bottom: 0em;
-    bottom: 0;
-    top: 0px;
-    z-index: -1;
-    width: 100%;
-    max-height: 50px;
+.hero-img-container5 {
+  /* height: calc(100vh - 4rem); */
+  position: absolute;
+  /* display: flex; */
+  /* align-items: center; */
+  min-height: 50px;
+  /* padding-right: 1em; */
+  margin-bottom: 0em;
+  bottom: 0;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  max-height: 50px;
 }
 
 .hero-img5 {
-    background-image: url(images/footer.jpg);
-    height: inherit;
-    min-height: inherit;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    width: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0;
-    /* height: 35px; */
-    padding-top: 14em;
-    margin-top: 0em;
-    background-position: 0px 48%;
-    bottom: 0;
+  background-image: url(images/footer.jpg);
+  height: inherit;
+  min-height: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  /* height: 35px; */
+  padding-top: 14em;
+  margin-top: 0em;
+  background-position: 0px 48%;
+  bottom: 0;
 }
 
 p.white {
@@ -277,35 +281,38 @@ p.white {
 }
 
 .cent {
-    position: fixed;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60%;
-    width: 80%;
+  position: fixed;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  max-width:1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 80%;
+  -webkit-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
 
 }
 
 .modal-footer {
-    padding: 15px;
-    text-align: right;
-    border-top: none;
+  padding: 15px;
+  text-align: right;
+  border-top: none;
 }
 .westat-footer2 {
-    background-color: #00467F;
-    position: absolute;
-    bottom: 0px;
-    z-index: 8;
-    right: 0;
-    width: 100%;
-    opacity: .89;
-    /* padding-top: 1em; */
-    /* padding-bottom: 1em; */
+  background-color: #00467F;
+  position: absolute;
+  bottom: 0px;
+  z-index: 8;
+  right: 0;
+  width: 100%;
+  opacity: .89;
+  /* padding-top: 1em; */
+  /* padding-bottom: 1em; */
 }
 
 .fa.fa-envelope-o {
@@ -313,11 +320,11 @@ p.white {
 }
 
 h1#smaller {
-    font-size: 26px !important;
-    color: #CB4C45;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom:0px
+  font-size: 26px !important;
+  color: #CB4C45;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom:0px
 }
 
 @media (max-width:767px) {
@@ -326,12 +333,745 @@ h1#smaller {
     font-family: 'Montserrat', sans-serif;
     color: #f2f4f5;
     padding: 10px;
-}
-.wrapper {
+  }
+  .wrapper {
     width: 100%;
-}
+  }
 }
 
+
+
+.circCont {
+  display: inline-block;
+}
+
+.circleClose {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 3px solid #008488;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 20px;
+}
+.circleClose:after {
+  width: 24px;
+  height: 3px;
+  background-color: #008488;
+  content: "";
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -2px;
+  position: absolute;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  /*@include transform-origin(100%,100%);*/
+}
+.circleClose:before {
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -2px;
+  width: 24px;
+  height: 3px;
+  background-color: #008488;
+  content: "";
+  position: absolute;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  /*@include transform-origin(0%,0%);*/
+}
+.circleClose + p {
+  text-transform: lowercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.simpleRotate {
+  -moz-animation: rotate 0.1s 2 ease-in-out alternate;
+  -webkit-animation: rotate 0.1s 2 ease-in-out alternate;
+  animation: rotate 0.1s 2 ease-in-out alternate;
+}
+
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@keyframes rotate {
+  0% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+.circleClose[data-animation="simpleRotate"]:not(.simpleRotate) {
+  -moz-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  -o-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+}
+.circleClose[data-animation="simpleRotate"]:not(.simpleRotate):hover {
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.circleClose[data-animation="rotateY"] {
+  -moz-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+}
+.circleClose[data-animation="rotateY"]:after {
+  -moz-transition-delay: 150ms;
+  -o-transition-delay: 150ms;
+  -webkit-transition-delay: 150ms;
+  transition-delay: 150ms;
+}
+.circleClose[data-animation="rotateY"]:before {
+  -moz-transition-delay: 150ms;
+  -o-transition-delay: 150ms;
+  -webkit-transition-delay: 150ms;
+  transition-delay: 150ms;
+}
+
+.circleClose[data-animation="rotateX"] {
+  -moz-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+}
+.circleClose[data-animation="rotateX"]:after {
+  -moz-transition-delay: 150ms;
+  -o-transition-delay: 150ms;
+  -webkit-transition-delay: 150ms;
+  transition-delay: 150ms;
+}
+.circleClose[data-animation="rotateX"]:before {
+  -moz-transition-delay: 150ms;
+  -o-transition-delay: 150ms;
+  -webkit-transition-delay: 150ms;
+  transition-delay: 150ms;
+}
+
+.rotateY {
+  -moz-transform: rotateY(180deg) scale(0.5);
+  -ms-transform: rotateY(180deg) scale(0.5);
+  -webkit-transform: rotateY(180deg) scale(0.5);
+  transform: rotateY(180deg) scale(0.5);
+}
+.rotateY:after {
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.rotateY:before {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.rotateX {
+  -moz-transform: rotateX(180deg) scale(0.5);
+  -ms-transform: rotateX(180deg) scale(0.5);
+  -webkit-transform: rotateX(180deg) scale(0.5);
+  transform: rotateX(180deg) scale(0.5);
+}
+.rotateX:after {
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.rotateX:before {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.scaleUp:not(.scaleDown):not(.minimize) {
+  -moz-transition: cubic-bezier(0.175, 0.885, 0.52, 1.575) 200ms;
+  -o-transition: cubic-bezier(0.175, 0.885, 0.52, 1.575) 200ms;
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.52, 1.575) 200ms;
+  transition: cubic-bezier(0.175, 0.885, 0.52, 1.575) 200ms;
+}
+.scaleUp:not(.scaleDown):not(.minimize):hover {
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.scaleUp:not(.scaleDown):not(.minimize):hover:after {
+  -moz-transform: scale(1.1) rotate(45deg);
+  -ms-transform: scale(1.1) rotate(45deg);
+  -webkit-transform: scale(1.1) rotate(45deg);
+  transform: scale(1.1) rotate(45deg);
+}
+.scaleUp:not(.scaleDown):not(.minimize):hover:before {
+  -moz-transform: scale(1.1) rotate(-45deg);
+  -ms-transform: scale(1.1) rotate(-45deg);
+  -webkit-transform: scale(1.1) rotate(-45deg);
+  transform: scale(1.1) rotate(-45deg);
+}
+
+.scaleDown {
+  -moz-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.minimize {
+  -moz-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+.boxShadow {
+  -moz-transition: box-shadow 200ms ease-out, -moz-transform 200ms ease-out, opacity 200ms ease-in-out;
+  -o-transition: box-shadow 200ms ease-out, -o-transform 200ms ease-out, opacity 200ms ease-in-out;
+  -webkit-transition: box-shadow 200ms ease-out, -webkit-transform 200ms ease-out, opacity 200ms ease-in-out;
+  transition: box-shadow 200ms ease-out, transform 200ms ease-out, opacity 200ms ease-in-out;
+}
+.boxShadow:after, .boxShadow:before {
+  -moz-transition: linear 400ms;
+  -o-transition: linear 400ms;
+  -webkit-transition: linear 400ms;
+  transition: linear 400ms;
+}
+
+.boxShadow:hover:not(.fadeOut) {
+  -moz-box-shadow: 0px 0px 0px 20px #E91E63 inset;
+  -webkit-box-shadow: 0px 0px 0px 20px #E91E63 inset;
+  box-shadow: 0px 0px 0px 20px #E91E63 inset;
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.boxShadow:hover:not(.fadeOut):after {
+  background-color: #fff;
+  -moz-transform: rotate(-45deg) scale(0.6);
+  -ms-transform: rotate(-45deg) scale(0.6);
+  -webkit-transform: rotate(-45deg) scale(0.6);
+  transform: rotate(-45deg) scale(0.6);
+}
+.boxShadow:hover:not(.fadeOut):before {
+  background-color: #fff;
+  -moz-transform: rotate(45deg) scale(0.6);
+  -ms-transform: rotate(45deg) scale(0.6);
+  -webkit-transform: rotate(45deg) scale(0.6);
+  transform: rotate(45deg) scale(0.6);
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+.circleClose[data-animation="magnify"]:not(.magnify) {
+  -moz-transition: ease-in-out 100ms;
+  -o-transition: ease-in-out 100ms;
+  -webkit-transition: ease-in-out 100ms;
+  transition: ease-in-out 100ms;
+}
+.circleClose[data-animation="magnify"]:not(.magnify):hover {
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.circleClose.magnify {
+  -moz-transition: ease-in-out 200ms;
+  -o-transition: ease-in-out 200ms;
+  -webkit-transition: ease-in-out 200ms;
+  transition: ease-in-out 200ms;
+  -moz-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+  opacity: 0;
+}
+
+.fromMiddle:before, .fromMiddle:after {
+  z-index: 9999;
+  -moz-transition-delay: 150ms;
+  -o-transition-delay: 150ms;
+  -webkit-transition-delay: 150ms;
+  transition-delay: 150ms;
+  -moz-transition: ease-in-out 400ms;
+  -o-transition: ease-in-out 400ms;
+  -webkit-transition: ease-in-out 400ms;
+  transition: ease-in-out 400ms;
+}
+.fromMiddle span {
+  width: 38px;
+  height: 38px;
+  background-color: #008488;
+  display: inline-block;
+  position: absolute;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  left: -2px;
+  top: -2px;
+  z-index: -9999;
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
+  opacity: 0;
+  -moz-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+}
+
+.fromMiddle:hover:before, .fromMiddle:hover:after {
+  position: absolute;
+  background-color: #fff;
+}
+.fromMiddle:hover span {
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.circleClose[data-animation="downBorder"] {
+  -moz-transition: ease-out 200ms;
+  -o-transition: ease-out 200ms;
+  -webkit-transition: ease-out 200ms;
+  transition: ease-out 200ms;
+}
+.circleClose[data-animation="downBorder"]:hover:not(.downBorder) {
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.downBorder {
+  border: 4px solid transparent;
+  -moz-transform: scale(0.3) rotate(45deg);
+  -ms-transform: scale(0.3) rotate(45deg);
+  -webkit-transform: scale(0.3) rotate(45deg);
+  transform: scale(0.3) rotate(45deg);
+}
+
+.circleClose[data-animation="radiusPlus"] {
+  -moz-transition: ease-out 300ms;
+  -o-transition: ease-out 300ms;
+  -webkit-transition: ease-out 300ms;
+  transition: ease-out 300ms;
+}
+.circleClose[data-animation="radiusPlus"]:before, .circleClose[data-animation="radiusPlus"]:after {
+  -moz-transition: ease-out 300ms;
+  -o-transition: ease-out 300ms;
+  -webkit-transition: ease-out 300ms;
+  transition: ease-out 300ms;
+}
+
+.radiusPlus {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+}
+.radiusPlus:before {
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.radiusPlus:after {
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.circleClose[data-animation="shrinkRadius"] {
+  -moz-transition: ease-in-out 400ms;
+  -o-transition: ease-in-out 400ms;
+  -webkit-transition: ease-in-out 400ms;
+  transition: ease-in-out 400ms;
+}
+.circleClose[data-animation="shrinkRadius"]:after, .circleClose[data-animation="shrinkRadius"]:before {
+  -moz-transition: ease-in-out 400ms;
+  -o-transition: ease-in-out 400ms;
+  -webkit-transition: ease-in-out 400ms;
+  transition: ease-in-out 400ms;
+}
+
+.circleClose.shrinkRadius {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
+}
+.circleClose.shrinkRadius:before {
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.circleClose.shrinkRadius:after {
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.circleClose[data-animation="xMarks"] {
+  border: 0px solid white;
+  overflow: hidden;
+  -moz-box-shadow: 0px 0px 0px 0px #E91E63 inset;
+  -webkit-box-shadow: 0px 0px 0px 0px #E91E63 inset;
+  box-shadow: 0px 0px 0px 0px #E91E63 inset;
+  -moz-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  -o-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+}
+.circleClose[data-animation="xMarks"]:before, .circleClose[data-animation="xMarks"]:after {
+  -moz-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  -o-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+}
+.circleClose[data-animation="xMarks"]:not(.xMarks):hover {
+  -moz-box-shadow: 0px 0px 0px 6px #E91E63 inset;
+  -webkit-box-shadow: 0px 0px 0px 6px #E91E63 inset;
+  box-shadow: 0px 0px 0px 6px #E91E63 inset;
+}
+.circleClose[data-animation="xMarks"]:not(.xMarks):hover:before {
+  -moz-transform: scale(0.7) rotate(45deg);
+  -ms-transform: scale(0.7) rotate(45deg);
+  -webkit-transform: scale(0.7) rotate(45deg);
+  transform: scale(0.7) rotate(45deg);
+  -moz-transition-delay: 100ms;
+  -o-transition-delay: 100ms;
+  -webkit-transition-delay: 100ms;
+  transition-delay: 100ms;
+}
+.circleClose[data-animation="xMarks"]:not(.xMarks):hover:after {
+  -moz-transform: scale(0.7) rotate(-45deg);
+  -ms-transform: scale(0.7) rotate(-45deg);
+  -webkit-transform: scale(0.7) rotate(-45deg);
+  transform: scale(0.7) rotate(-45deg);
+  -moz-transition-delay: 100ms;
+  -o-transition-delay: 100ms;
+  -webkit-transition-delay: 100ms;
+  transition-delay: 100ms;
+}
+
+.circleClose.xMarks {
+  -moz-transition: -moz-transform 400ms ease-out, opacity 200ms ease-in;
+  -o-transition: -o-transform 400ms ease-out, opacity 200ms ease-in;
+  -webkit-transition: -webkit-transform 400ms ease-out, opacity 200ms ease-in;
+  transition: transform 400ms ease-out, opacity 200ms ease-in;
+  -moz-transition-delay: opacity 100ms;
+  -o-transition-delay: opacity 100ms;
+  -webkit-transition-delay: opacity 100ms;
+  transition-delay: opacity 100ms;
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  opacity: 0;
+  -moz-box-shadow: 0px 0px 0px 20px #E91E63 inset;
+  -webkit-box-shadow: 0px 0px 0px 20px #E91E63 inset;
+  box-shadow: 0px 0px 0px 20px #E91E63 inset;
+}
+.circleClose.xMarks:before {
+  background-color: white;
+  -moz-transform: scale(2) rotate(45deg);
+  -ms-transform: scale(2) rotate(45deg);
+  -webkit-transform: scale(2) rotate(45deg);
+  transform: scale(2) rotate(45deg);
+}
+.circleClose.xMarks:after {
+  background-color: white;
+  -moz-transform: scale(2) rotate(-45deg);
+  -ms-transform: scale(2) rotate(-45deg);
+  -webkit-transform: scale(2) rotate(-45deg);
+  transform: scale(2) rotate(-45deg);
+}
+
+.circleClose[data-animation="showShadow"] {
+  -moz-box-shadow: 0px 0px 0px 0px #E91E63 inset;
+  -webkit-box-shadow: 0px 0px 0px 0px #E91E63 inset;
+  box-shadow: 0px 0px 0px 0px #E91E63 inset;
+  -moz-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  -o-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  border: 0px solid white;
+}
+.circleClose[data-animation="showShadow"]:before, .circleClose[data-animation="showShadow"]:after {
+  -moz-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  -o-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+}
+.circleClose[data-animation="showShadow"]:not(.showShadow):hover {
+  -moz-box-shadow: 0px 0px 0px 6px #E91E63 inset;
+  -webkit-box-shadow: 0px 0px 0px 6px #E91E63 inset;
+  box-shadow: 0px 0px 0px 6px #E91E63 inset;
+}
+.circleClose[data-animation="showShadow"]:not(.showShadow):hover:before {
+  -moz-transform: scale(0.7) rotate(45deg);
+  -ms-transform: scale(0.7) rotate(45deg);
+  -webkit-transform: scale(0.7) rotate(45deg);
+  transform: scale(0.7) rotate(45deg);
+  -moz-transition-delay: 100ms;
+  -o-transition-delay: 100ms;
+  -webkit-transition-delay: 100ms;
+  transition-delay: 100ms;
+}
+.circleClose[data-animation="showShadow"]:not(.showShadow):hover:after {
+  -moz-transform: scale(0.7) rotate(-45deg);
+  -ms-transform: scale(0.7) rotate(-45deg);
+  -webkit-transform: scale(0.7) rotate(-45deg);
+  transform: scale(0.7) rotate(-45deg);
+  -moz-transition-delay: 100ms;
+  -o-transition-delay: 100ms;
+  -webkit-transition-delay: 100ms;
+  transition-delay: 100ms;
+}
+
+.circleClose.showShadow {
+  -moz-transition: ease-out 300ms;
+  -o-transition: ease-out 300ms;
+  -webkit-transition: ease-out 300ms;
+  transition: ease-out 300ms;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+}
+
+
+.modal-header .close {
+  margin-top: -2px;
+  opacity: 1;
+  outline: none;
+}
+
+.surveyContent {
+  width:100%;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  top:-35%;
+
+}
+
+.surveyContentInner {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-left:3em;
+  padding-right:3em;
+  position: absolute;
+
+  z-index: 2;
+}
+
+
+.panel-default>.panel-heading {
+  background-image: transparent !important;
+  background-image: transparent !important;
+  background-repeat: repeat-x;
+  background:#181e2a;
+  color:white
+}
+
+
+#listResults .one label,
+#listResults .two label,
+#listResults .three label,
+#listResults .four label,
+#listResults .five label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 5px;
+}
+
+#listResults .one label::before,
+#listResults .two label::before,
+#listResults .three label::before,
+#listResults .four label::before,
+#listResults .five label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #555;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  top:3px;
+}
+
+#listResults .one label::after,
+#listResults .two label::after,
+#listResults .three label::after,
+#listResults .four label::after,
+#listResults .five label::after {
+  display: inline-block;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: -17px;
+  top: 4px;
+  /* margin-left: -17px; */
+  padding-left: 0px;
+  padding-top: 1px;
+  font-size: 9px;
+  color: #008488;
+  font-weight: 200 !important;
+  padding: 1px;
+}
+
+#listResults .one input[type="checkbox"],
+#listResults .two input[type="checkbox"],
+#listResults .three input[type="checkbox"],
+#listResults .four input[type="checkbox"],
+#listResults .five input[type="checkbox"]   {
+  opacity: 0;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+}
+
+
+#listResults .one input[type="checkbox"]:checked + label::after,
+#listResults .two input[type="checkbox"]:checked + label::after,
+#listResults .three input[type="checkbox"]:checked + label::after,
+#listResults .four input[type="checkbox"]:checked + label::after,
+#listResults .five input[type="checkbox"]:checked + label::after{
+  font-family: "FontAwesome";
+  content: "\f111";
+}
+
+#listResults .one label::before,
+#listResults .two label::before,
+#listResults .three label::before,
+#listResults .four label::before,
+#listResults .five label::before     {
+  border-radius: 50%;
+}
+
+#listResults .one {
+  margin-top: 0;
+}
+
+#listResults .one    input[type="checkbox"]:checked + label::after,
+#listResults .one input[type="checkbox"]:checked + label::after,
+#listResults .two    input[type="checkbox"]:checked + label::after,
+#listResults .two input[type="checkbox"]:checked + label::after,
+#listResults .three    input[type="checkbox"]:checked + label::after,
+#listResults .three input[type="checkbox"]:checked + label::after,
+#listResults .four    input[type="checkbox"]:checked + label::after,
+#listResults .four input[type="checkbox"]:checked + label::after,
+#listResults .five    input[type="checkbox"]:checked + label::after,
+#listResults .five input[type="checkbox"]:checked + label::after
+
+{color: #008488;}
+
+#listResults .one input[type="checkbox"] + label::before,
+#listResults .two input[type="checkbox"] + label::before,
+#listResults .three input[type="checkbox"] + label::before,
+#listResults .four input[type="checkbox"] + label::before,
+#listResults .five input[type="checkbox"] + label::before {
+  border-color: #008488;
+  background: white;
+}
+
+
+input[type="checkbox"].styled:checked + label:after {
+  font-family: 'FontAwesome';
+  content: "\f111";
+}
+
+
+.redLineTop {
+    width: 100%;
+    background: #CB4C45;
+    height: 1px;
+    padding-bottom: 0em;
+    margin-bottom: 2em;
+}
+
+.redLineBottom {
+    width: 100%;
+    background: #CB4C45;
+    height: 1px;
+    padding-bottom: 0em;
+    margin-top: 2em;
+}
 
 </style>
 
@@ -341,203 +1081,246 @@ h1#smaller {
 
     <a name="content"></a>
 
-      <div class="container-fluid padding-0">
-        <div class="row heros2">
-          <div class="col-xs-12 col-lg-12">
-            <header class="landing2">
+    <div class="container-fluid padding-0">
+      <div class="row heros2">
+        <div class="col-xs-12 col-lg-12">
+          <header class="landing2">
 
-              <div class="title2 text-center">National Survey Of Crime And Safety</div>
-            </header>
+            <div class="title2 text-center">National Survey Of Crime And Safety</div>
+          </header>
 
-          </div>
-        </div>
-
-
-
-        <div class="row heros2">
-          <div class="col-xs-12 col-lg-12">
-<div id="bigWrapper">
-    <div id="slideOut">
-
-      <div class="slideOutTab one">
-        <div id="one">
-          <p class="white">FAQ ?</p>
-        </div>
-        <div id="two">
-          <p class="white">Contact <i class="fa fa-envelope-o"></i></p>
         </div>
       </div>
 
 
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span id="close" aria-hidden="true">×</span>
-          </button>
-          <center>
-            <h1 class="p1" id="smaller">Frequently Asked Questions</h1>
-          </center>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-xs-12 col-lg-12">
 
-              <div class="wrapper center-block">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                      <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          What is this survey about?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                      <div class="panel-body">
-                        <p class="small">The NSCS asks about people&rsquo;s experiences with crime in the last 12 months, regardless of whether these experiences were reported to the police. The survey is asked of adults and youth age 12 or older in selected U.S. households.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Who is conducting this survey?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                      <div class="panel-body">
-                        <p class="small">The Bureau of Justice Statistics within the Department of Justice has asked Westat, a research organization based in Rockville, Maryland, to conduct the study.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          How is the information collected?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                      <div class="panel-body">
-                        <p class="small">Someone from Westat will come to your home to interview you and other members of your household.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFour">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                          How was I selected for this study?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                      <div class="panel-body">
-                        <p class="small">Your address was scientifically selected to be a part of our sample.</p>
-                      </div>
-                    </div>
-                  </div>
+      <div class="row heros2">
+        <div class="col-xs-12 col-lg-12">
+          <div id="bigWrapper">
+            <div id="slideOut">
 
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFive">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                          How long will the interview take?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                      <div class="panel-body">
-                        <p class="small">Between 20 &ndash; 40 minutes, depending on your experiences with crime.</p>
-                      </div>
-                    </div>
-                  </div>
+              <div class="slideOutTab one">
+                <div id="one">
+                  <p class="white">FAQ ?</p>
+                </div>
+                <div id="two">
+                  <p class="white">Contact <i class="fa fa-envelope-o"></i></p>
+                </div>
+              </div>
 
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingSix">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                          How will my privacy be protected?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                      <div class="panel-body">
-                        <p class="small">All the information you give to this study will be kept private.</p>
-                        <ul class="papaya">
-                          <li>Your answers will not be connected with your name.</li>
-                          <li>Your name and contact information will be kept separately in secure computer files.</li>
-                        </ul>
+
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span id="close" aria-hidden="true">
+                      <div class="circCont">
+                        <div class="circleClose fromMiddle" data-animation="magnify">
+                          <span></span>
+                        </div>
+                      </div>
+                    </span>
+                  </button>
+                  <center>
+                    <h1 class="p1" id="smaller">Frequently Asked Questions</h1>
+                  </center>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-xs-12 col-lg-12">
+
+                      <div class="wrapper center-block">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                              <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  What is this survey about?
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="panel-body">
+                                <p class="small">The NSCS asks about people&rsquo;s experiences with crime in the last 12 months, regardless of whether these experiences were reported to the police. The survey is asked of adults and youth age 12 or older in selected U.S. households.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                              <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Who is conducting this survey?
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="panel-body">
+                                <p class="small">The Bureau of Justice Statistics within the Department of Justice has asked Westat, a research organization based in Rockville, Maryland, to conduct the study.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                              <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  How is the information collected?
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                <p class="small">Someone from Westat will come to your home to interview you and other members of your household.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                              <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  How was I selected for this study?
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                              <div class="panel-body">
+                                <p class="small">Your address was scientifically selected to be a part of our sample.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                              <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  How long will the interview take?
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                              <div class="panel-body">
+                                <p class="small">Between 20 &ndash; 40 minutes, depending on your experiences with crime.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                              <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                  How will my privacy be protected?
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                              <div class="panel-body">
+                                <p class="small">All the information you give to this study will be kept private.</p>
+                                <ul class="papaya">
+                                  <li>Your answers will not be connected with your name.</li>
+                                  <li>Your name and contact information will be kept separately in secure computer files.</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="modal-footer"> </div>
               </div>
             </div>
+
+
+            <div class="cent">
+
+
+              <div class="surveyContent">
+                <div class="surveyContentInner">
+
+                  <div class="redLineTop"></div>
+                <div class="question">
+                  <p class="small">In the past 7 days, did you have a job or work at a business? Do not include volunteer work or work around the house.</p>
+                </div>
+
+                    <div class="choices">
+                      <form class="was-validated" id="listResults">
+                        <div class="one">
+                          <input class="form-check-input" type="checkbox" id="customControlValidation1" value="Yes">
+                          <label class="form-check-label" for="customControlValidation1">Yes</label>
+                        </div>
+
+                        <div class="one">
+                          <input class="form-check-input" type="checkbox" id="customControlValidation2" value="No">
+                          <label class="form-check-label" for="customControlValidation2">No</label>
+                        </div>
+
+                      </form>
+
+                    </div>
+                      <div class="redLineBottom"></div>
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+
+
+              </div>
+
             </div>
+
+          </div>
         </div>
-        <div class="modal-footer"> </div>
+
       </div>
+
+
+
+      <footer class="westat-footer2">
+        <div class="vertical3">
+          <div class="center">
+            <img src="images/doj.svg" class="img-responsive footer1" alt="Department of Justice logo graphic">
+            <img src="images/Westat_logo_white.svg" class="img-responsive footer2" alt="Westat white logo graphic">
+          </div>
+        </div>
+
+        <div class="hero-img-container5">
+          <div class="hero-img5"></div>
+        </div>
+      </footer>
     </div>
 
 
-    <div class="cent">
 
-    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
-</div>
-
-</div>
-</div>
-
-</div>
-
-
-
-    <footer class="westat-footer2">
-      <div class="vertical3">
-        <div class="center">
-          <img src="images/doj.svg" class="img-responsive footer1" alt="Department of Justice logo graphic">
-          <img src="images/Westat_logo_white.svg" class="img-responsive footer2" alt="Westat white logo graphic">
-        </div>
-      </div>
-
-      <div class="hero-img-container5">
-        <div class="hero-img5"></div>
-      </div>
-    </footer>
-</div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
 
 
 
-<script
-src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"></script>
-
-<script src="js/bootstrap.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/index.js"></script>
-<script>
 
 
-// this.$slideOut = $('#slideOut');
-//
-// this.$slideOut.find('.slideOutTab').on('click', function() {
-//   $("#slideOut").toggleClass('showSlideOut');
-// });
+    // this.$slideOut = $('#slideOut');
+    //
+    // this.$slideOut.find('.slideOutTab').on('click', function() {
+    //   $("#slideOut").toggleClass('showSlideOut');
+    // });
 
-$('#one').on('click', function() {
+    $('#one').on('click', function() {
 
-$('.modal-content').addClass('opened')
-$("#slideOut").toggleClass('showSlideOut');
-$('#one').css('background', '#F1F1F1');
-$('#one p.white').css('color', '#008488');
+      $('.modal-content').addClass('opened')
+      $("#slideOut").toggleClass('showSlideOut');
+      $('#one').css('background', '#F1F1F1');
+      $('#one p.white').css('color', '#008488');
 
-})
+    })
 
 
 
@@ -545,48 +1328,48 @@ $('#one p.white').css('color', '#008488');
 
 
 
-if ($('#slideOut').is('.showSlideOut')   || $('.modal-content').is('.opened') ) {
+    if ($('#slideOut').is('.showSlideOut')   || $('.modal-content').is('.opened') ) {
 
-  $('#one').on('click', function() {
+      $('#one').on('click', function() {
 
-    console.log('siefyuvievg')
+        console.log('siefyuvievg')
 
-  $('.modal-content').removeClass('opened')
-  $("#slideOut").toggleClass('showSlideOut');
-  $('#one').css('background', '#008488');
-  $('#one p.white').css('color', 'white');
+        $('.modal-content').removeClass('opened')
+        $("#slideOut").toggleClass('showSlideOut');
+        $('#one').css('background', '#008488');
+        $('#one p.white').css('color', 'white');
 
-})
+      })
 
-}
-
-
+    }
 
 
 
-$('#close').on('click', function() {
-  $("#slideOut").removeClass('showSlideOut');
-  $('#one').css('background', '#008488');
-  $('#one p.white').css('color', 'white');
-})
+
+
+    $('#close').on('click', function() {
+      $("#slideOut").removeClass('showSlideOut');
+      $('#one').css('background', '#008488');
+      $('#one p.white').css('color', 'white');
+    })
 
 
 
-var modal1 = document.getElementById('slideOut');
+    var modal1 = document.getElementById('slideOut');
 
-console.log(window.getComputedStyle(modal1).width);
-
-
-
-$( document ).ready(function() {
-    $("#slideOut").css("right" , -$('#bigWrapper').outerWidth());
+    console.log(window.getComputedStyle(modal1).width);
 
 
-    $(".modal-content").width($('#bigWrapper').width());
 
-})
+    $( document ).ready(function() {
+      $("#slideOut").css("right" , -$('#bigWrapper').outerWidth());
 
-</script>
+
+      $(".modal-content").width($('#bigWrapper').width());
+
+    })
+
+  </script>
 
 
 </body>

@@ -14,10 +14,10 @@
 }
 
 .checkbox {
-    position: relative;
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 10px;
+  position: relative;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .padding-0.new {
@@ -95,17 +95,17 @@ h2.smaller {
 }
 
 .title2 {
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
-    color: #f2f4f5;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: #f2f4f5;
 }
 
- .checkbox label {
-    min-height: 20px;
-    padding-left: 0px;
-    margin-bottom: 0;
-    font-weight: normal;
-    cursor: pointer;
+.checkbox label {
+  min-height: 20px;
+  padding-left: 0px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
 }
 
 h1 {
@@ -163,9 +163,9 @@ p.smaller {
 
 
 span.blue.card {
-    color: #004568;
-    font-weight: 600;
-    font-size: 24px;
+  color: #004568;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 .hero-img-container {
@@ -344,8 +344,8 @@ span.blue.card {
   box-shadow:none;
 }
 .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
-    border-top: none !important;
-    background: #eef2f4 !important;
+  border-top: none !important;
+  background: #eef2f4 !important;
 }
 
 .button-default {
@@ -404,25 +404,25 @@ span.blue.card {
 }
 
 .landing-panel .checkbox label {
-    width: 100%;
-    text-align: center;
-    font-size: 1em;
-    cursor: pointer;
-    font-weight: 600;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display:flex;
-    -webkit-justify-content: flex-end;
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    -ms-flex-pack: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    max-width: 81%;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 600;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display:flex;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  max-width: 81%;
 }
 
 .center{
@@ -674,19 +674,19 @@ a.whiteStrong {
 }
 
 .fingerDiv {
-    position: absolute;
-    z-index: 0;
-    /* bottom: 38px; */
-    /* margin-bottom: 10em; */
-    left: -32px;
-    top: -90px;
+  position: absolute;
+  z-index: 0;
+  /* bottom: 38px; */
+  /* margin-bottom: 10em; */
+  left: -32px;
+  top: -90px;
 }
 
 #eye {
-    position: absolute;
-    bottom: 39px;
-    right: 20%;
-    z-index: 3;
+  position: absolute;
+  bottom: 39px;
+  right: 20%;
+  z-index: 3;
 }
 
 
@@ -966,13 +966,13 @@ hr {
 }
 
 .fadableElement {
-   opacity: 1;
-   transition: opacity 2s ease-in-out;
-   -moz-transition: opacity 2s ease-in-out;
-   -webkit-transition: opacity 2s ease-in-out;
-   }
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;
+}
 .transparent {
-display:none;
+  display:none;
 }
 .transparent-opacity {
   opacity:0;
@@ -1046,8 +1046,8 @@ display:none;
 @media (min-width:2040px) {
   .grayBox2 {
 
-      max-height: 700px;
-      min-height: 700px;
+    max-height: 700px;
+    min-height: 700px;
 
   }
 
@@ -1055,19 +1055,19 @@ display:none;
 
     max-height: 600px;
     min-height: 600px;
-}
+  }
 
   .landing-panel.new2 {
 
     max-height: 600px;
     min-height: 600px;
-}
+  }
 
   .landing-panel.new {
 
     max-height: 700px;
     min-height: 700px;
-}
+  }
 
 
 }
@@ -1087,7 +1087,7 @@ display:none;
   }
 
   /* .about1 {
-    bottom: 24%;
+  bottom: 24%;
   } */
 
   .grayBox2 {
@@ -1119,7 +1119,7 @@ display:none;
   }
 
   /* .about1 {
-    bottom: 35%;
+  bottom: 35%;
   } */
 
   .grayBox2 {
@@ -1728,11 +1728,11 @@ display:none;
   }
 
   .mobileOnly {
-      display: block;
-      position: absolute;
-      z-index: 100;
-      right: 21%;
-      bottom: 14px;
+    display: block;
+    position: absolute;
+    z-index: 100;
+    right: 21%;
+    bottom: 14px;
   }
   #accessCode1 {
     position:relative;
@@ -2056,20 +2056,20 @@ display:none;
   .footer2 {
     max-height: 50px;
     max-width: 120px;
-}
-.footer1 {
+  }
+  .footer1 {
     max-height: 50px;
     max-width: 50px;
     margin-right: 1em;
-}
+  }
 
-.fingerDiv {
+  .fingerDiv {
     position: absolute;
     z-index: 0;
     /* bottom: 38px; */
     /* margin-bottom: 10em; */
     left: 0px;
     top: 0px;
-}
+  }
 
 }
