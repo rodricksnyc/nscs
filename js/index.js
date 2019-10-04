@@ -776,15 +776,17 @@ $(document).ready(function () {
 
     var box1 = document.getElementById('box1');
 
-    console.log(window.getComputedStyle(box1).width);
+    var box2 = document.getElementById('box2');
 
+    console.log(window.getComputedStyle(box1).width);
+    console.log(window.getComputedStyle(box2).width);
 
     $(".grayBox").css({
       'width': ($(box1).outerWidth() + 'px')
     });
 
     $(".grayBox2").css({
-      'width': ($(box1).outerWidth() + 'px')
+      'width': ($(box2).outerWidth() + 'px')
     });
 
   }

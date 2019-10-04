@@ -1307,6 +1307,13 @@ hr {
 
 @media (max-width:991px) and (min-width:768px) {
 
+  .fingerDiv {
+    position: absolute;
+    z-index: 0;
+    left: -90px;
+    top: -64px;
+}
+
   .tealBox.first{
     border-right:1px solid white;
   }
@@ -1366,10 +1373,10 @@ hr {
   }
 
   .print {
-    max-width: 100px;
-    position: absolute;
+    max-width: 170px;
+    /* position: absolute;
     left: 3%;
-    top: -25px;
+    top: -25px; */
   }
 
   .tealBox {
@@ -2071,5 +2078,9 @@ hr {
     left: 0px;
     top: 0px;
   }
+
+  .p1 {
+    padding: 1em;
+}
 
 }
