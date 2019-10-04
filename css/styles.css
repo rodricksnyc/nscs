@@ -13,6 +13,13 @@
 
 }
 
+.checkbox {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 .padding-0.new {
   padding-right: 0px;
   padding-left: 0;
@@ -53,10 +60,9 @@ a:hover {
   padding-left:0;
 }
 
-/* .padding-0.new{
-padding-right:2px;
-padding-left:0;
-} */
+.rel {
+  position: relative;
+}
 
 h2 {
   font-family: 'Montserrat', sans-serif;
@@ -498,7 +504,7 @@ span.blue {
 }
 .mr-1, .mx-1 {
   margin-right: 4px!important;
-  margin-top: 0px;
+  margin-top: -2px;
 }
 
 .about {
@@ -649,7 +655,7 @@ a.whiteStrong {
   max-width: 250px;
   position: absolute;
   left: 107px;
-  top: -83px;
+  /* top: -83px; */
 }
 
 .print3 {
@@ -666,6 +672,23 @@ a.whiteStrong {
   right: -3%;
   top: 200px;
 }
+
+.fingerDiv {
+    position: absolute;
+    z-index: 0;
+    /* bottom: 38px; */
+    /* margin-bottom: 10em; */
+    left: -32px;
+    top: -90px;
+}
+
+#eye {
+    position: absolute;
+    bottom: 39px;
+    right: 20%;
+    z-index: 3;
+}
+
 
 .mb5 {
   margin-bottom:5em;
@@ -951,6 +974,9 @@ hr {
 .transparent {
 display:none;
 }
+.transparent-opacity {
+  opacity:0;
+}
 
 #stickySide {
   position: fixed;
@@ -1006,6 +1032,46 @@ display:none;
   /* padding: 6em; */
   padding: 30px;
 }
+
+@media (min-width:2700px) {
+  .about1 {
+    width: 75%;
+  }
+  .about2, .about3, .about4, .about5 {
+    width:62%;
+  }
+}
+
+
+@media (min-width:2040px) {
+  .grayBox2 {
+
+      max-height: 700px;
+      min-height: 700px;
+
+  }
+
+  .grayBox{
+
+    max-height: 600px;
+    min-height: 600px;
+}
+
+  .landing-panel.new2 {
+
+    max-height: 600px;
+    min-height: 600px;
+}
+
+  .landing-panel.new {
+
+    max-height: 700px;
+    min-height: 700px;
+}
+
+
+}
+
 
 @media (max-width: 1000px) and (min-width:992px) {
   .col-md-12.newBoot {
@@ -1657,12 +1723,16 @@ display:none;
     height: auto;
   }
 
+  #eye {
+    display:none;
+  }
+
   .mobileOnly {
-    display:block;
-    position:absolute;
-    z-index:100;
-    right: 25%;
-      bottom: 81px;
+      display: block;
+      position: absolute;
+      z-index: 100;
+      right: 21%;
+      bottom: 14px;
   }
   #accessCode1 {
     position:relative;
@@ -1983,5 +2053,23 @@ display:none;
     margin-left: 8px;
   }
 
+  .footer2 {
+    max-height: 50px;
+    max-width: 120px;
+}
+.footer1 {
+    max-height: 50px;
+    max-width: 50px;
+    margin-right: 1em;
+}
+
+.fingerDiv {
+    position: absolute;
+    z-index: 0;
+    /* bottom: 38px; */
+    /* margin-bottom: 10em; */
+    left: 0px;
+    top: 0px;
+}
 
 }
