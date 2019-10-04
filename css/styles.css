@@ -942,9 +942,14 @@ hr {
   max-width:150px;
 }
 
-
+.fadableElement {
+   opacity: 1;
+   transition: opacity 2s ease-in-out;
+   -moz-transition: opacity 2s ease-in-out;
+   -webkit-transition: opacity 2s ease-in-out;
+   }
 .transparent {
-visibility:hidden;
+display:none;
 }
 
 #stickySide {

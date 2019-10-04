@@ -189,25 +189,45 @@ $(document).ready(function () {
     })
 
 
-    if ($('.sticky').hasClass('active')) {
-      $('.content-top').removeClass('transparent').addClass('animated fadeIn');
 
+    $('article').each(function() {
+      var elementTop = $(this).offset().top;
+      var elementBottom = $(this).offset().top + $(this).outerHeight();
+
+      if ((screenBottom > elementTop + ($(this).find('.heros3').height() + 700 )) && (screenTop < elementBottom)) {
+        $('article').removeClass('active3')
+        $(this).addClass('active3')
+      }
+      else {
+        $(this).removeClass('active3')
+      }
+    })
+
+
+    if ($('.sticky').hasClass('active3')) {
+
+      $(".sticky .content-top").fadeIn()
+
+      // $( ".sticky .content-top" ).animate({opacity: 1});
+
+
+      // $('.sticky .content-top').removeClass('transparent');
+
+    }
+
+    else {
+        $(".sticky .content-top").fadeOut()
     }
 
 
 
-    if ($('.top').hasClass('active2')) {
-      $('.content-top').addClass('transparent');
-
-    }
-
-    // if (!$('.sticky').hasClass('active')) {
+    // if ($('.top').hasClass('active2')) {
     //
-    //   $('.content-top').removeClass('animated fadeIn');
+    //     $(".sticky .content-top").fadeOut()
     //
-    //   $('.content-top').addClass('transparent').addClass('animated fadeOut');
     //
     // }
+
 
 
   });
