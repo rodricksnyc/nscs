@@ -1073,6 +1073,78 @@ input[type="checkbox"].styled:checked + label:after {
     margin-top: 2em;
 }
 
+.choices {
+    margin-bottom: 10em;
+    margin-top: 2em;
+    margin-left: 2em;
+
+}
+
+.question {
+  margin-top:1em;
+}
+
+.start {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display:flex;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  margin-top:5em;
+}
+
+.prevNext {
+    padding: 7px 20px;
+    background: #008488;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    width: 158px;
+}
+
+.clear {
+    padding: 7px 20px;
+    background: none;
+    color: #008488;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    width: 158px;
+}
+
+
+
+.fa.fa-angle-left {
+    font-size: 21px;
+
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.fa.fa-angle-right {
+    font-size: 21px;
+
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.tealFA {
+  color:#008488;
+}
+
 </style>
 
 <body>
@@ -1229,46 +1301,52 @@ input[type="checkbox"].styled:checked + label:after {
               </div>
             </div>
 
-
             <div class="cent">
-
-
               <div class="surveyContent">
                 <div class="surveyContentInner">
 
                   <div class="redLineTop"></div>
-                <div class="question">
-                  <p class="small">In the past 7 days, did you have a job or work at a business? Do not include volunteer work or work around the house.</p>
-                </div>
-
-                    <div class="choices">
-                      <form class="was-validated" id="listResults">
-                        <div class="one">
-                          <input class="form-check-input" type="checkbox" id="customControlValidation1" value="Yes">
-                          <label class="form-check-label" for="customControlValidation1">Yes</label>
-                        </div>
-
-                        <div class="one">
-                          <input class="form-check-input" type="checkbox" id="customControlValidation2" value="No">
-                          <label class="form-check-label" for="customControlValidation2">No</label>
-                        </div>
-
-                      </form>
-
-                    </div>
-                      <div class="redLineBottom"></div>
-                    </div>
+                  <div class="question">
+                    <p class="small">In the past 7 days, did you have a job or work at a business? Do not include volunteer work or work around the house.</p>
                   </div>
 
+                  <div class="choices">
+                    <form class="was-validated" id="listResults">
+                      <div class="one">
+                        <input class="form-check-input" type="checkbox" id="customControlValidation1" value="Yes">
+                        <label class="form-check-label" for="customControlValidation1">Yes</label>
+                      </div>
 
+                      <div class="one">
+                        <input class="form-check-input" type="checkbox" id="customControlValidation2" value="No">
+                        <label class="form-check-label" for="customControlValidation2">No</label>
+                      </div>
 
+                    </form>
 
+                  </div>
+                  <div class="redLineBottom"></div>
+
+                  <div class="start">
+                    <div class="col-lg-3">
+                        <div class="prevNext clear"><i class="fa fa-angle-left tealFA" aria-hidden="true"></i> Previous</div>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <div class="prevNext">Next <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                    </div>
+                  </div>
                 </div>
 
 
               </div>
 
             </div>
+
+
+          </div>
+
+        </div>
 
           </div>
         </div>
