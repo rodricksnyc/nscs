@@ -21,7 +21,7 @@
 
 #wrapper {
   background: #b3c9d1;
-  overflow: visible;
+  /* overflow: visible; */
   height: 100%;
   width: 100%;
 }
@@ -326,19 +326,6 @@ h1#smaller {
   font-family: 'Montserrat', sans-serif;
   margin-bottom:0px
 }
-
-@media (max-width:767px) {
-  .title2 {
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    color: #f2f4f5;
-    padding: 10px;
-  }
-  .wrapper {
-    width: 100%;
-  }
-}
-
 
 
 .circCont {
@@ -914,11 +901,11 @@ h1#smaller {
 
 .surveyContent {
   width:100%;
-  position: relative;
+  position: absolute;
   display: flex;
   align-content: center;
   justify-content: center;
-  top:-35%;
+  top:12%;
 
 }
 
@@ -928,9 +915,7 @@ h1#smaller {
   align-content: center;
   padding-left:3em;
   padding-right:3em;
-  position: absolute;
 
-  z-index: 2;
 }
 
 
@@ -1077,11 +1062,13 @@ input[type="checkbox"].styled:checked + label:after {
     margin-bottom: 10em;
     margin-top: 2em;
     margin-left: 2em;
+    padding-left:2em;
 
 }
 
 .question {
   margin-top:1em;
+  padding-left:2em;
 }
 
 .start {
@@ -1098,7 +1085,7 @@ input[type="checkbox"].styled:checked + label:after {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  margin-top:5em;
+  margin-top:3em;
 }
 
 .prevNext {
@@ -1110,7 +1097,7 @@ input[type="checkbox"].styled:checked + label:after {
     justify-content: center;
     align-items: center;
     border-radius: 3px;
-    width: 158px;
+    width: 135px;
 }
 
 .clear {
@@ -1122,7 +1109,7 @@ input[type="checkbox"].styled:checked + label:after {
     justify-content: center;
     align-items: center;
     border-radius: 3px;
-    width: 158px;
+    width: 135px;
 }
 
 
@@ -1144,6 +1131,67 @@ input[type="checkbox"].styled:checked + label:after {
 .tealFA {
   color:#008488;
 }
+#bigWrapper {
+  max-width:1000px;
+}
+
+@media  (max-width:1024px) and (min-width:992px)  {
+
+  .choices {
+    margin-bottom: 4em;
+  }
+
+  #bigWrapper {
+    max-width:900px;
+  }
+
+  #slideOut {
+    width:900px;
+  }
+
+
+}
+
+@media(max-width:991px) and (min-width:768px) {
+  #bigWrapper {
+    max-width:700px;
+  }
+
+  #slideOut {
+    width:700px;
+  }
+
+  .surveyContent {
+    top: 15%;
+}
+
+.choices {
+    padding-left:1em;
+
+}
+
+.question {
+  padding-left:1em;
+}
+
+
+}
+
+@media (max-width:767px) {
+
+
+
+  .title2 {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f2f4f5;
+    padding: 10px;
+  }
+  .wrapper {
+    width: 100%;
+  }
+}
+
 
 </style>
 
@@ -1154,8 +1202,8 @@ input[type="checkbox"].styled:checked + label:after {
     <a name="content"></a>
 
     <div class="container-fluid padding-0">
-      <div class="row heros2">
-        <div class="col-xs-12 col-lg-12">
+      <div class="row">
+        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
           <header class="landing2">
 
             <div class="title2 text-center">National Survey Of Crime And Safety</div>
@@ -1166,8 +1214,8 @@ input[type="checkbox"].styled:checked + label:after {
 
 
 
-      <div class="row heros2">
-        <div class="col-xs-12 col-lg-12">
+      <div class="row">
+        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
           <div id="bigWrapper">
             <div id="slideOut">
 
@@ -1300,6 +1348,11 @@ input[type="checkbox"].styled:checked + label:after {
                 <div class="modal-footer"> </div>
               </div>
             </div>
+          </div>
+        </div>
+</div>
+        <div class="row">
+          <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
 
             <div class="cent">
               <div class="surveyContent">
@@ -1328,13 +1381,18 @@ input[type="checkbox"].styled:checked + label:after {
                   <div class="redLineBottom"></div>
 
                   <div class="start">
-                    <div class="col-lg-3">
-                        <div class="prevNext clear"><i class="fa fa-angle-left tealFA" aria-hidden="true"></i> Previous</div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+
+                      <div class="prevNext clear"><i class="fa fa-angle-left tealFA" aria-hidden="true"></i> Previous</div>
+
                     </div>
 
-                    <div class="col-lg-3">
+                      <div class="col-lg-2 col-md-3 col-sm-4">
+
                       <div class="prevNext">Next <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+
                     </div>
+
                   </div>
                 </div>
 
@@ -1351,7 +1409,7 @@ input[type="checkbox"].styled:checked + label:after {
           </div>
         </div>
 
-      </div>
+
 
 
 
