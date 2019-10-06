@@ -1034,6 +1034,10 @@ h1#smaller {
   background: white;
 }
 
+#boxes {
+  display:none;
+}
+
 
 input[type="checkbox"].styled:checked + label:after {
   font-family: 'FontAwesome';
@@ -1191,6 +1195,9 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
 }
 
 @media (max-width:767px) {
+
+
+
   .cent {
 
     top: 50%;
@@ -1230,40 +1237,9 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
   }
 
 
-
-  .slideOutTab div#one {
-    text-align: center;
-    position: relative;
-    right: 40px;
-    top: 0px;
-    background: #008488;
-    width: 50%;
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    writing-mode: lr-tb;
-    padding-bottom: 4px;
-    -webkit-box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
-    -moz-box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
-    box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
-    z-index: 99999;
-}
-
-.slideOutTab div#two {
-    text-align: center;
-    position: relative;
-    right: -59px;
-    top: 0;
-    background: #008488;
-    width: 50%;
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    writing-mode: lr-tb;
-    padding-top: 7px;
-    padding-bottom: 4px;
-    z-index: 99;
-}
+  #boxes {
+    display:flex;
+  }
 
 .slideOutTab {
     margin-top: 0;
@@ -1327,14 +1303,24 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
 .tealBox.survey {
   height:40px;
   width:130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tealBox.survey.one {
-  margin-right:5px;
+  margin-right:3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vertical3 {
   opacity: .89;
+}
+
+.start {
+  margin-top:2em;
 }
 
 
@@ -1370,11 +1356,11 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
             <div class="center" id="boxes">
 
               <div class="tealBox survey one" >
-
+                  <p class="white">FAQ ?</p>
               </div>
 
               <div class="tealBox survey">
-
+                  <p class="white">Contact <i class="fa fa-envelope-o"></i></p>
               </div>
 
             </div>
@@ -1704,7 +1690,7 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
 
 
     $( document ).ready(function() {
-      $("#slideOut").css("bottom" , -$('#slideOut').height() + 118 );
+      $("#slideOut").css("bottom" , -$('#slideOut').height() + $('#boxes').outerHeight() + $('#foot2').outerHeight() );
       //
       //
       // $(".modal-content").width($('#bigWrapper').width());
