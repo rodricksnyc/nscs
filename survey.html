@@ -32,11 +32,11 @@ body {
 
 #slideOut {
   position: fixed;
-  top: 100px;
+  top: 120px;
   right: -100rem;
   z-index: 102;
   min-height: 100vh;
-  width: 100rem;
+  width: 1000px;
 
   transition-property: all;
   transition-duration: .5s;
@@ -282,19 +282,17 @@ p.white {
 
 .cent {
   position: fixed;
-  top: 47%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  max-width:1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60%;
-  width: 80%;
-  -webkit-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
-  -moz-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
-  box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    height: 70%;
+    width: 70%;
+    -webkit-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
+;
+
 
 }
 
@@ -900,13 +898,14 @@ h1#smaller {
 }
 
 .surveyContent {
-  width:100%;
-  position: absolute;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  top:12%;
-
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    top: 14%;
+    /* padding-bottom: 2em; */
+    padding: 1em;
 }
 
 .surveyContentInner {
@@ -1128,6 +1127,12 @@ input[type="checkbox"].styled:checked + label:after {
     font-weight: 600;
 }
 
+.landing2 {
+  -webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+}
+
 .tealFA {
   color:#008488;
 }
@@ -1147,6 +1152,11 @@ input[type="checkbox"].styled:checked + label:after {
 
   #slideOut {
     width:900px;
+    top:88px;
+  }
+
+  .modal-content {
+    padding-bottom:0em;
   }
 
 
@@ -1173,13 +1183,33 @@ input[type="checkbox"].styled:checked + label:after {
 .question {
   padding-left:1em;
 }
+.modal-content {
+  padding-bottom:0em;
+}
 
 
 }
 
 @media (max-width:767px) {
+  .cent {
 
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
 
+}
+.choices {
+    margin-bottom: 50%;
+    margin-top: 2em;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+.question {
+    margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
 
   .title2 {
     font-size: 18px;
@@ -1190,6 +1220,103 @@ input[type="checkbox"].styled:checked + label:after {
   .wrapper {
     width: 100%;
   }
+
+  .modal-content {
+    padding-bottom:0em;
+  }
+
+  #slideOut {
+    width:auto;
+  }
+
+
+
+  .slideOutTab div#one {
+    text-align: center;
+    position: relative;
+    right: 40px;
+    top: 0px;
+    background: #008488;
+    width: 50%;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    writing-mode: lr-tb;
+    padding-bottom: 4px;
+    -webkit-box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
+    -moz-box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
+    box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
+    z-index: 99999;
+}
+
+.slideOutTab div#two {
+    text-align: center;
+    position: relative;
+    right: -59px;
+    top: 0;
+    background: #008488;
+    width: 50%;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    writing-mode: lr-tb;
+    padding-top: 7px;
+    padding-bottom: 4px;
+    z-index: 99;
+}
+
+.slideOutTab {
+    margin-top: 0;
+    position: unset;
+    left: 0;
+    /* background: #008488; */
+    width: 100%;
+    margin-left: 0;
+}
+
+.surveyContent {
+    width: 100%;
+    position: unset;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* top: 14%; */
+    /* padding-bottom: 2em; */
+    padding: 1em;
+    height: 100%;
+    margin-top: 25%;
+}
+.choices {
+    margin-bottom: 15%;
+    margin-top: 2em;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+#bigWrapper {
+    max-width: none;
+}
+
+#slideOut {
+  position: fixed;
+  /* top: 0; */
+  right: 0;
+  z-index: 102;
+  top:auto;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  z-index: 9999;
+    height: 800px;
+    bottom: -650px;
+    position: fixed;
+}
+
+.slideOutTab.one {
+
+    display: none;
+}
+
+
 }
 
 
@@ -1354,7 +1481,7 @@ input[type="checkbox"].styled:checked + label:after {
         <div class="row">
           <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
 
-            <div class="cent">
+            <div class="cent" id="mobileModal">
               <div class="surveyContent">
                 <div class="surveyContentInner">
 
@@ -1381,13 +1508,13 @@ input[type="checkbox"].styled:checked + label:after {
                   <div class="redLineBottom"></div>
 
                   <div class="start">
-                    <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 
                       <div class="prevNext clear"><i class="fa fa-angle-left tealFA" aria-hidden="true"></i> Previous</div>
 
                     </div>
 
-                      <div class="col-lg-2 col-md-3 col-sm-4">
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 
                       <div class="prevNext">Next <i class="fa fa-angle-right" aria-hidden="true"></i></div>
 
@@ -1489,7 +1616,7 @@ input[type="checkbox"].styled:checked + label:after {
       $('#one p.white').css('color', 'white');
     })
 
-
+  if ($(document).innerWidth() >= 768) {
 
     var modal1 = document.getElementById('slideOut');
 
@@ -1504,6 +1631,27 @@ input[type="checkbox"].styled:checked + label:after {
       $(".modal-content").width($('#bigWrapper').width());
 
     })
+
+  }
+
+  if ($(document).innerWidth() <= 767) {
+
+    var mobile = document.getElementById('mobileModal');
+
+    console.log(window.getComputedStyle(mobile).width);
+
+
+
+    $( document ).ready(function() {
+      $("#slideOut").css("bottom" , -$('#mobileModal').height());
+      //
+      //
+      // $(".modal-content").width($('#bigWrapper').width());
+
+    })
+
+  }
+
 
   </script>
 
