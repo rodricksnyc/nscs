@@ -308,7 +308,7 @@ p.white {
   z-index: 8;
   right: 0;
   width: 100%;
-  opacity: .89;
+  opacity: .96;
   /* padding-top: 1em; */
   /* padding-bottom: 1em; */
 }
@@ -1305,15 +1305,36 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
   transition-property: all;
   transition-duration: .5s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  z-index: 9999;
-    height: 800px;
-    bottom: -650px;
+  z-index: 1;
+    height: auto;
+
     position: fixed;
 }
 
 .slideOutTab.one {
 
     display: none;
+}
+
+.stickySurveyBottom {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    z-index: 152;
+}
+
+.tealBox.survey {
+  height:40px;
+  width:130px;
+}
+
+.tealBox.survey.one {
+  margin-right:5px;
+}
+
+.vertical3 {
+  opacity: .89;
 }
 
 
@@ -1345,6 +1366,18 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
         <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
           <div id="bigWrapper">
             <div id="slideOut">
+
+            <div class="center" id="boxes">
+
+              <div class="tealBox survey one" >
+
+              </div>
+
+              <div class="tealBox survey">
+
+              </div>
+
+            </div>
 
               <div class="slideOutTab one">
                 <div id="one">
@@ -1526,6 +1559,8 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
 
               </div>
 
+
+
             </div>
 
 
@@ -1533,28 +1568,41 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
 
         </div>
 
+
+        <!-- <div class="row">
+          <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="stickySurveyBottom">
+
+              <div class="center">
+                  <div class="tealBox survey one">
+
+                  </div>
+
+                  <div class="tealBox survey">
+
+                  </div>
+
+                </div>
+              </div>
+
           </div>
-        </div>
+        </div> -->
 
-
-
-
-
-      <footer class="westat-footer2">
-        <div class="vertical3">
-          <div class="center">
-            <img src="images/doj.svg" class="img-responsive footer1" alt="Department of Justice logo graphic">
-            <img src="images/Westat_logo_white.svg" class="img-responsive footer2" alt="Westat white logo graphic">
-          </div>
-        </div>
-
-        <div class="hero-img-container5">
-          <div class="hero-img5"></div>
-        </div>
-      </footer>
+  <footer class="westat-footer2" id="foot2">
+    <div class="vertical3">
+      <div class="center">
+        <img src="images/doj.svg" class="img-responsive footer1" alt="Department of Justice logo graphic">
+        <img src="images/Westat_logo_white.svg" class="img-responsive footer2" alt="Westat white logo graphic">
+      </div>
     </div>
 
+    <div class="hero-img-container5">
+      <div class="hero-img5"></div>
+    </div>
+  </footer>
 
+</div>
+</div>
 
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -1641,9 +1689,22 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
     console.log(window.getComputedStyle(mobile).width);
 
 
+    var foot = document.getElementById('foot2');
+
+    console.log(window.getComputedStyle(foot).height);
+
+    var boxes = document.getElementById('boxes');
+
+    console.log(window.getComputedStyle(boxes).height);
+
+    var foot2 = $('#foot2').height() + $('#boxes').height();
+
+    console.log(foot2)
+
+
 
     $( document ).ready(function() {
-      $("#slideOut").css("bottom" , -$('#mobileModal').height());
+      $("#slideOut").css("bottom" , -$('#slideOut').height() + 118 );
       //
       //
       // $(".modal-content").width($('#bigWrapper').width());
