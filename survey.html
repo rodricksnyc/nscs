@@ -1275,6 +1275,7 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
 #slideOut {
   height:100%;
   right: 0;
+  left:0;
   z-index: 102;
   top:auto;
   transition-property: all;
@@ -1331,6 +1332,63 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
  p.white {
   margin: 0px 0px 2px 0px;
 }
+.panel-title>a, .panel-title>a:active {
+  padding: 17px;
+  font-size: 15px;
+
+}
+.panel-title>a, .panel-title>a:active {
+
+    max-height: 50px;
+    min-height: 50px;
+}
+
+.modal-content {
+  background: #eef2f4;
+  height:100%;
+  max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+.circleClose {
+    background: #008488;
+    border: 3px solid #008488;
+    margin:0;
+    width:30px;
+    height:30px;
+
+  }
+.circleClose:before {
+  background-color: white;
+  height: 2px;
+  margin-left: -11px;
+  margin-top: -1px;
+  width: 21px;
+}
+
+.circleClose:after {
+  background-color: white;
+  height: 2px;
+  margin-left: -11px;
+  margin-top: -1px;
+  width: 21px;
+}
+
+h1#smaller {
+    font-size: 19px !important;
+    color: #004568;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+}
+.panel-title>a, .panel-title>a:active {
+    color: #004568;
+  }
+.panel-heading a:before {
+
+    line-height: .5em;
+  }
+
 
 
 }
@@ -1395,6 +1453,7 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
                       </div>
                     </span>
                   </button>
+                  <br>
                   <center>
                     <h1 class="p1" id="smaller">Frequently Asked Questions</h1>
                   </center>
@@ -1668,13 +1727,20 @@ box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
 
 
     $( document ).ready(function() {
+
+        $("#news").animate({
+          "left": -$("#myCool").width()
+
+        }, 700);
+
+
       $("#slideOut").css("bottom" , -$('#slideOut').height() + $('#boxes').outerHeight() + $('#foot2').outerHeight() );
 
 
 
       $('.toggleModal').on('click', function() {
           $("#slideOut").animate({"bottom": 0}, 50);
-          $("#slideOut").css('height', '100%')
+
       })
 
         $('#close').on('click', function() {
