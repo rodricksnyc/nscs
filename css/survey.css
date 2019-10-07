@@ -6,8 +6,11 @@
       display: block;
       position: relative;
       padding-bottom: 0px;
-        overflow-y: hidden;
+
 }
+
+
+
 
 body {
   overflow:hidden;
@@ -80,7 +83,7 @@ ul.papaya {
 
 .flexing-scroll {
   position:absolute;
-  right:-100%;
+  right:-150%;
 }
 
 .tabOpen {
@@ -161,17 +164,35 @@ p.small {
 
 }
 
-.slideOutTab.one {
-  /* -webkit-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79);
-  -moz-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79);
-  box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.79); */
+.bottomShadow {
+  -webkit-box-shadow: -21px 13px 19px 7px rgba(0,0,0,0.58);
+  -moz-box-shadow: -21px 13px 19px 7px rgba(0,0,0,0.58);
+  box-shadow: -21px 13px 19px 7px rgba(0,0,0,0.58);
+
+  -webkit-box-shadow: -26px 0px 14px 2px rgba(0,0,0,0.27);
+-moz-box-shadow: -26px 0px 14px 2px rgba(0,0,0,0.27);
+box-shadow: -26px 0px 14px 2px rgba(0,0,0,0.27);
 }
-.slideOutTab div#one {
+
+.bottomShadowDarker {
+  -webkit-box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
+  -moz-box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
+  box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
+}
+
+.topShadow {
+  -webkit-box-shadow: 14px 0px 20px -5px rgba(0,0,0,0.7);
+-moz-box-shadow: 14px 0px 20px -5px rgba(0,0,0,0.7);
+box-shadow: 14px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+#one {
   text-align: center;
   position: relative;
   right: 70px;
   top: 90px;
-  background: #008488;
+  background: rgb(0,170,170);
+  background: linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%);
   width: 180px;
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -179,18 +200,27 @@ p.small {
   writing-mode: lr-tb;
   padding-top:7px;
   padding-bottom:4px;
-  -webkit-box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
-  -moz-box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
-  box-shadow: -6px 0px 5px 0px rgba(0,0,0,0.58);
+  border-radius:5px;
   z-index:99999;
 }
 
-.slideOutTab div#two {
+.gradientTeal {
+  background: rgb(0,170,170);
+  background: linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%);
+}
+
+.gray {
+background:#F1F1F1
+}
+
+#two {
   text-align: center;
   position: relative;
   right: 70px;
   top: 218px;
-  background: #008488;
+    border-radius:5px;
+  background: rgb(0,170,170);
+  background: linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%);
   width: 180px;
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -231,9 +261,9 @@ section {
 }
 
 .modal-body {
-  height: 400px;
+    height: auto;
+    padding: 0em 2em;
 }
-
 section {
   display: table;
   width: 100%;
@@ -245,38 +275,7 @@ section {
 
 }
 
-.hero-img-container5 {
-  /* height: calc(100vh - 4rem); */
-  position: absolute;
-  /* display: flex; */
-  /* align-items: center; */
-  min-height: 50px;
-  /* padding-right: 1em; */
-  margin-bottom: 0em;
-  bottom: 0;
-  top: 0px;
-  z-index: -1;
-  width: 100%;
-  max-height: 50px;
-}
 
-.hero-img5 {
-  background-image: url(images/footer.jpg);
-  height: inherit;
-  min-height: inherit;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-position: center; */
-  width: 100%;
-  position: absolute;
-  top: 0%;
-  left: 0;
-  /* height: 35px; */
-  padding-top: 14em;
-  margin-top: 0em;
-  background-position: 0px 48%;
-  bottom: 0;
-}
 
 p.white {
   color:white;
@@ -311,7 +310,7 @@ p.white {
   right: 0;
   width: 100%;
   opacity: .96;
-  height:78px;
+
 
 }
 
@@ -908,7 +907,7 @@ h1#smaller {
   top: 50px;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 1em;
+  padding: 0em;
 }
 
 .surveyContentInner {
@@ -920,7 +919,7 @@ h1#smaller {
     position: absolute;
     /* top: 14%; */
     background: white;
-    padding: 4em;
+    padding: 5em 3em;
     max-width: 80%;
 
 }
@@ -973,18 +972,18 @@ h1#smaller {
 #listResults .four label::after,
 #listResults .five label::after {
   display: inline-block;
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  left: -17px;
-  top: 4px;
-  /* margin-left: -17px; */
-  padding-left: 0px;
-  padding-top: 1px;
-  font-size: 9px;
-  color: #008488;
-  font-weight: 200 !important;
-  padding: 1px;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: -18px;
+      top: 1px;
+      /* margin-left: -17px; */
+      padding-left: 0px;
+      padding-top: 1px;
+      font-size: 14px;
+      color: #008488;
+      font-weight: 100;
+      padding: 0px;
 }
 
 #listResults .one input[type="checkbox"],
@@ -1070,11 +1069,10 @@ input[type="checkbox"].styled:checked + label:after {
 }
 
 .choices {
-  margin-bottom: 4%;
-  margin-top: 2em;
-  margin-left: 2em;
-  padding-left:2em;
-
+    margin-bottom: 0%;
+    margin-top: 1em;
+    margin-left: 2em;
+    padding-left: 2em;
 }
 
 .question {
@@ -1175,6 +1173,29 @@ input[type="checkbox"].styled:checked + label:after {
 
   }
 
+  h2.smaller {
+
+    font-size: 22px;
+
+}
+span.blue.card {
+    color: #004568;
+    font-weight: 600;
+    font-size: 22px;
+}
+.blueLight {
+    color: #004568;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.aqua {
+    color: #00AAAA;
+    text-decoration: underline;
+    font-size: 21px;
+
+  }
+
 
 }
 
@@ -1192,9 +1213,25 @@ input[type="checkbox"].styled:checked + label:after {
 
   }
 
-  .surveyContent {
-    top: 15%;
+  h2.smaller {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+      color: #004568;
+      font-weight: 600;
+      margin-bottom: 30px;
   }
+
+  span.blue.card {
+    color: #004568;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.blueLight {
+    color: #004568;
+    font-weight: 100;
+    font-size: 18px;
+}
 
   .choices {
     padding-left:1em;
@@ -1218,10 +1255,10 @@ input[type="checkbox"].styled:checked + label:after {
       align-content: center;
       /* padding-left: 3em; */
       /* padding-right: 3em; */
-      position: absolute;
+      position: relative;
       /* top: 14%; */
       background: white;
-      padding: 1em;
+      padding: 1em 2em 4em 2em;
       max-width: 100%;
   }
 
@@ -1242,7 +1279,7 @@ input[type="checkbox"].styled:checked + label:after {
 
   .modal-body {
     height: auto;
-    margin-top: -1em;
+    margin-top: 0em;
 }
 
 
@@ -1295,19 +1332,19 @@ input[type="checkbox"].styled:checked + label:after {
   }
 
   .surveyContent {
-    width: 100%;
-    position: fixed;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    height: 100%;
-    padding-top: 5%;
-    overflow-y: scroll;
-    transform:none;
-    left:0;
-    right:0;
-
-}
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      height: 100%;
+      padding-top: 0em;
+      overflow-y: scroll;
+      transform: none;
+      left: 0;
+      right: 0;
+      padding-bottom: 4em;
+  }
   .choices {
     /* margin-bottom: 15%; */
     margin-top: 1em;
@@ -1320,7 +1357,7 @@ input[type="checkbox"].styled:checked + label:after {
   }
 
   #slideOut {
-    height:auto;
+    height:100%;
     right: 0;
     left:0;
     z-index: 1;
@@ -1330,7 +1367,8 @@ input[type="checkbox"].styled:checked + label:after {
     transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
     z-index: 1;
     opacity:0;
-    padding-bottom:1em;
+    padding-bottom:0em;
+    padding-top:3em;
   }
 
   .slideOutTab.one {
@@ -1366,7 +1404,7 @@ input[type="checkbox"].styled:checked + label:after {
   }
 
   .vertical3 {
-    opacity: .89;
+    opacity: .82;
   }
 
   .start {
@@ -1381,18 +1419,18 @@ input[type="checkbox"].styled:checked + label:after {
     margin: 0px 0px 2px 0px;
   }
   .panel-title>a, .panel-title>a:active {
-    padding: 17px;
-    font-size: 15px;
+    padding: 13px;
+    font-size: 12px;
 
   }
   .panel-title>a, .panel-title>a:active {
 
-    max-height: 50px;
-    min-height: 50px;
+    max-height: 40px;
+    min-height: 40px;
   }
 
   .modal-content {
-    background: #eef2f4;
+    background: #c8d8df;
     height:100%;
     max-height: calc(100vh - 100px);
     overflow-y: auto;
@@ -1434,7 +1472,7 @@ input[type="checkbox"].styled:checked + label:after {
   }
   .panel-heading a:before {
     font-size: 22px;
-    line-height: .5em;
+    line-height: .7em;
   }
 
   p.small {
@@ -1465,6 +1503,25 @@ input[type="checkbox"].styled:checked + label:after {
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+#mobileModal {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.modal-body {
+    height: auto;
+  padding: 0em 2em 5em 2em;
+}
+
+.panel-group .panel {
+    margin-bottom: 15px;
+    border-radius: 0px;
+}
+
+.clear, .prevNext {
+  width:115px;
 }
 
 
