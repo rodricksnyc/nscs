@@ -314,6 +314,7 @@ p.white {
   width: 100%;
   opacity: .96;
 
+
 }
 
 .fa.fa-envelope-o {
@@ -1211,13 +1212,23 @@ input[type="checkbox"].styled:checked + label:after {
 
 
   .cent {
-
-    top: 50%;
-    left: 50%;
+    transform: none;
+    background: none;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
+    position: unset;
+
+    box-shadow: none;
 
   }
+
+
+  #main-wrapper {
+      background: white;
+}
+
   .choices {
     margin-bottom: 50%;
     margin-top: 2em;
@@ -1264,15 +1275,13 @@ input[type="checkbox"].styled:checked + label:after {
 
   .surveyContent {
     width: 100%;
-    position: unset;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    /* top: 14%; */
-    /* padding-bottom: 2em; */
-    padding: 1em;
-    height: 100%;
-    margin-top: 25%;
+      position: unset;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+
+      height: 100%;
+      padding-top: 2em;
   }
   .choices {
     margin-bottom: 15%;
