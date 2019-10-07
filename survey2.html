@@ -18,7 +18,12 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
+<style>
 
+
+
+
+</style>
 
 <body>
   <a href="#content" class="skipNav">Skip to main content</a>
@@ -38,22 +43,21 @@
       </div>
 
 
+      <div class="row stickBottomMobile">
+        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+      <div class="center" id="boxes">
 
-            <div class="row stickBottomMobile">
-              <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-            <div class="center" id="boxes">
+        <div class="tealBox survey one toggleModal1">
+          <i class="fa fa-angle-up firstAngle" aria-hidden="true"></i><p class="white">FAQ</p>
+        </div>
 
-              <div class="tealBox survey one toggleModal1">
-                <i class="fa fa-angle-up firstAngle" aria-hidden="true"></i><p class="white">FAQ</p>
-              </div>
+        <div class="tealBox survey toggleModal2">
+          <i class="fa fa-angle-up secondAngle" aria-hidden="true"></i><p class="white">Contact</p>
+        </div>
 
-              <div class="tealBox survey toggleModal2">
-                <i class="fa fa-angle-up secondAngle" aria-hidden="true"></i><p class="white">Contact</p>
-              </div>
-
-            </div>
       </div>
-      </div>
+</div>
+</div>
 
 
       <div class="row">
@@ -61,17 +65,7 @@
           <div id="bigWrapper">
             <div id="slideOut">
 
-              <!-- <div class="center" id="boxes">
 
-                <div class="tealBox survey one toggleModal1">
-                  <i class="fa fa-angle-up" aria-hidden="true"></i><p class="white">FAQ</p>
-                </div>
-
-                <div class="tealBox survey toggleModal2">
-                  <i class="fa fa-angle-up" aria-hidden="true"></i><p class="white">Contact</p>
-                </div>
-
-              </div> -->
 
               <div class="slideOutTab one">
                 <div id="one">
@@ -249,8 +243,6 @@
                 <div class="modal-footer"> </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
@@ -263,10 +255,12 @@
 
                 <div class="redLineTop"></div>
                 <div class="question">
-                  <p class="small">In the past 7 days, did you have a job or work at a business? Do not include volunteer work or work around the house.</p>
+                  <p class="small">Next are some questions about experiences you may have had with the police in your area during the past 12 months, that is, since October 11, 2018. Please include experiences with police officers, sheriff&rsquo;s deputies, state troopers, or school resource officers, but not with guards or other security personnel who are not part of the police.</p>
                 </div>
 
                 <div class="choices">
+                  <ol>
+                    <li>During the past 12 months, have you contacted the police in your area to report a crime, disturbance or suspicious activity?</li>
                   <form class="was-validated" id="listResults">
                     <div class="one">
                       <input class="form-check-input" type="checkbox" id="customControlValidation1" value="Yes">
@@ -277,9 +271,18 @@
                       <input class="form-check-input" type="checkbox" id="customControlValidation2" value="No">
                       <label class="form-check-label" for="customControlValidation2">No</label>
                     </div>
+                    <li>During the past 12 months, have you contacted the police in your area to report something else, such as a traffic accident or medical emergency?</li>
+                    <div class="one">
+                      <input class="form-check-input" type="checkbox" id="customControlValidation1" value="Yes">
+                      <label class="form-check-label" for="customControlValidation1">Yes</label>
+                    </div>
 
+                    <div class="one">
+                      <input class="form-check-input" type="checkbox" id="customControlValidation2" value="No">
+                      <label class="form-check-label" for="customControlValidation2">No</label>
+                    </div>
                   </form>
-
+                </ol>
                 </div>
                 <div class="redLineBottom"></div>
 
@@ -338,8 +341,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/survey.js"></script>
-
-
 
 </body>
 </html>
