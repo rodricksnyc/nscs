@@ -27,6 +27,7 @@
       display: block;
       position: relative;
       padding-bottom: 0px;
+      overflow-y: auto;
 }
 
 body {
@@ -1284,7 +1285,7 @@ input[type="checkbox"].styled:checked + label:after {
   }
 
   #slideOut {
-
+    height:100%;
     right: 0;
     left:0;
     z-index: 1;
@@ -1434,12 +1435,12 @@ input[type="checkbox"].styled:checked + label:after {
 
               <div class="center" id="boxes">
 
-                <div class="tealBox survey one">
-                  <i class="fa fa-angle-up toggleModal" aria-hidden="true"></i><p class="white">FAQ</p>
+                <div class="tealBox survey one toggleModal">
+                  <i class="fa fa-angle-up" aria-hidden="true"></i><p class="white">FAQ</p>
                 </div>
 
-                <div class="tealBox survey">
-                  <i class="fa fa-angle-up toggleModal" aria-hidden="true"></i><p class="white">Contact</p>
+                <div class="tealBox survey toggleModal">
+                  <i class="fa fa-angle-up" aria-hidden="true"></i><p class="white">Contact</p>
                 </div>
 
               </div>
@@ -1758,12 +1759,21 @@ input[type="checkbox"].styled:checked + label:after {
 
 
       $('.toggleModal').on('click', function() {
-        $("#slideOut").animate({"bottom": 0}, 50);
+
+       $("#slideOut").animate({
+         bottom:'0',
+
+       }, 200);
+
+
 
       })
 
       $('#close').on('click', function() {
+
+
         $("#slideOut").css("bottom" , -$('#slideOut').height() + $('#boxes').outerHeight() + $('#foot2').outerHeight() );
+
 
       })
 
