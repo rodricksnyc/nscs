@@ -1294,7 +1294,7 @@ input[type="checkbox"].styled:checked + label:after {
   }
 
   #slideOut {
-    height:800px;
+    height:700px;
     right: 0;
     left:0;
     z-index: 1;
@@ -1672,7 +1672,7 @@ input[type="checkbox"].styled:checked + label:after {
   <script src="js/index.js"></script>
   <script>
 
-
+  $( document ).ready(function() {
   // $(document).ready(function(){
   //     resizeDiv();
   // });
@@ -1730,15 +1730,15 @@ input[type="checkbox"].styled:checked + label:after {
 
 
 
-    $( document ).ready(function() {
+
       $("#slideOut").css("right" , -$('#bigWrapper').outerWidth());
 
 
       $(".modal-content").width($('#bigWrapper').width());
 
-    })
+    }
 
-  }
+
 
   if ($(document).innerWidth() <= 767) {
 
@@ -1761,7 +1761,7 @@ input[type="checkbox"].styled:checked + label:after {
 
 
 
-    $( document ).ready(function() {
+
 
       $("#slideOut").css("bottom" , -$('#slideOut').height() + $('#boxes').outerHeight() + $('#foot2').outerHeight() );
 
@@ -1773,6 +1773,8 @@ input[type="checkbox"].styled:checked + label:after {
          bottom:'0',
 
        }, 200);
+       //
+       // $("#slideOut").css("top", "20%")
 
 
 
@@ -1783,13 +1785,15 @@ input[type="checkbox"].styled:checked + label:after {
 
         $("#slideOut").css("bottom" , -$('#slideOut').height() + $('#boxes').outerHeight() + $('#foot2').outerHeight() );
 
+        // $("#slideOut").css("top", "auto")
 
       })
 
 
-    })
 
   }
+
+})
 
 
   </script>
