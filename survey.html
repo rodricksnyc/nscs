@@ -1294,7 +1294,7 @@ input[type="checkbox"].styled:checked + label:after {
   }
 
   #slideOut {
-    height:700px;
+    height:100%;
     right: 0;
     left:0;
     z-index: 1;
@@ -1673,19 +1673,19 @@ input[type="checkbox"].styled:checked + label:after {
   <script>
 
   $( document ).ready(function() {
-  // $(document).ready(function(){
-  //     resizeDiv();
-  // });
-  //
-  // window.onresize = function(event) {
-  //     resizeDiv();
-  // }
-  //
-  // function resizeDiv() {
-  //     vpw = $(window).width();
-  //     vph = $(window).height();
-  //     $('#main-wrapper').css({'height': vph + 'px'});
-  // }
+
+      resizeDiv();
+
+
+  window.onresize = function(event) {
+      resizeDiv();
+  }
+
+  function resizeDiv() {
+      vpw = $(window).width();
+      vph = $(window).height();
+      $('#main-wrapper').css({'height': vph + 'px'});
+  }
 
   $('#one').on('click', function() {
 
@@ -1773,8 +1773,8 @@ input[type="checkbox"].styled:checked + label:after {
          bottom:'0',
 
        }, 200);
-       //
-       // $("#slideOut").css("top", "20%")
+
+       // $("#slideOut").css("top", "0")
 
 
 
