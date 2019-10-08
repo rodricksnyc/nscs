@@ -699,12 +699,12 @@ a.whiteStrong {
   top: 237px;
 }
 
-.print2 {
+/* .print2 {
   max-width: 250px;
   position: absolute;
   right: -3%;
   top: 200px;
-}
+} */
 
 .fingerDiv {
   position: absolute;
@@ -713,6 +713,44 @@ a.whiteStrong {
   /* margin-bottom: 10em; */
   left: -32px;
   top: -90px;
+}
+
+.fingerDiv2 {
+    position: absolute;
+    z-index: -1;
+    /* bottom: 38px; */
+    /* margin-bottom: 10em; */
+    /* right: 0; */
+    /* top: -90px; */
+}
+
+.fingerDiv3 {
+    position: absolute;
+    z-index: -1;
+    /* bottom: 38px; */
+    /* margin-bottom: 10em; */
+    left: -32px;
+    /* top: -90px; */
+    /* top: -110px; */
+    bottom: 100px;
+}
+
+.print2 {
+    max-width: 250px;
+    position: absolute;
+    top: -346px;
+    right: 90px;
+    transform: rotateY(180deg);
+
+}
+
+.print3 {
+    max-width: 250px;
+    position: absolute;
+    top: -190px;
+    /* right: 90px; */
+    /* transform: rotateY(180deg); */
+
 }
 
 #eye {
@@ -948,7 +986,14 @@ hr {
   background: radial-gradient(circle, rgba(64,64,64,1) 0%, rgba(179,179,179,1) 0%, rgba(64,64,64,1) 100%);
 }
 
-
+.print3 {
+  max-width: 140px;
+  position: absolute;
+  left: 2%;
+  top: 705px;
+  transform: rotateY(180deg);
+  /* bottom: -500px; */
+}
 
 .scroll {
   position: absolute;
@@ -1513,17 +1558,28 @@ hr {
     position: absolute;
     right: 2%;
     top: auto;
-    bottom: -540px;
+    bottom: -96px;
     z-index: -1;
   }
   .print3 {
-    max-width: 140px;
-    position: absolute;
-    left: 2%;
-    top: 705px;
-    transform: rotateY(180deg);
-    /* bottom: -500px; */
+      max-width: 140px;
+      position: absolute;
+      left: 8%;
+      top: -1120px;
+      transform: rotateY(180deg);
+      /* bottom: -500px; */
   }
+  .fingerDiv3 {
+      position: absolute;
+      z-index: -1;
+      /* bottom: 38px; */
+      /* margin-bottom: 10em; */
+      left: -32px;
+     top: 0px;
+      /* top: -110px; */
+      bottom:0px;
+  }
+
   .hero-img-container4 {
     /* height: calc(100vh - 4rem); */
     position: relative;
@@ -1906,17 +1962,17 @@ hr {
     margin: auto;
   }
   .print2 {
-    max-width: 100px;
-    position: absolute;
-    right: 2%;
-    top: auto;
-    bottom: -383px;
+      max-width: 100px;
+      position: absolute;
+      right: 2%;
+      top: auto;
+      bottom: -69px;
   }
   .print3 {
     max-width: 100px;
-    position: absolute;
-    left: 2%;
-    top: 500px;
+      position: absolute;
+      left: 11%;
+      top: -17px;
     transform: rotateY(180deg);
   }
 

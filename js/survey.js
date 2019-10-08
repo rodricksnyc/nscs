@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 
 
+
   $('#prev').on('click', function() {
     $('#prev').removeClass('clear');
     $('#next').addClass('clear');
@@ -18,41 +19,42 @@ $( document ).ready(function() {
 
 
 
-      resizeDiv();
+  resizeDiv();
 
 
   window.onresize = function(event) {
-      resizeDiv();
+    resizeDiv();
   }
 
   function resizeDiv() {
-      vpw = $(window).width();
-      vph = $(window).height();
-      $('#main-wrapper').css({'height': vph + 'px'});
+    vpw = $(window).width();
+    vph = $(window).height();
+    $('#main-wrapper').css({'height': vph + 'px'});
   }
 
   $('#one').on('click', function() {
 
 
+    $(".faqTab").attr('src',"images/FAQ_tab_HVR-ON.svg");
+    $(".contactTab").attr('src',"images/Contact_tab_OFF.svg");
 
-
-
-    $('#one').addClass('bottomShadowDarker');
-    $('#one').removeClass('bottomShadow');
-    $('#two').removeClass('topShadow');
+    //
+    // $('#one').addClass('bottomShadowDarker');
+    // $('#one').removeClass('bottomShadow');
+    // $('#two').removeClass('topShadow');
 
 
     $('#smaller').html('Frequently Asked Questions')
 
     $('.modal-content').addClass('opened')
     $("#slideOut").addClass('showSlideOut');
-    $('#one').css('background', '#F1F1F1');
-    $('#one p.white').css('color', '#008488');
+    // $('#one').css('background', '#F1F1F1');
+    // $('#one p.white').css('color', '#008488');
     $('#one').css('z-index', '999')
     $('#two').css('z-index', '99')
-
-    $('#two').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
-    $('#two p.white').css('color', '#F1F1F1');
+    //
+    // $('#two').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
+    // $('#two p.white').css('color', '#F1F1F1');
 
     $('.firstBlock').removeClass('flexing-scroll');
     $('.secondBlock').addClass('flexing-scroll');
@@ -66,9 +68,14 @@ $( document ).ready(function() {
 
   $('#two').on('click', function() {
 
-    $('#one').removeClass('bottomShadow');
-    $('#one').removeClass('bottomShadowDarker');
-    $('#two').addClass('topShadow');
+    // $('#one').removeClass('bottomShadow');
+    // $('#one').removeClass('bottomShadowDarker');
+    // $('#two').addClass('topShadow');
+
+
+    $(".contactTab").attr('src',"images/Contacdt_tab_HVR-ON.svg");
+      $(".faqTab").attr('src',"images/FAQ_tab_OFF.svg");
+
 
 
     $('#smaller').html('For more information about this study, please contact:')
@@ -82,10 +89,10 @@ $( document ).ready(function() {
     // $('#one').removeClass('tabOpen');
     // $('#tab').addClass('tabOpen');
 
-    $('#one').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
-    $('#one p.white').css('color', '#F1F1F1');
-    $('#two').css('background', '#F1F1F1');
-    $('#two p.white').css('color', '#008488');
+    // $('#one').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
+    // $('#one p.white').css('color', '#F1F1F1');
+    // $('#two').css('background', '#F1F1F1');
+    // $('#two p.white').css('color', '#008488');
     $('#two').css('z-index', '999')
     $('#one').css('z-index', '99')
   })
@@ -94,16 +101,19 @@ $( document ).ready(function() {
 
   $('#close').on('click', function() {
     $("#slideOut").removeClass('showSlideOut');
-    $('#one').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
-    $('#two').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
-    $('#one p.white').css('color', 'white');
-    $('#two p.white').css('color', 'white');
+    // $('#one').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
+    // $('#two').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
+    // $('#one p.white').css('color', 'white');
+    // $('#two p.white').css('color', 'white');
     $('#one').css('z-index', '999');
-    $('#two').css('z-index', '99')
+    $('#two').css('z-index', '99');
 
-    $('#one').removeClass('bottomShadowDarker');
-    $('#one').addClass('bottomShadow');
-    $('#two').removeClass('topShadow');
+      $(".contactTab").attr('src',"images/Contact_tab_OFF.svg");
+        $(".faqTab").attr('src',"images/FAQ_tab_OFF.svg");
+
+    // $('#one').removeClass('bottomShadowDarker');
+    // $('#one').addClass('bottomShadow');
+    // $('#two').removeClass('topShadow');
 
   })
 
@@ -212,7 +222,7 @@ $( document ).ready(function() {
 
     $('.toggleModal2').on('click', function() {
 
-        $('#smaller').html('For more information about this study, please contact:')
+      $('#smaller').html('For more information about this study, please contact:')
 
       $("#slideOut").css('opacity', '1')
 
