@@ -38,8 +38,8 @@ body {
   border: none;
   border-radius: 6px;
   outline: 0;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-  box-shadow: none;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .6);
+  /* box-shadow: none; */
   z-index: 999999;
   padding-bottom: 4em;
 }
@@ -206,7 +206,7 @@ p.small {
 
 .faqTab {
   width: 50px;
-  filter: drop-shadow(0 0 0.2rem black);
+  /* filter: drop-shadow(0 0 0.08rem black); */
 
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -222,9 +222,15 @@ p.small {
   -o-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
-  filter: drop-shadow(0 0 0.2rem black);
+  /* filter: drop-shadow(0 0 0.08rem black); */
 }
 
+.lightBlue {
+
+-webkit-box-shadow: 0px 4px 6px -2px rgba(171,194,205,1);
+-moz-box-shadow: 0px 4px 6px -2px rgba(171,194,205,1);
+box-shadow: 0px 4px 6px -2px rgba(171,194,205,1);
+}
 
 .gradientTeal {
   background: rgb(0,170,170);
@@ -238,7 +244,7 @@ p.small {
 #two {
   text-align: center;
   position: relative;
-  right: 6px;
+  right: 5px;
   top: 87px;
   z-index: 99;
   /* border-radius:5px;
@@ -1123,6 +1129,9 @@ input[type="checkbox"].styled:checked + label:after {
 .prevNext {
   padding: 7px 20px;
   background: #008488;
+
+  background-image: linear-gradient(to top, #404040, #505050, #606060, #727272, #838383);
+
   color: white;
   font-size: 18px;
   display: flex;
@@ -1130,19 +1139,63 @@ input[type="checkbox"].styled:checked + label:after {
   align-items: center;
   border-radius: 3px;
   width: 135px;
+  height: 37px;
+
+}
+
+.activeTeal {
+  background: linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%);
 }
 
 .clear {
   padding: 7px 20px;
-  background: none;
+      background: none;
+      color: #008488;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0px;
+      width: 90px;
+      height: 37px;
+
+
+}
+
+.aquaLine2 {
+  margin-top:0px;
+  width:90px;
+  height:2px;
+  background: #008488;
+  display:none;
+}
+
+.aquaLine {
+  margin-top:0px;
+  width:90px;
+  height:2px;
+  background: #008488;
+  display:none;
+}
+
+/* .clear:hover {
+  padding: 0px;
+  margin:0;
+  background: white;
   color: #008488;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 3px;
-  width: 135px;
-}
+  border-radius: 0px;
+  width: 90px;
+  height:40px;
+  border-bottom:2px solid #008488;
+  border-left:2px solid transparent;
+  border-right:2px solid transparent;
+  border-top:2px solid transparent;
+
+} */
 
 
 

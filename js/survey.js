@@ -2,17 +2,30 @@ $( document ).ready(function() {
 
 
 
+// $('.clear').mouseover(function() {
+//   $('.aquaLine').show()
+// })
+//
+// $('.clear').mouseout(function() {
+//   $('.aquaLine').hide()
+// })
+
   $('#prev').on('click', function() {
-    $('#prev').removeClass('clear');
-    $('#next').addClass('clear');
-    $('.fa.fa-angle-left').css('color', 'white');
-    $('.fa.fa-angle-right').css('color', '#008488');
+
+    $('#next').removeClass('activeTeal')
+    // $('#prev').removeClass('clear');
+    // $('#next').addClass('clear');
+    // $('.fa.fa-angle-left').css('color', 'white');
+    // $('.fa.fa-angle-right').css('color', '#008488');
   })
 
 
   $('#next').on('click', function() {
-    $('#next').removeClass('clear');
-    $('#prev').addClass('clear');
+
+    $('#next').addClass('activeTeal')
+
+    // $('#next').removeClass('clear');
+    // $('#prev').addClass('clear');
     $('.fa.fa-angle-right').css('color', 'white');
     $('.fa.fa-angle-left').css('color', '#008488');
   })
@@ -34,6 +47,9 @@ $( document ).ready(function() {
 
   $('#one').on('click', function() {
 
+
+
+    $(".faqTab").removeClass('lightBlue')
 
     $(".faqTab").attr('src',"images/FAQ_tab_HVR-ON.svg");
     $(".contactTab").attr('src',"images/Contact_tab_OFF.svg");
@@ -72,6 +88,7 @@ $( document ).ready(function() {
     // $('#one').removeClass('bottomShadowDarker');
     // $('#two').addClass('topShadow');
 
+  $(".faqTab").removeClass('lightBlue')
 
     $(".contactTab").attr('src',"images/Contacdt_tab_HVR-ON.svg");
       $(".faqTab").attr('src',"images/FAQ_tab_OFF.svg");
@@ -107,6 +124,9 @@ $( document ).ready(function() {
     // $('#two p.white').css('color', 'white');
     $('#one').css('z-index', '999');
     $('#two').css('z-index', '99');
+
+
+      $(".faqTab").addClass('lightBlue')
 
       $(".contactTab").attr('src',"images/Contact_tab_OFF.svg");
         $(".faqTab").attr('src',"images/FAQ_tab_OFF.svg");
