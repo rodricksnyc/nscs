@@ -144,7 +144,14 @@ p, label {
   color: #404040;
 }
 
-p.small {
+p.small{
+  font-size:20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:100;
+  color: #404040;
+}
+
+p.small.mobileFont{
   font-size:20px;
   font-family: 'Montserrat', sans-serif;
   font-weight:100;
@@ -700,10 +707,10 @@ a.whiteStrong {
 }
 
 /* .print2 {
-  max-width: 250px;
-  position: absolute;
-  right: -3%;
-  top: 200px;
+max-width: 250px;
+position: absolute;
+right: -3%;
+top: 200px;
 } */
 
 .fingerDiv {
@@ -716,40 +723,40 @@ a.whiteStrong {
 }
 
 .fingerDiv2 {
-    position: absolute;
-    z-index: -1;
-    /* bottom: 38px; */
-    /* margin-bottom: 10em; */
-    /* right: 0; */
-    /* top: -90px; */
+  position: absolute;
+  z-index: -1;
+  /* bottom: 38px; */
+  /* margin-bottom: 10em; */
+  /* right: 0; */
+  /* top: -90px; */
 }
 
 .fingerDiv3 {
-    position: absolute;
-    z-index: -1;
-    /* bottom: 38px; */
-    /* margin-bottom: 10em; */
-    left: -32px;
-    /* top: -90px; */
-    /* top: -110px; */
-    bottom: 100px;
+  position: absolute;
+  z-index: -1;
+  /* bottom: 38px; */
+  /* margin-bottom: 10em; */
+  left: -32px;
+  /* top: -90px; */
+  /* top: -110px; */
+  bottom: 100px;
 }
 
 .print2 {
-    max-width: 250px;
-    position: absolute;
-    top: -346px;
-    right: 90px;
-    transform: rotateY(180deg);
+  max-width: 250px;
+  position: absolute;
+  top: -346px;
+  right: 90px;
+  transform: rotateY(180deg);
 
 }
 
 .print3 {
-    max-width: 250px;
-    position: absolute;
-    top: -190px;
-    /* right: 90px; */
-    /* transform: rotateY(180deg); */
+  max-width: 250px;
+  position: absolute;
+  top: -190px;
+  /* right: 90px; */
+  /* transform: rotateY(180deg); */
 
 }
 
@@ -1390,7 +1397,7 @@ hr {
     z-index: 0;
     left: -90px;
     top: -64px;
-}
+  }
 
   .tealBox.first{
     border-right:1px solid white;
@@ -1562,22 +1569,22 @@ hr {
     z-index: -1;
   }
   .print3 {
-      max-width: 140px;
-      position: absolute;
-      left: 8%;
-      top: -1120px;
-      transform: rotateY(180deg);
-      /* bottom: -500px; */
+    max-width: 140px;
+    position: absolute;
+    left: 8%;
+    top: -1120px;
+    transform: rotateY(180deg);
+    /* bottom: -500px; */
   }
   .fingerDiv3 {
-      position: absolute;
-      z-index: -1;
-      /* bottom: 38px; */
-      /* margin-bottom: 10em; */
-      left: -32px;
-     top: 0px;
-      /* top: -110px; */
-      bottom:0px;
+    position: absolute;
+    z-index: -1;
+    /* bottom: 38px; */
+    /* margin-bottom: 10em; */
+    left: -32px;
+    top: 0px;
+    /* top: -110px; */
+    bottom:0px;
   }
 
   .hero-img-container4 {
@@ -1699,11 +1706,11 @@ hr {
     font-size: 19px;
     font-family: 'Montserrat', sans-serif;
     color: #004568;
-    padding: 1em 0em;
+    padding: .5em 0em;
   }
   .landing-panel {
-    margin: 8rem auto 0rem;
-    padding: 6.5rem 1.5rem .75rem;
+    margin: 0rem auto 0rem;
+    padding: 3.5rem 1rem .5rem;
     background-size: 8rem;
     background-position: center .75rem;
   }
@@ -1962,17 +1969,17 @@ hr {
     margin: auto;
   }
   .print2 {
-      max-width: 100px;
-      position: absolute;
-      right: 2%;
-      top: auto;
-      bottom: -69px;
+    max-width: 100px;
+    position: absolute;
+    right: 2%;
+    top: auto;
+    bottom: -69px;
   }
   .print3 {
     max-width: 100px;
-      position: absolute;
-      left: 11%;
-      top: -17px;
+    position: absolute;
+    left: 11%;
+    top: -17px;
     transform: rotateY(180deg);
   }
 
@@ -2150,12 +2157,12 @@ hr {
   }
 
   .footer2 {
-    max-height: 50px;
-    max-width: 120px;
+    max-height: 35px;
+    max-width: 80px;
   }
   .footer1 {
-    max-height: 50px;
-    max-width: 50px;
+    max-height: 35px;
+    max-width: 35px;
     margin-right: 1em;
   }
 
@@ -2168,8 +2175,18 @@ hr {
     top: 0px;
   }
 
+  .hero-img-container {
+    height: calc(100vh + 10rem);
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 40rem;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
   .p1 {
     padding: 1em;
-}
+  }
 
 }
