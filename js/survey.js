@@ -32,18 +32,18 @@ $( document ).ready(function() {
 
 
 
-  resizeDiv();
-
-
-  window.onresize = function(event) {
-    resizeDiv();
-  }
-
-  function resizeDiv() {
-    vpw = $(window).width();
-    vph = $(window).height();
-    $('#main-wrapper').css({'height': vph + 'px'});
-  }
+  // resizeDiv();
+  //
+  //
+  // window.onresize = function(event) {
+  //   resizeDiv();
+  // }
+  //
+  // function resizeDiv() {
+  //   vpw = $(window).width();
+  //   vph = $(window).height();
+  //   $('#main-wrapper').css({'height': vph + 'px'});
+  // }
 
   $('#one').on('click', function() {
 
@@ -178,9 +178,14 @@ $( document ).ready(function() {
     $('.secondBlock').addClass('flexing-fixed');
 
 
+    // $(".stickBottomMobile").css({
+    //   'bottom': ($('#foot2').height() + 'px')
+    // });
     $(".stickBottomMobile").css({
-      'bottom': ($('#foot2').height() + 'px')
+      'bottom': 0
     });
+
+
 
 
 
