@@ -84,6 +84,8 @@ $( document ).ready(function() {
 
   $('#two').on('click', function() {
 
+
+
     // $('#one').removeClass('bottomShadow');
     // $('#one').removeClass('bottomShadowDarker');
     // $('#two').addClass('topShadow');
@@ -117,6 +119,9 @@ $( document ).ready(function() {
 
 
   $('#close').on('click', function() {
+
+
+
     $("#slideOut").removeClass('showSlideOut');
     // $('#one').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
     // $('#two').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
@@ -190,6 +195,8 @@ $( document ).ready(function() {
 
     $('.toggleModal1').on('click', function() {
 
+          $('.wrapper').show();
+
 
       $('#smaller').html('Frequently Asked Questions')
 
@@ -242,6 +249,9 @@ $( document ).ready(function() {
 
     $('.toggleModal2').on('click', function() {
 
+
+          $('.wrapper').hide();
+
       $('#smaller').html('For more information about this study, please contact:')
 
       $("#slideOut").css('opacity', '1')
@@ -291,6 +301,8 @@ $( document ).ready(function() {
 
 
     $('#close').on('click', function() {
+
+        $('.wrapper').show();
 
 
       $("#slideOut").css('opacity', '0')

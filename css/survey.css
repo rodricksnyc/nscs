@@ -1493,7 +1493,9 @@ input[type="checkbox"].styled:checked + label:after {
     z-index: 1;
     opacity:0;
     padding-bottom:0em;
-    padding-top:3em;
+    padding-top:0em;
+    z-index: 9999999;
+    padding: .3em;
   }
 
   .slideOutTab.one {
@@ -1516,6 +1518,7 @@ input[type="checkbox"].styled:checked + label:after {
     flex-direction: column;
     align-items: center;
     padding:1px 0px 0px 0px;
+    height: 44px;
   }
 
   .tealBox.survey.one {
@@ -1526,6 +1529,7 @@ input[type="checkbox"].styled:checked + label:after {
     flex-direction: column;
     align-items: center;
     padding:1px 0px 0px 0px;
+    height: 44px;
   }
 
   .vertical3 {
@@ -1557,7 +1561,7 @@ input[type="checkbox"].styled:checked + label:after {
   .modal-content {
     background: #c8d8df;
     height:100%;
-    max-height: calc(100vh - 100px);
+
     overflow-y: auto;
   }
 
@@ -1642,11 +1646,14 @@ input[type="checkbox"].styled:checked + label:after {
   }
 
   #mobileModal {
-    max-height: calc(100vh - 100px);
+    /* max-height: calc(100vh - 100px); */
     overflow-y: auto;
+    overflow-y: auto;
+
   }
 
   .modal-body {
+    height: 100%;
     height: auto;
     padding: 0em 2em 5em 2em;
   }
