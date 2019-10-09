@@ -192,12 +192,14 @@ $( document ).ready(function() {
 
     $('.toggleModal1').on('click', function() {
 
-      $(".toggleModal2").animate({
-        bottom:'-100',
+        $("#accordion").show();
 
-      }, 100);
-
-      $(".toggleModal2").css('position', 'relative')
+      // $(".toggleModal2").animate({
+      //   bottom:'-100',
+      //
+      // }, 100);
+      //
+      // $(".toggleModal2").css('position', 'relative')
 
       $('#smaller').html('Frequently Asked Questions')
 
@@ -263,6 +265,7 @@ $( document ).ready(function() {
     $('.toggleModal2').on('click', function() {
 
 
+      $("#accordion").hide();
 
       $('#smaller').html('For more information about this study, please contact:')
 
@@ -286,12 +289,12 @@ $( document ).ready(function() {
 
       }, 300);
 
-      $(".toggleModal1").animate({
-        bottom:'-100',
-
-      }, 100);
-
-      $(".toggleModal1").css('position', 'relative')
+      // $(".toggleModal1").animate({
+      //   bottom:'-100',
+      //
+      // }, 100);
+      //
+      // $(".toggleModal1").css('position', 'relative')
 
       $('.secondBlock').removeClass('flexing-scroll');
       $('.secondBlock').removeClass('flexing-fixed');
@@ -333,19 +336,21 @@ $( document ).ready(function() {
 
     $('#close').on('click', function() {
 
-      $(".toggleModal1").animate({
-        bottom:'0',
+        $("#accordion").show();
 
-      }, 100);
-
-      $(".toggleModal1").css('position', 'unset')
-
-      $(".toggleModal2").animate({
-        bottom:'0',
-
-      }, 100);
-
-      $(".toggleModal2").css('position', 'unset')
+      // $(".toggleModal1").animate({
+      //   bottom:'0',
+      //
+      // }, 100);
+      //
+      // $(".toggleModal1").css('position', 'unset')
+      //
+      // $(".toggleModal2").animate({
+      //   bottom:'0',
+      //
+      // }, 100);
+      //
+      // $(".toggleModal2").css('position', 'unset')
 
       $(".stickBottomMobile").animate({
         bottom:  50
