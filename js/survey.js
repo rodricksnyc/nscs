@@ -178,14 +178,9 @@ $( document ).ready(function() {
     $('.secondBlock').addClass('flexing-fixed');
 
 
-    // $(".stickBottomMobile").css({
-    //   'bottom': ($('#foot2').height() + 'px')
-    // });
     $(".stickBottomMobile").css({
-      'bottom': 0
+      'bottom': ($('#foot2').height() + 'px')
     });
-
-
 
 
 
@@ -193,8 +188,16 @@ $( document ).ready(function() {
 
 
 
+
+
     $('.toggleModal1').on('click', function() {
 
+      $(".toggleModal2").animate({
+        bottom:'-43',
+
+      }, 100);
+
+      $(".toggleModal2").css('position', 'relative')
 
       $('#smaller').html('Frequently Asked Questions')
 
@@ -203,8 +206,20 @@ $( document ).ready(function() {
       $("#slideOut").animate({
         bottom:'0',
 
-
       }, 200);
+
+      $(".stickBottomMobile").animate({
+        bottom:'0',
+
+
+      }, 300);
+
+      $("#foot2").animate({
+        height:'0',
+
+
+      }, 300);
+
 
       $('.secondBlock').removeClass('flexing-scroll');
       $('.secondBlock').addClass('flexing-fixed');
@@ -247,6 +262,8 @@ $( document ).ready(function() {
 
     $('.toggleModal2').on('click', function() {
 
+
+
       $('#smaller').html('For more information about this study, please contact:')
 
       $("#slideOut").css('opacity', '1')
@@ -256,6 +273,25 @@ $( document ).ready(function() {
 
 
       }, 200);
+
+      $(".stickBottomMobile").animate({
+        bottom:'0',
+
+
+      }, 300);
+
+      $("#foot2").animate({
+        height:'0',
+
+
+      }, 300);
+
+      $(".toggleModal1").animate({
+        bottom:'-43',
+
+      }, 100);
+
+      $(".toggleModal1").css('position', 'relative')
 
       $('.secondBlock').removeClass('flexing-scroll');
       $('.secondBlock').removeClass('flexing-fixed');
@@ -296,6 +332,32 @@ $( document ).ready(function() {
 
 
     $('#close').on('click', function() {
+
+      $(".toggleModal1").animate({
+        bottom:'0',
+
+      }, 100);
+
+      $(".toggleModal1").css('position', 'unset')
+
+      $(".toggleModal2").animate({
+        bottom:'0',
+
+      }, 100);
+
+      $(".toggleModal2").css('position', 'unset')
+
+      $(".stickBottomMobile").animate({
+        bottom:  50
+
+
+      }, 300);
+
+      $("#foot2").animate({
+        height:'50',
+
+
+      }, 300);
 
 
       $("#slideOut").css('opacity', '0')

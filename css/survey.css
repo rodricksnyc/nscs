@@ -1,15 +1,11 @@
 #main-wrapper {
-  /* background: #b3c9d1;
+  background: #b3c9d1;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   display: block;
   position: relative;
-  padding-bottom: 0px; */
-
-  width: 100vw;
-    height: 100vh;
-    overflow: scroll;
+  padding-bottom: 0px;
 
 }
 
@@ -336,8 +332,8 @@ p.white {
   border-top: none;
 }
 .westat-footer2 {
-  /* background-color: #00467F; */
-  /* position: absolute; */
+  background-color: #00467F;
+  position: absolute;
   bottom: 0px;
   z-index: 8;
   right: 0;
@@ -1645,10 +1641,10 @@ input[type="checkbox"].styled:checked + label:after {
     transform: rotate(180deg);
   }
 
-  /* #mobileModal {
+  #mobileModal {
     max-height: calc(100vh - 100px);
     overflow-y: auto;
-  } */
+  }
 
   .modal-body {
     height: auto;
@@ -1664,10 +1660,10 @@ input[type="checkbox"].styled:checked + label:after {
     width:115px;
   }
 
-  /* .vertical3 {
+  .vertical3 {
     padding-top: .5em;
     padding-bottom: .5em;
-  } */
+  }
 
 
 
