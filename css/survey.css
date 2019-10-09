@@ -1626,11 +1626,7 @@ input[type="checkbox"].styled:checked + label:after {
   .modal-content {
     background: #c8d8df;
     height:100%;
-<<<<<<< HEAD
 
-=======
-    /* max-height: calc(100vh - 100px); */
->>>>>>> a5989cbf5b95b84ee94ecb46defb85f407df2481
     overflow-y: auto;
   }
 
@@ -1664,7 +1660,6 @@ input[type="checkbox"].styled:checked + label:after {
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0px;
-    margin-top: 0px
   }
   .panel-title>a, .panel-title>a:active {
     color: #004568;
@@ -1691,8 +1686,7 @@ input[type="checkbox"].styled:checked + label:after {
   }
 
   ul.papaya li {
-    font-size: 12px;
-    margin-top: 0px;
+    font-size:13px;
   }
 
   .flexing-fixed {

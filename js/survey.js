@@ -56,18 +56,18 @@ $('.clear').mouseout(function() {
 
 
 
-  // resizeDiv();
-  //
-  //
-  // window.onresize = function(event) {
-  //   resizeDiv();
-  // }
-  //
-  // function resizeDiv() {
-  //   vpw = $(window).width();
-  //   vph = $(window).height();
-  //   $('#main-wrapper').css({'height': vph + 'px'});
-  // }
+  resizeDiv();
+
+
+  window.onresize = function(event) {
+    resizeDiv();
+  }
+
+  function resizeDiv() {
+    vpw = $(window).width();
+    vph = $(window).height();
+    $('#main-wrapper').css({'height': vph + 'px'});
+  }
 
   $('#one').on('click', function() {
 
@@ -217,23 +217,10 @@ $('.clear').mouseout(function() {
 
 
 
-
-
     $('.toggleModal1').on('click', function() {
 
-<<<<<<< HEAD
           $('.wrapper').show();
 
-=======
-        $("#accordion").show();
-
-      // $(".toggleModal2").animate({
-      //   bottom:'-100',
-      //
-      // }, 100);
-      //
-      // $(".toggleModal2").css('position', 'relative')
->>>>>>> a5989cbf5b95b84ee94ecb46defb85f407df2481
 
       $('#smaller').html('Frequently Asked Questions')
 
@@ -242,20 +229,8 @@ $('.clear').mouseout(function() {
       $("#slideOut").animate({
         bottom:'0',
 
+
       }, 200);
-
-      $(".stickBottomMobile").animate({
-        bottom:'0',
-
-
-      }, 300);
-
-      $("#foot2").animate({
-        height:'0',
-
-
-      }, 300);
-
 
       $('.secondBlock').removeClass('flexing-scroll');
       $('.secondBlock').addClass('flexing-fixed');
@@ -299,11 +274,7 @@ $('.clear').mouseout(function() {
     $('.toggleModal2').on('click', function() {
 
 
-<<<<<<< HEAD
           $('.wrapper').hide();
-=======
-      $("#accordion").hide();
->>>>>>> a5989cbf5b95b84ee94ecb46defb85f407df2481
 
       $('#smaller').html('For more information about this study, please contact:')
 
@@ -314,25 +285,6 @@ $('.clear').mouseout(function() {
 
 
       }, 200);
-
-      $(".stickBottomMobile").animate({
-        bottom:'0',
-
-
-      }, 300);
-
-      $("#foot2").animate({
-        height:'0',
-
-
-      }, 300);
-
-      // $(".toggleModal1").animate({
-      //   bottom:'-100',
-      //
-      // }, 100);
-      //
-      // $(".toggleModal1").css('position', 'relative')
 
       $('.secondBlock').removeClass('flexing-scroll');
       $('.secondBlock').removeClass('flexing-fixed');
@@ -374,37 +326,7 @@ $('.clear').mouseout(function() {
 
     $('#close').on('click', function() {
 
-<<<<<<< HEAD
         $('.wrapper').show();
-=======
-        $("#accordion").show();
-
-      // $(".toggleModal1").animate({
-      //   bottom:'0',
-      //
-      // }, 100);
-      //
-      // $(".toggleModal1").css('position', 'unset')
-      //
-      // $(".toggleModal2").animate({
-      //   bottom:'0',
-      //
-      // }, 100);
-      //
-      // $(".toggleModal2").css('position', 'unset')
-
-      $(".stickBottomMobile").animate({
-        bottom:  50
-
-
-      }, 300);
-
-      $("#foot2").animate({
-        height:'50',
-
-
-      }, 300);
->>>>>>> a5989cbf5b95b84ee94ecb46defb85f407df2481
 
 
       $("#slideOut").css('opacity', '0')
