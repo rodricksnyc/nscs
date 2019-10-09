@@ -193,7 +193,7 @@ $( document ).ready(function() {
     $('.toggleModal1').on('click', function() {
 
       $(".toggleModal2").animate({
-        bottom:'-43',
+        bottom:'-100',
 
       }, 100);
 
@@ -287,7 +287,7 @@ $( document ).ready(function() {
       }, 300);
 
       $(".toggleModal1").animate({
-        bottom:'-43',
+        bottom:'-100',
 
       }, 100);
 
