@@ -13,6 +13,7 @@
 
 }
 
+
 .checkbox {
   position: relative;
   display: block;
@@ -1116,6 +1117,27 @@ hr {
   position: relative;
   /* padding: 6em; */
   padding: 30px;
+}
+
+.print3 {
+    max-width: 250px;
+    position: absolute;
+    left: 30%;
+    /* top: 705px; */
+    transform: rotateY(180deg);
+    /* bottom: -500px; */
+    top: -200px;
+}
+
+.fingerDiv3 {
+    position: absolute;
+    z-index: -1;
+    /* bottom: 38px; */
+    /* margin-bottom: 10em; */
+    left: -32px;
+    /* top: -90px; */
+    /* top: -110px; */
+    /* bottom: 100px; */
 }
 
 @media (min-width:2700px) {

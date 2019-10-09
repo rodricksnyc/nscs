@@ -26,6 +26,34 @@ $(document).ready(function () {
   });
 
 
+    $('a[href^="#topLastAnchor"]').on('click', function(event) {
+
+      $('.circle.first').removeClass('activate');
+      $('.circle.second').removeClass('activate');
+      $('.circle.third').addClass('activate');
+
+      var target = $(this.getAttribute('href'));
+
+      if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 1500);
+      }
+
+    });
+
+    $('a[href^="#topLastAnchor"]').on('hover', function(event) {
+
+      $('.circle.first').removeClass('activate');
+      $('.circle.second').removeClass('activate');
+      $('.circle.third').addClass('activate');
+
+
+
+    });
+
+
   $('a[href^="#top"]').on('hover', function(event) {
 
     $('.circle.first').addClass('activate');
@@ -51,32 +79,6 @@ $(document).ready(function () {
 
 
 
-  $('a[href^="#topLastAnchor"]').on('click', function(event) {
-
-    $('.circle.first').removeClass('activate');
-    $('.circle.second').removeClass('activate');
-    $('.circle.third').addClass('activate');
-
-    var target = $(this.getAttribute('href'));
-
-    if( target.length ) {
-      event.preventDefault();
-      $('html, body').stop().animate({
-        scrollTop: target.offset().top
-      }, 1500);
-    }
-
-  });
-
-  $('a[href^="#topLastAnchor"]').on('hover', function(event) {
-
-    $('.circle.first').removeClass('activate');
-    $('.circle.second').removeClass('activate');
-    $('.circle.third').addClass('activate');
-
-
-
-  });
 
   $('a[href^="#topSecondAnchor"]').on('click', function(event) {
 
@@ -102,7 +104,7 @@ $(document).ready(function () {
     if( target.length ) {
       event.preventDefault();
       $('html, body').stop().animate({
-        scrollTop: target.offset().top
+        scrollTop: target.offset().top + 200
       }, 1500);
     }
 
