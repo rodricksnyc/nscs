@@ -2,6 +2,11 @@ $(document).ready(function () {
 
 
 
+  $('input, textarea').focus(function () {
+      $('html, body').animate({ scrollTop: ($('input, textarea').offset().top - 300) }, 500);
+      return false;
+  });
+
   //scroll magic
   $('a[href^="#top"]').on('click', function(event) {
 

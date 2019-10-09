@@ -11,6 +11,60 @@
 
 
 
+.closeModal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 73, 94, 0.8);
+  z-index: 50;
+  visibility: hidden;
+  position: fixed;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  height: 30%;
+  width: 50%;
+  -webkit-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
+}
+.modal {
+  position: fixed;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  height: 30%;
+  width: 50%;
+  -webkit-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.4);
+}
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+.active + .modal {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 body {
   overflow:hidden;
@@ -1094,7 +1148,8 @@ input[type="checkbox"].styled:checked + label:after {
   background: #CB4C45;
   height: 1px;
   padding-bottom: 0em;
-  margin-top: 2em;
+  margin-top: 3em;
+  margin-bottom:0em;
 }
 
 .choices {
@@ -1167,7 +1222,7 @@ input[type="checkbox"].styled:checked + label:after {
   width:90px;
   height:2px;
   background: #008488;
-  display:none;
+  opacity:0;
 }
 
 .aquaLine {
@@ -1175,7 +1230,7 @@ input[type="checkbox"].styled:checked + label:after {
   width:90px;
   height:2px;
   background: #008488;
-  display:none;
+  opacity:0;
 }
 
 /* .clear:hover {
@@ -1365,6 +1420,15 @@ input[type="checkbox"].styled:checked + label:after {
 @media (max-width:767px) {
 
 
+  .redLineBottom {
+    width: 100%;
+    background: #CB4C45;
+    height: 1px;
+    padding-bottom: 0em;
+    margin-top: 0em;
+    margin-bottom:1em;
+  }
+
   #stickySide2 {
     display:none;
   }
@@ -1380,6 +1444,7 @@ input[type="checkbox"].styled:checked + label:after {
     background: white;
     padding: 0em 2em 0em 2em;
     max-width: 100%;
+    padding-bottom: 10em;
   }
 
   .panel-body {
@@ -1646,9 +1711,9 @@ input[type="checkbox"].styled:checked + label:after {
   }
 
   #mobileModal {
-    /* max-height: calc(100vh - 100px); */
+    max-height: calc(100vh - 100px);
     overflow-y: auto;
-    overflow-y: auto;
+
 
   }
 
