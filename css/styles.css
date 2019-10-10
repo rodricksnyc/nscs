@@ -153,7 +153,7 @@ p.small{
 }
 
 p.small.mobileFont{
-  font-size:20px;
+  font-size:18px;
   font-family: 'Montserrat', sans-serif;
   font-weight:100;
   color: #404040;
@@ -1072,6 +1072,7 @@ hr {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  
 }
 
 .about2, .about3, .about4, .about5 {
@@ -1124,7 +1125,7 @@ hr {
     position: absolute;
     left: 30%;
     /* top: 705px; */
-    transform: rotateY(180deg);
+
     /* bottom: -500px; */
     top: -200px;
 }
@@ -1595,7 +1596,7 @@ hr {
     position: absolute;
     left: 8%;
     top: -1120px;
-    transform: rotateY(180deg);
+
     /* bottom: -500px; */
   }
   .fingerDiv3 {
@@ -2002,7 +2003,8 @@ hr {
     position: absolute;
     left: 11%;
     top: -17px;
-    transform: rotateY(180deg);
+
+
   }
 
 
