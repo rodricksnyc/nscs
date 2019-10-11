@@ -2,25 +2,6 @@ $(document).ready(function () {
 
 
 
-  $('input, textarea').focus(function () {
-      $('html, body').animate({ scrollTop: ($('input, textarea').offset().top - 300) }, 500);
-      return false;
-  });
-
-
-
-
-  //
-  // $('.js-anchor-link').click(function(e){
-  //   e.preventDefault();
-  //   var target = $($(this).attr('href'));
-  //   if(target.length){
-  //     var scrollTo = target.offset().top;
-  //     $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
-  //   }
-  // });
-
-
 
   //scroll magic
   $('a[href^="#top"]').on('click', function(event) {
@@ -768,6 +749,12 @@ $(document).ready(function () {
     // };
     //
     // togglePassword2.addEventListener('click', showOrHidePassword2);
+
+
+    $('input, textarea').focus(function () {
+        $('html, body').animate({ scrollTop: ($('input, textarea').offset().top - 300) }, 500);
+        return false;
+    });
 
 
     function show() {

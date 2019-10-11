@@ -5,20 +5,38 @@ $( document ).ready(function() {
   // Click function for show the Modal
 
   $(".show").on("click", function(){
-    $(".mask").addClass("active");
+    $(".modal2").removeClass("animated fadeOutDown");
+    $(".modal2").addClass("animated fadeInUp").show();
+     $(".mask").fadeIn();
   });
 
-  // Function for close the Modal
+  $(".closeModal").on("click", function(){
+    $(".modal2").removeClass("animated fadeInUp")
+    $(".modal2").addClass("animated fadeOutDown");
 
-  function closeModal(){
-    $(".mask").removeClass("active");
-  }
+    setTimeout(function() {
+    $(".modal2").hide();
+  }, 800)
+     $(".mask").fadeOut();
 
-  // Call the closeModal function on the clicks/keyboard
+     $('.button-default').addClass('second')
+     $('.button-default').removeClass('activeTeal')
 
-  $(".closeModal, .mask").on("click", function(){
-    closeModal();
   });
+
+  $(".mask").on("click", function(){
+    $(".modal2").hide();
+    $(".mask").hide();
+
+  })
+
+
+
+$('.button-default.second').on('click', function() {
+
+  $('.button-default.second').removeClass('second')
+  $('.button-default').addClass('activeTeal')
+})
 
   $(document).keyup(function(e) {
     if (e.keyCode == 27) {
@@ -78,6 +96,8 @@ $('.clear').mouseout(function() {
     $(".faqTab").attr('src',"images/FAQ_tab_HVR-ON.svg");
     $(".contactTab").attr('src',"images/Contact_tab_OFF.svg");
 
+    $('.modal-content').css('box-shadow', '0 3px 9px rgba(0, 0, 0, .6)')
+
     //
     // $('#one').addClass('bottomShadowDarker');
     // $('#one').removeClass('bottomShadow');
@@ -92,6 +112,10 @@ $('.clear').mouseout(function() {
     // $('#one p.white').css('color', '#008488');
     $('#one').css('z-index', '999')
     $('#two').css('z-index', '99')
+
+    $('#two').css('right', '7');
+
+
     //
     // $('#two').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
     // $('#two p.white').css('color', '#F1F1F1');
@@ -108,6 +132,7 @@ $('.clear').mouseout(function() {
 
   $('#two').on('click', function() {
 
+    $('#two').css('right', '7');
 
 
     // $('#one').removeClass('bottomShadow');
@@ -119,7 +144,7 @@ $('.clear').mouseout(function() {
     $(".contactTab").attr('src',"images/Contacdt_tab_HVR-ON.svg");
       $(".faqTab").attr('src',"images/FAQ_tab_OFF.svg");
 
-
+  $('.modal-content').css('box-shadow', '0 3px 9px rgba(0, 0, 0, .6)')
 
     $('#smaller').html('For more information about this study, please contact:')
 
@@ -144,7 +169,9 @@ $('.clear').mouseout(function() {
 
   $('#close').on('click', function() {
 
+    $('#two').css('right', '5');
 
+      $('.modal-content').css('box-shadow', 'none')
 
     $("#slideOut").removeClass('showSlideOut');
     // $('#one').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
