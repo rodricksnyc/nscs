@@ -213,22 +213,22 @@ $('.clear').mouseout(function() {
 
   if ($(document).innerWidth() <= 767) {
 
-    var mobile = document.getElementById('mobileModal');
+    // var mobile = document.getElementById('mobileModal');
+    //
+    // console.log(window.getComputedStyle(mobile).width);
+    //
+    //
+    // var foot = document.getElementById('foot2');
+    //
+    // console.log(window.getComputedStyle(foot).height);
+    //
+    // var boxes = document.getElementById('boxes');
+    //
+    // console.log(window.getComputedStyle(boxes).height);
+    //
+    // var foot2 = $('#foot2').height() + $('#boxes').height();
 
-    console.log(window.getComputedStyle(mobile).width);
-
-
-    var foot = document.getElementById('foot2');
-
-    console.log(window.getComputedStyle(foot).height);
-
-    var boxes = document.getElementById('boxes');
-
-    console.log(window.getComputedStyle(boxes).height);
-
-    var foot2 = $('#foot2').height() + $('#boxes').height();
-
-    console.log(foot2)
+    // console.log(foot2)
 
     $('.secondBlock').removeClass('flexing-scroll');
     $('.secondBlock').addClass('flexing-fixed');
@@ -239,9 +239,8 @@ $('.clear').mouseout(function() {
     // });
 
     $(".stickBottomMobile").css({
-      'bottom': 0;
+      'bottom': 0
     });
-
 
 
 
