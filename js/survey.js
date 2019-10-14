@@ -234,9 +234,14 @@ $('.clear').mouseout(function() {
     $('.secondBlock').addClass('flexing-fixed');
 
 
+    // $(".stickBottomMobile").css({
+    //   'bottom': ($('#foot2').height() + 'px')
+    // });
+
     $(".stickBottomMobile").css({
-      'bottom': ($('#foot2').height() + 'px')
+      'bottom': 0;
     });
+
 
 
 

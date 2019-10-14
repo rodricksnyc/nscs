@@ -8,6 +8,11 @@
   padding-bottom: 0px;
 
 }
+
+
+#mainBody {
+  background: #b3c9d1;
+}
 .comment-container textarea {
     border: 1px solid lightgray;
     box-shadow: inset 0px 0px 1px #002F60;

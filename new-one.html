@@ -18,19 +18,171 @@
 
 </head>
 
+
+<style>
+footer {
+  position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.survey-container {
+    width: 100%;
+    min-height: calc(100vh - 8rem);
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    background-image: url(assets/honeycomb.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #595959;
+    box-shadow: inset 0px 5rem 5rem -4rem rgba(0,0,0,0.75), inset 0rem -5rem 5rem -4rem rgba(0,0,0,0.75);
+}
+
+.survey-wrapper {
+    background: #ffffff;
+    position: relative;
+    padding: 1.5rem 2rem;
+    margin: 4rem auto;
+}
+
+.survey-sec-title {
+    font-size: 1.6rem;
+    color: #0F426B;
+    font-weight: 600;
+}
+.ques-wrapper {
+    position: relative;
+    margin: 0.5rem auto 1.5rem;
+    padding: 0.5rem 0.5rem 2rem;
+    border-bottom: 2px solid #377F9A;
+    border-top: 2px solid #377F9A;
+}
+
+.survey-btn-group {
+    display: flex;
+    margin: 1rem auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-group-left, .btn-group-right {
+    display: flex;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.position-relative {
+    position: relative!important;
+}
+
+    </style>
+
 <body>
   <a href="#content" class="skipNav">Skip to main content</a>
-  <div id="main-wrapper">
+
     <a name="content"></a>
     <div class="container-fluid padding-0">
-      <div class="row">
-        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+      <!-- <div class="row">
+        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12"> -->
           <header class="landing2">
             <div class="title2 text-center">National Survey of Crime and Safety</div>
           </header>
+        <!-- </div>
+      </div> -->
+
+
+
+      <main class="position-relative">
+			<div class="survey-container">
+				<div class="container survey-wrapper el-S">
+					<p class="survey-sec-title">Part A - Employment Situation</p>
+					<div class="ques-wrapper">
+						// Survey goes here //
+					</div>
+					<div class="survey-btn-group">
+						<div class="btn-group-left">
+							<button class="button-default button-outlined">&lt;&nbsp;&nbsp;Previous</button>
+							<button class="button-default">Next&nbsp;&nbsp;&gt;</button>
+						</div>
+						<!-- <div class="btn-group-cemter"></div> -->
+						<div class="btn-group-right">
+							<button class="button-default button-outlined button-link">Save and Continue Later</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+      <!-- <div class="row">
+        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+
+          <div id="mobileModal">
+            <div class="surveyContent">
+              <div class="surveyContentInner">
+
+                <div class="redLineTop"></div>
+                <div class="question">
+                  <p class="small">In the past 7 days, did you have a job or work at a business? Do not include volunteer work or work around the house.</p>
+                </div>
+
+                <div class="choices">
+                  <form class="was-validated" id="listResults">
+                    <div class="one">
+                      <input class="form-check-input" type="checkbox" id="customControlValidation1" value="Yes">
+                      <label class="form-check-label" for="customControlValidation1">Yes</label>
+                    </div>
+
+                    <div class="one">
+                      <input class="form-check-input" type="checkbox" id="customControlValidation2" value="No">
+                      <label class="form-check-label" for="customControlValidation2">No</label>
+                    </div>
+
+                  </form>
+
+                </div>
+                <div class="redLineBottom"></div>
+
+                <div class="start">
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="vertical">
+                    <div id="prev" class="clear">
+                      <i class="fa fa-angle-left tealFA" aria-hidden="true"></i> Previous
+                    </div>
+
+                    <div class="aquaLine"></div>
+
+                  </div>
+
+                  </div>
+
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                      <div class="vertical">
+                    <div id="next" class="prevNext">Next <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+
+                    <div class="aquaLine2"></div>
+                  </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row stickBottomMobile">
+
+      </div> -->
+
+
+
+      <!-- <div class="row stickBottomMobile">
         <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
           <div class="center" id="boxes">
 
@@ -44,9 +196,9 @@
 
           </div>
         </div>
-      </div>
+      </div> -->
 
-
+<!--
         <div class="row">
           <div class="col-lg-12">
             <div class="vertical" id="stickySide2">
@@ -75,23 +227,23 @@
             </div>
 
           </div>
-        </div>
+        </div> -->
 
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
           <div id="bigWrapper">
             <div id="slideOut">
 
               <div class="slideOutTab one">
                 <div id="one">
-                  <!-- <p class="white">FAQ ?</p> -->
+
                   <img src="images/FAQ_tab_OFF.svg" class="img-responsive faqTab lightBlue" alt="Frequently Asked Questions tab graphic">
                 </div>
                 <div id="two">
                   <img src="images/Contact_tab_OFF.svg" class="img-responsive contactTab" alt="Contact Us tab graphic">
 
-                  <!-- <p class="white">Contact <i class="fa fa-envelope-o"></i></p>  -->
+
                 </div>
               </div>
 
@@ -265,82 +417,26 @@
 
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+      </div> -->
 
-          <div id="mobileModal">
-            <div class="surveyContent">
-              <div class="surveyContentInner">
 
-                <div class="redLineTop"></div>
-                <div class="question">
-                  <p class="small">In the past 7 days, did you have a job or work at a business? Do not include volunteer work or work around the house.</p>
-                </div>
-
-                <div class="choices">
-                  <form class="was-validated" id="listResults">
-                    <div class="one">
-                      <input class="form-check-input" type="checkbox" id="customControlValidation1" value="Yes">
-                      <label class="form-check-label" for="customControlValidation1">Yes</label>
-                    </div>
-
-                    <div class="one">
-                      <input class="form-check-input" type="checkbox" id="customControlValidation2" value="No">
-                      <label class="form-check-label" for="customControlValidation2">No</label>
-                    </div>
-
-                  </form>
-
-                </div>
-                <div class="redLineBottom"></div>
-
-                <div class="start">
-                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                    <div class="vertical">
-                    <div id="prev" class="clear">
-                      <i class="fa fa-angle-left tealFA" aria-hidden="true"></i> Previous
-                    </div>
-
-                    <div class="aquaLine"></div>
-
-                  </div>
-
-                  </div>
-
-                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                      <div class="vertical">
-                    <div id="next" class="prevNext">Next <i class="fa fa-angle-right" aria-hidden="true"></i></div>
-
-                    <div class="aquaLine2"></div>
-                  </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
 
     </div>
-      <footer class="westat-footer2" id="foot2">
-        <div class="vertical3">
-          <div class="center">
-            <img src="images/doj.svg" class="img-responsive footer1" alt="Department of Justice logo graphic">
-            <img src="images/Westat_logo_white.svg" class="img-responsive footer2" alt="Westat white logo graphic">
-          </div>
-        </div>
-
-        <div class="hero-img-container5">
-          <div class="hero-img5"></div>
-        </div>
-      </footer>
 
 
-  </div>
+          <!-- <footer>
+            <div class="vertical3">
+              <div class="center">
+                <img src="images/doj.svg" class="img-responsive footer1" alt="Department of Justice logo graphic">
+                <img src="images/Westat_logo_white.svg" class="img-responsive footer2" alt="Westat white logo graphic">
+              </div>
+            </div>
+
+            <div class="hero-img-container5">
+              <div class="hero-img5"></div>
+            </div>
+          </footer> -->
+
 
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
