@@ -1318,7 +1318,61 @@ input[type="checkbox"].styled:checked + label:after {
   width: 90px;
   height: 37px;
 
+}
 
+.blankColor {
+  background: none;
+  color: #008488;
+  font-size: 18px;
+}
+
+.aquaColor {
+  background-image: linear-gradient(to top, #404040, #505050, #606060, #727272, #838383);
+
+  color: white;
+  font-size: 18px;
+}
+
+#prev {
+  color:#008488;
+  font-size:18px;
+  width:130px;
+  background: none;
+}
+
+
+#next {
+  background-image: linear-gradient(to top, #404040, #505050, #606060, #727272, #838383);
+  font-size:18px;
+  color:white;
+  width:130px;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+#next:hover {
+    background-image: linear-gradient(to top, #404040, #505050, #606060, #727272, #838383);
+}
+
+.btn-info:hover {
+background-image: linear-gradient(to top, #404040, #505050, #606060, #727272, #838383);
+    background-position: 0 0px;
+}
+
+.btn-info:focus {
+    background: linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%);
+    background-position: 0 0px;
+}
+
+#next:focus {
+    background: linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%);
+
+  }
+
+  .button-outlined:hover, .button-outlined:focus {
+
+    background-color: white !important;
+    border: 1px solid #008488 !important;
 }
 
 .aquaLine2 {
@@ -1423,7 +1477,7 @@ border-top:2px solid transparent;
   }
 
   #slideOut {
-    width:914px;
+    width:915px;
     margin-top: 0%;
   }
 
@@ -1464,7 +1518,7 @@ border-top:2px solid transparent;
   }
 
   #slideOut {
-    width:700px;
+    width:715px;
   }
 
   .title2 {
@@ -1505,7 +1559,8 @@ border-top:2px solid transparent;
     padding-left:1em;
   }
   .modal-content {
-    padding-bottom:0em;
+    padding-bottom:10em;
+    max-height:690px;
   }
 
 
@@ -1606,6 +1661,7 @@ border-top:2px solid transparent;
   }
 
   #slideOut {
+    position:fixed;
     width:auto;
   }
 
@@ -1838,6 +1894,10 @@ border-top:2px solid transparent;
     padding-top: .5em;
     padding-bottom: .5em;
   }
+
+  .landing-panel.small {
+    padding: .2em 1em .5em 1em;
+}
 
 
 
