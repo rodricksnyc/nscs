@@ -1914,7 +1914,7 @@ hr {
   }
 
   p.small {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     color: #404040;
@@ -2098,7 +2098,7 @@ hr {
     display: block;
     padding: 22px 15px;
     color: #004568;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: capitalize;
     letter-spacing: 0px;
@@ -2235,5 +2235,18 @@ hr {
   .p1 {
     padding: 1em;
   }
+
+  ul.discs {
+    list-style: none;
+    font-size: 15px;
+    color: #404040;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  margin-left:1em;
+  margin-right:1em;
+}
 
 }

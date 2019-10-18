@@ -93,7 +93,7 @@ $('.clear').mouseout(function() {
 
     $(".faqTab").removeClass('lightBlue')
 
-    $(".faqTab").attr('src',"images/FAQ_tab_HVR-ON.svg");
+    $(".faqTab").attr('src',"images/FAQ_tab_HVR-ON.png");
     $(".contactTab").attr('src',"images/Contact_tab_OFF.svg");
 
     $('.modal-content').css('box-shadow', '0 3px 9px rgba(0, 0, 0, .6)')
@@ -113,7 +113,7 @@ $('.clear').mouseout(function() {
     $('#one').css('z-index', '999')
     $('#two').css('z-index', '99')
 
-    $('#two').css('right', '7');
+    $('#two').css('right', '6px');
 
 
     //
@@ -132,7 +132,7 @@ $('.clear').mouseout(function() {
 
   $('#two').on('click', function() {
 
-    $('#two').css('right', '7');
+    $('#two').css('right', '7px');
 
 
     // $('#one').removeClass('bottomShadow');
@@ -169,7 +169,7 @@ $('.clear').mouseout(function() {
 
   $('#close').on('click', function() {
 
-    $('#two').css('right', '5');
+    $('#two').css('right', '5px');
 
       $('.modal-content').css('box-shadow', 'none')
 
