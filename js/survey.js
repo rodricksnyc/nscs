@@ -202,10 +202,10 @@ $('.clear').mouseout(function() {
 
 
 
-    $("#slideOut").css("right" , -$('#bigWrapper').outerWidth());
+    $("#slideOut").css("right" , -$('#slideOut').outerWidth() + 15);
 
 
-    $(".modal-content").width($('#bigWrapper').width());
+    $(".modal-content").width($('#slideOut').width());
 
   }
 
@@ -269,11 +269,11 @@ $('.clear').mouseout(function() {
       $('.firstBlock').removeClass('flexing-fixed');
 
 
-
-      $('.firstAngle').addClass('rotate');
-      $('.secondAngle').removeClass('rotate')
-      $('.secondAngle').addClass('noRotate');
-      $('.firstAngle').removeClass('noRotate');
+      //
+      // $('.firstAngle').addClass('rotate');
+      // $('.secondAngle').removeClass('rotate')
+      // $('.secondAngle').addClass('noRotate');
+      // $('.firstAngle').removeClass('noRotate');
 
       // if($("#slideOut").css('opacity') == "1" && $('.secondAngle').hasClass('noRotate')  && $('.firstAngle').hasClass('rotate')) {
       //
@@ -323,11 +323,11 @@ $('.clear').mouseout(function() {
       $('.firstBlock').addClass('flexing-fixed');
 
 
-
-      $('.secondAngle').addClass('rotate')
-      $('.firstAngle').removeClass('rotate');
-      $('.firstAngle').addClass('noRotate');
-      $('.secondAngle').removeClass('noRotate')
+      //
+      // $('.secondAngle').addClass('rotate')
+      // $('.firstAngle').removeClass('rotate');
+      // $('.firstAngle').addClass('noRotate');
+      // $('.secondAngle').removeClass('noRotate')
 
       // if($("#slideOut").css('opacity') == "1" && $('.firstAngle').hasClass('noRotate')  && $('.secondAngle').hasClass('rotate')) {
       //

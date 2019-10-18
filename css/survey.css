@@ -109,11 +109,11 @@ body {
 
 #slideOut {
   position: absolute;
-  margin-top:
+
 
   z-index: 102;
 
-  width: 1014px;
+  width: 1000px;
 
   transition-property: all;
   transition-duration: .5s;
@@ -245,7 +245,7 @@ p.small {
 }
 
 .slideOutTab {
-  margin-top: 20px;
+
   position: absolute;
   left: -40px;
   /* height: 400px;
@@ -1091,7 +1091,7 @@ h1#smaller {
   display: flex;
   align-content: center;
   justify-content: center;
-  top: 50px;
+  top: 4em;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0em;
@@ -1107,7 +1107,7 @@ h1#smaller {
   /* top: 14%; */
   background: white;
   padding: 5em 3em;
-  max-width: 80%;
+  max-width: 75%;
 
 }
 
@@ -1658,6 +1658,7 @@ border-top:2px solid transparent;
 
   .modal-content {
     padding-bottom:0em;
+    max-height:none;
   }
 
   #slideOut {
@@ -1691,7 +1692,7 @@ border-top:2px solid transparent;
     transform: none;
     left: 0;
     right: 0;
-    padding-bottom: 6em;
+    /* padding-bottom: 6em; */
   }
   .choices {
     /* margin-bottom: 15%; */
