@@ -2,12 +2,16 @@ $( document ).ready(function() {
 
 
 
+
+
+
+
   // Click function for show the Modal
 
   $(".show").on("click", function(){
     $(".modal2").removeClass("animated fadeOutDown");
     $(".modal2").addClass("animated fadeInUp").show();
-     $(".mask").fadeIn();
+    $(".mask").fadeIn();
   });
 
   $(".closeModal").on("click", function(){
@@ -15,12 +19,12 @@ $( document ).ready(function() {
     $(".modal2").addClass("animated fadeOutDown");
 
     setTimeout(function() {
-    $(".modal2").hide();
-  }, 800)
-     $(".mask").fadeOut();
+      $(".modal2").hide();
+    }, 800)
+    $(".mask").fadeOut();
 
-     $('.button-default').addClass('second')
-     $('.button-default').removeClass('activeTeal')
+    $('.button-default').addClass('second')
+    $('.button-default').removeClass('activeTeal')
 
   });
 
@@ -32,11 +36,12 @@ $( document ).ready(function() {
 
 
 
-$('.button-default.second').on('click', function() {
 
-  $('.button-default.second').removeClass('second')
-  $('.button-default').addClass('activeTeal')
-})
+  $('.button-default.second').on('click', function() {
+
+    $('.button-default.second').removeClass('second')
+    $('.button-default').addClass('activeTeal')
+  })
 
   $(document).keyup(function(e) {
     if (e.keyCode == 27) {
@@ -44,13 +49,13 @@ $('.button-default.second').on('click', function() {
     }
   });
 
-$('.clear').mouseover(function() {
-  $('.aquaLine').css('opacity', '1')
-})
+  $('.clear').mouseover(function() {
+    $('.aquaLine').css('opacity', '1')
+  })
 
-$('.clear').mouseout(function() {
-  $('.aquaLine').css('opacity', '0')
-})
+  $('.clear').mouseout(function() {
+    $('.aquaLine').css('opacity', '0')
+  })
 
   $('#prev').on('click', function() {
 
@@ -74,34 +79,34 @@ $('.clear').mouseout(function() {
 
 
 
-  resizeDiv();
-
-
-  window.onresize = function(event) {
-    resizeDiv();
-  }
-
-  function resizeDiv() {
-    vpw = $(window).width();
-    vph = $(window).height();
-    $('#main-wrapper').css({'height': vph + 'px'});
-  }
+  // resizeDiv();
+  //
+  //
+  // window.onresize = function(event) {
+  //   resizeDiv();
+  // }
+  //
+  // function resizeDiv() {
+  //   vpw = $(window).width();
+  //   vph = $(window).height();
+  //   $('#main-wrapper').css({'height': vph + 'px'});
+  // }
 
   $('#one').on('click', function() {
-
-
 
     $(".faqTab").removeClass('lightBlue')
 
     $(".faqTab").attr('src',"images/FAQ_tab_HVR-ON.png");
-    $(".contactTab").attr('src',"images/Contact_tab_OFF.svg");
+    $(".contactTab").attr('src',"images/blue-contact.png");
 
     $('.modal-content').css('box-shadow', '0 3px 9px rgba(0, 0, 0, .6)')
 
-    //
-    // $('#one').addClass('bottomShadowDarker');
-    // $('#one').removeClass('bottomShadow');
-    // $('#two').removeClass('topShadow');
+
+    $('.thirdBlock').addClass('flexing-scroll');
+    $(".firstBlock").addClass('animated fadeIn');
+    $(".secondBlock").removeClass('animated fadeIn');
+    $(".thirdBlock").removeClass('animated fadeIn');
+
 
 
     $('#smaller').html('Frequently Asked Questions')
@@ -111,10 +116,16 @@ $('.clear').mouseout(function() {
     // $('#one').css('background', '#F1F1F1');
     // $('#one p.white').css('color', '#008488');
     $('#one').css('z-index', '999')
-    $('#two').css('z-index', '99')
+    $('#two').css('z-index', '3')
 
-    $('#two').css('right', '6px');
+    $('#two').css('right', '9px');
+    $('#one').css('right', '9px');
 
+    $('#one').addClass('dropshad');
+    $('#two').addClass('dropshad2');
+
+    $(".faqTab").css('width', '50px');
+    $(".contactTab").css('width', '49px');
 
     //
     // $('#two').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
@@ -122,6 +133,7 @@ $('.clear').mouseout(function() {
 
     $('.firstBlock').removeClass('flexing-scroll');
     $('.secondBlock').addClass('flexing-scroll');
+    $('.thirdBlock').addClass('flexing-scroll');
     $('.secondBlock').removeClass('unset');
 
     // $('div#one').addClass('tabOpen');
@@ -132,19 +144,32 @@ $('.clear').mouseout(function() {
 
   $('#two').on('click', function() {
 
-    $('#two').css('right', '7px');
+
+    $(".secondBlock").addClass('animated fadeIn');
+
+    $(".firstBlock").removeClass('animated fadeIn');
+    $(".thirdBlock").removeClass('animated fadeIn');
+
+
+    $('#two').css('right', '8px');
+    $('#one').css('right', '8px');
+
+    $('#one').addClass('dropshad2');
+    $('#two').addClass('dropshad');
 
 
     // $('#one').removeClass('bottomShadow');
     // $('#one').removeClass('bottomShadowDarker');
     // $('#two').addClass('topShadow');
 
-  $(".faqTab").removeClass('lightBlue')
+    $(".faqTab").removeClass('lightBlue');
+    $(".faqTab").css('width', '50px');
+    $(".contactTab").css('width', '51px');
 
     $(".contactTab").attr('src',"images/Contacdt_tab_HVR-ON.svg");
-      $(".faqTab").attr('src',"images/FAQ_tab_OFF.svg");
+    $(".faqTab").attr('src',"images/FAQ_tab_OFF.svg");
 
-  $('.modal-content').css('box-shadow', '0 3px 9px rgba(0, 0, 0, .6)')
+    $('.modal-content').css('box-shadow', '0 3px 9px rgba(0, 0, 0, .6)')
 
     $('#smaller').html('For more information about this study, please contact:')
 
@@ -152,6 +177,7 @@ $('.clear').mouseout(function() {
 
     $('.firstBlock').addClass('flexing-scroll');
     $('.secondBlock').removeClass('flexing-scroll');
+    $('.thirdBlock').addClass('flexing-scroll');
     $('.secondBlock').addClass('unset');
 
     // $('#one').removeClass('tabOpen');
@@ -166,12 +192,58 @@ $('.clear').mouseout(function() {
   })
 
 
+  $('.emailUs').on('click', function(e) {
+
+    e.preventDefault();
+
+    $('#smaller').html('Contact Us');
+
+    $(".thirdBlock").addClass('animated fadeIn');
+
+    $(".secondBlock").removeClass('animated fadeIn');
+    $(".firstBlock").removeClass('animated fadeIn');
+
+    $('.firstBlock').addClass('flexing-scroll');
+    $('.secondBlock').addClass('flexing-scroll');
+
+    $('.thirdBlock').removeClass('flexing-scroll');
+
+  })
+
+
 
   $('#close').on('click', function() {
 
-    $('#two').css('right', '5px');
+    $('.firstBlock').addClass('unset');
 
-      $('.modal-content').css('box-shadow', 'none')
+
+
+    $(".secondBlock").removeClass('animated fadeIn');
+    $(".firstBlock").removeClass('animated fadeIn');
+    $(".thirdtBlock").removeClass('animated fadeIn');
+
+
+    setTimeout(function() {
+      $('.thirdBlock').addClass('flexing-scroll');
+      $('.secondBlock').addClass('flexing-scroll');
+    }, 600)
+
+
+    $(".faqTab").css('width', '54px');
+    $(".contactTab").css('width', '54px');
+    $('#one').removeClass('dropshad2');
+    $('#two').removeClass('dropshad');
+    $('#one').removeClass('dropshad');
+    $('#two').removeClass('dropshad2');
+
+    $('#two').css('right', '5px');
+    $('#one').css('right', '7px');
+
+
+
+
+
+    $('.modal-content').css('box-shadow', 'none')
 
     $("#slideOut").removeClass('showSlideOut');
     // $('#one').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
@@ -182,10 +254,10 @@ $('.clear').mouseout(function() {
     $('#two').css('z-index', '99');
 
 
-      $(".faqTab").addClass('lightBlue')
+    $(".faqTab").addClass('lightBlue')
 
-      $(".contactTab").attr('src',"images/Contact_tab_OFF.svg");
-        $(".faqTab").attr('src',"images/FAQ_tab_OFF.svg");
+    $(".contactTab").attr('src',"images/Contact_tab_OFF.svg");
+    $(".faqTab").attr('src',"images/FAQ_tab_OFF.svg");
 
     // $('#one').removeClass('bottomShadowDarker');
     // $('#one').addClass('bottomShadow');
@@ -202,16 +274,85 @@ $('.clear').mouseout(function() {
 
 
 
+
     $("#slideOut").css("right" , -$('#slideOut').outerWidth() + 15);
 
 
     $(".modal-content").width($('#slideOut').width());
+
+
+    $(window).on("scroll", function() {
+          var docHeight = $(document).height();
+          var winScrolled = $(window).height() + $(window).scrollTop(); // Sum never quite reaches
+          if ((docHeight - winScrolled) < 1) {
+
+            console.log("ahhh");
+            $("#stickySide2").css({
+                 'top': '87%'
+               });
+          }
+
+          else if ((docHeight - winScrolled) > 1) {
+              console.log("no ahhh");
+
+              $("#stickySide2").css({
+                   'top': '95%'
+                 });
+          }
+
+
+      });
+
 
   }
 
 
 
   if ($(document).innerWidth() <= 767) {
+
+
+
+
+    $(window).on("scroll", function() {
+          var docHeight = $(document).height();
+          var winScrolled = $(window).height() + $(window).scrollTop(); // Sum never quite reaches
+          if ((docHeight - winScrolled) < 1) {
+
+            console.log("ahhh");
+            $(".stickBottomMobile").css({
+                 'bottom': ($('footer').height() + 'px')
+               });
+          }
+
+          else if ((docHeight - winScrolled) > 1) {
+              console.log("no ahhh");
+
+              $(".stickBottomMobile").css({
+                   'bottom': 0
+                 });
+          }
+
+
+      });
+
+    // $(window).scroll(function() {
+    //
+    //   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    //
+    //     $(".stickBottomMobile").css({
+    //       'bottom': ($('footer').height() + 'px')
+    //     });
+    //
+    //   }
+    //
+    //   else  {
+    //     $(".stickBottomMobile").css({
+    //       'bottom': 0
+    //     });
+    //
+    //   }
+    //
+    // });
 
     // var mobile = document.getElementById('mobileModal');
     //
@@ -234,13 +375,16 @@ $('.clear').mouseout(function() {
     $('.secondBlock').addClass('flexing-fixed');
 
 
+
+
+
     // $(".stickBottomMobile").css({
-    //   'bottom': ($('#foot2').height() + 'px')
+    // 'bottom': ($('#foot2').height() + 'px')
     // });
 
-    $(".stickBottomMobile").css({
-      'bottom': 0
-    });
+    // $(".stickBottomMobile").css({
+    //   'bottom': 0
+    // });
 
 
 
@@ -250,7 +394,7 @@ $('.clear').mouseout(function() {
 
     $('.toggleModal1').on('click', function() {
 
-          $('.wrapper').show();
+      $('.wrapper').show();
 
 
       $('#smaller').html('Frequently Asked Questions')
@@ -305,7 +449,7 @@ $('.clear').mouseout(function() {
     $('.toggleModal2').on('click', function() {
 
 
-          $('.wrapper').hide();
+      $('.wrapper').hide();
 
       $('#smaller').html('For more information about this study, please contact:')
 
@@ -355,9 +499,24 @@ $('.clear').mouseout(function() {
 
 
 
+    $('.emailUs').on('click', function() {
+
+      $('#smaller').html('Contact Us')
+
+      $(".thirdBlock").addClass('animated fadeIn')
+
+
+    })
+
+
+
     $('#close').on('click', function() {
 
-        $('.wrapper').show();
+      $(".thirdBlock").removeClass('animated fadeIn');
+      $('.firstBlock').removeClass('flexing-scroll');
+
+
+      $('.wrapper').show();
 
 
       $("#slideOut").css('opacity', '0')

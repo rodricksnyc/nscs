@@ -41,34 +41,35 @@
         <div class="row">
           <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
 
-              <div class="surveyContent">
-                <div class="surveyContentInner">
-                  <div class="redLineTop"></div>
-                      <div class="question">
-                        <p class="small">// Survey question goes here: Next are some questions about experiences you may have had with the police in your area during the past 12 months, that is, since October 11, 2018. Please include experiences with police officers, sheriff&rsquo;s deputies, state troopers, or school resource officers, but not with guards or other security personnel who are not part of the police.</p>
-                      </div>
-                  <div class="choices">
-                    <p class="small">// Survey answers go here</p>
+            <div class="surveyContent">
+              <div class="surveyContentInner">
+                <div class="redLineTop"></div>
+                <div class="question">
+                  <p class="small">// Survey question goes here: Next are some questions about experiences you may have had with the police in your area during the past 12 months, that is, since October 11, 2018. Please include experiences with police officers, sheriff&rsquo;s deputies, state troopers, or school resource officers, but not with guards or other security personnel who are not part of the police.</p>
+
+                </div>
+                <div class="choices">
+                  <p class="small">// Survey answers go here</p>
+
+                </div>
+                <div class="redLineBottom"></div>
+
+                <div class="start">
+
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <button type="button" class="btn btn-light button-outlined" id="prev">&#x3c;&nbsp;&nbsp;Previous</button>
+                    <div class="aquaLine"></div>
 
                   </div>
-                  <div class="redLineBottom"></div>
-
-                  <div class="start">
-
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                      <button type="button" class="btn btn-light button-outlined" id="prev">&#x3c;&nbsp;&nbsp;Previous</button>
-                      <div class="aquaLine"></div>
-
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                      <button type="button" class="btn btn-info button-outlined" id="next">Next&nbsp;&nbsp;&#x3e;</button>
-                      <div class="aquaLine"></div>
-
-                    </div>
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <button type="button" class="btn btn-info button-outlined" id="next">Next&nbsp;&nbsp;&#x3e;</button>
+                    <div class="aquaLine"></div>
 
                   </div>
+
                 </div>
               </div>
+            </div>
 
           </div>
         </div>
@@ -118,22 +119,19 @@
 
         <div class="row">
           <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-          
-              <div id="slideOut">
-
-                <div class="slideOutTab one">
-                  <div id="one">
-
-                    <img src="images/FAQ_tab_OFF.svg" class="img-responsive faqTab lightBlue" alt="Frequently Asked Questions tab graphic">
-                  </div>
-                  <div id="two">
-                    <img src="images/Contact_tab_OFF.svg" class="img-responsive contactTab" alt="Contact Us tab graphic">
-
-                  </div>
+            <div id="slideOut">
+              <div class="slideOutTab one">
+                <div id="one">
+                  <img src="images/FAQ_tab_OFF.svg" class="img-responsive faqTab lightBlue" alt="Frequently Asked Questions tab graphic">
                 </div>
+                <div id="two">
+                  <img src="images/Contact_tab_OFF.svg" class="img-responsive contactTab" alt="Contact Us tab graphic">
+                </div>
+              </div>
 
-
+              <div class="wrapBorder">
                 <div class="modal-content">
+
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span id="close" aria-hidden="true">
@@ -265,7 +263,7 @@
                               </div>
                               <div class="center">
                                 <img src="images/letter_icon.svg" class="img-responsive phone" alt="email icon">
-                                <a class="aqua" href="mailto:askbjs@usdoj.gov">askbjs@usdoj.gov</a>
+                                <a class="aqua emailUs" href="mailto:askbjs@usdoj.gov">askbjs@usdoj.gov</a>
                               </div>
                             </address>
                           </div>
@@ -286,7 +284,7 @@
                               </div>
                               <div class="center">
                                 <img src="images/letter_icon.svg" class="img-responsive phone" alt="email icon">
-                                <a class="aqua" href="mailto:nscs@westat.com">nscs@westat.com</a>
+                                <a class="aqua emailUs" href="mailto:nscs@westat.com">nscs@westat.com</a>
                               </div>
                             </address>
                           </div>
@@ -294,10 +292,40 @@
                       </div>
 
                     </div>
+
+                    <div class="row thirdBlock flexing-scroll">
+
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                        <form method="post" data-form-title="CONTACT US">
+                          <input type="hidden" data-form-email="true">
+                          <div class="form-group">
+                            <input type="text" class="form-control secondOne" name="name" required="" placeholder="Name*" data-form-field="Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="email" class="form-control secondOne" name="email" required="" placeholder="Email*" data-form-field="Email">
+                          </div>
+                          <div class="form-group">
+                            <input type="tel" class="form-control secondOne" name="phone" placeholder="Phone" data-form-field="Phone">
+                          </div>
+                          <div class="form-group">
+                            <textarea class="form-control thirdOne" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+                          </div>
+                          <div>
+                            <button type="submit" class="btn btn-info button-outlined" id="submitContact">Submit</button>
+                          </div>
+                        </form>
+                      </div>
+
+                    </div>
+
                   </div>
                   <div class="modal-footer"> </div>
                 </div>
+
               </div>
+
+            </div>
 
           </div>
         </div>
