@@ -2,10 +2,6 @@ $( document ).ready(function() {
 
 
 
-
-
-
-
   // Click function for show the Modal
 
   $(".show").on("click", function(){
@@ -211,6 +207,14 @@ $( document ).ready(function() {
   })
 
 
+  $('.emailUs').keydown(function(e) {
+        if(e.keyCode == 13) {
+
+        }
+    });
+
+
+
 
   $('#close').on('click', function() {
 
@@ -270,9 +274,6 @@ $( document ).ready(function() {
     var modal1 = document.getElementById('slideOut');
 
     console.log(window.getComputedStyle(modal1).width);
-
-
-
 
 
     $("#slideOut").css("right" , -$('#slideOut').outerWidth() + 15);
