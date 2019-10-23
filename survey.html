@@ -57,12 +57,12 @@
                 <div class="start">
 
                   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                    <button type="button" class="btn btn-light button-outlined" id="prev">&#x3c;&nbsp;&nbsp;Previous</button>
+                    <button type="button" class="btn btn-light button-outlined" id="prev" tabindex="2" aria-hidden="false">&#x3c;&nbsp;&nbsp;Previous</button>
                     <div class="aquaLine"></div>
 
                   </div>
                   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                    <button type="button" class="btn btn-info button-outlined" id="next">Next&nbsp;&nbsp;&#x3e;</button>
+                    <button type="button" class="btn btn-info button-outlined" id="next" tabindex="2" aria-hidden="false">Next&nbsp;&nbsp;&#x3e;</button>
                     <div class="aquaLine"></div>
 
                   </div>
@@ -116,16 +116,19 @@
           </div>
         </div>
 
-
+  <!-- <a href="#openFAQ" class="sr-only"></a> -->
         <div class="row">
           <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-            <div id="slideOut">
+            <div id="slideOut" data-toggle="tab" aria-controls="right-nav-contact" aria-selected="false" href="#slide-it" tabindex="0">
               <div class="slideOutTab one">
-                <div id="one">
-                  <img src="images/FAQ_tab_OFF.svg" class="img-responsive faqTab lightBlue" alt="Frequently Asked Questions tab graphic">
+
+                <div id="one" class="bottomShadow" data-toggle="tab" aria-controls="right-nav-contact" aria-selected="false" href="#right-nav-faq" tabindex="0">
+                    <p class="white">FAQ ?</p>
+                  <!-- <img src="images/FAQ_tab_OFF.svg" class="img-responsive faqTab lightBlue" alt="Frequently Asked Questions tab graphic"> -->
                 </div>
-                <div id="two">
-                  <img src="images/Contact_tab_OFF.svg" class="img-responsive contactTab" alt="Contact Us tab graphic">
+                <div id="two" data-toggle="tab" role="tab" aria-controls="right-nav-faq" aria-selected="false" href="#right-nav-contact" tabindex="0">
+                    <p class="white">Contact <i class="fa fa-envelope-o"></i></p>
+                  <!-- <img src="images/Contact_tab_OFF.svg" class="img-responsive contactTab" alt="Contact Us tab graphic"> -->
                 </div>
               </div>
 
@@ -161,7 +164,7 @@
                                   </a>
                                 </h4>
                               </div>
-                              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" tabindex="0" aria-hidden="false">
                                 <div class="panel-body">
                                   <p class="small mobileFont">The NSCS asks about people&rsquo;s experiences with crime in the last 12 months, regardless of whether these experiences were reported to the police. The survey is asked of adults and youth age 12 or older in selected U.S. households.</p>
                                 </div>
@@ -175,7 +178,7 @@
                                   </a>
                                 </h4>
                               </div>
-                              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" tabindex="0" aria-hidden="false">
                                 <div class="panel-body">
                                   <p class="small mobileFont">The Bureau of Justice Statistics within the Department of Justice has asked Westat, a research organization based in Rockville, Maryland, to conduct the study.</p>
                                 </div>
@@ -189,7 +192,7 @@
                                   </a>
                                 </h4>
                               </div>
-                              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" tabindex="0" aria-hidden="false">
                                 <div class="panel-body">
                                   <p class="small mobileFont">Someone from Westat will come to your home to interview you and other members of your household.</p>
                                 </div>
@@ -203,7 +206,7 @@
                                   </a>
                                 </h4>
                               </div>
-                              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" tabindex="0" aria-hidden="false">
                                 <div class="panel-body">
                                   <p class="small mobileFont">Your address was scientifically selected to be a part of our sample.</p>
                                 </div>
@@ -218,7 +221,7 @@
                                   </a>
                                 </h4>
                               </div>
-                              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive" tabindex="0" aria-hidden="false">
                                 <div class="panel-body">
                                   <p class="small mobileFont">Between 20 &ndash; 40 minutes, depending on your experiences with crime.</p>
                                 </div>
@@ -233,7 +236,7 @@
                                   </a>
                                 </h4>
                               </div>
-                              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix" tabindex="0" aria-hidden="false">
                                 <div class="panel-body">
                                   <p class="small mobileFont">All the information you give to this study will be kept private.</p>
                                   <ul class="papaya">
@@ -248,7 +251,7 @@
                       </div>
                     </div>
 
-                    <div class="row secondBlock hide2" tabindex="0" aria-hidden="false">
+                    <div class="row secondBlock hide2">
                       <div class="col-lg-6 col-md-6 col-sm-6 text-center">
                         <div class="landing-panel small">
                           <div class="vertical2">
@@ -301,31 +304,36 @@
 
                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                          <label class="checkbox-inline"><input type="checkbox" value=""><p class="contactInfo">Bureau of Justice Statistics</p></label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            <p class="contactInfo">Bureau of Justice Statistics</p>
+                          </label>
 
                           </div>
 
                           <div class="col-lg-6 col-md-16 col-sm-6 col-xs-12">
 
-                          <label class="checkbox-inline"><input type="checkbox" value=""><p class="contactInfo">Westat</p></label>
+                          <label class="checkbox-inline"><input type="checkbox" value="">
+                            <p class="contactInfo">Westat</p>
+                          </label>
 
                           </div>
 
-                          <input type="hidden" data-form-email="true">
+                          <input type="hidden" data-form-email="true" tabindex="0" aria-hidden="false">
                           <div class="form-group">
-                            <input type="text" class="form-control secondOne" name="name" required="" placeholder="Name*" data-form-field="Name">
+                            <input type="text" class="form-control secondOne" name="name" required="" placeholder="Name*" data-form-field="Name" tabindex="0" aria-hidden="false">
                           </div>
                           <div class="form-group">
-                            <input type="email" class="form-control secondOne" name="email" required="" placeholder="Email*" data-form-field="Email">
+                            <input type="email" class="form-control secondOne" name="email" required="" placeholder="Email*" data-form-field="Email" tabindex="0" aria-hidden="false">
                           </div>
                           <div class="form-group">
-                            <input type="tel" class="form-control secondOne" name="phone" placeholder="Phone" data-form-field="Phone">
+                            <input type="tel" class="form-control secondOne" name="phone" placeholder="Phone" data-form-field="Phone" tabindex="0" aria-hidden="false">
                           </div>
                           <div class="form-group">
-                            <textarea class="form-control thirdOne" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+                            <textarea class="form-control thirdOne" name="message" placeholder="Message" rows="7" data-form-field="Message" tabindex="0" aria-hidden="false"></textarea>
                           </div>
                           <div>
-                            <button type="submit" class="btn btn-info button-outlined" id="submitContact">Submit</button>
+                            <button type="submit" class="btn btn-info button-outlined" id="submitContact" tabindex="0" aria-hidden="false">Submit</button>
                           </div>
                         </form>
                       </div>
