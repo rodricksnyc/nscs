@@ -24,7 +24,6 @@
 <body>
   <a href="#content" class="sr-only">Skip to main content</a>
   <div id="main-wrapper">
-
     <a name="content"></a>
 
     <main style="position:relative">
@@ -37,13 +36,13 @@
           </div>
         </div>
 
-
         <div class="row">
           <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
 
             <div class="surveyContent">
               <div class="surveyContentInner">
                 <div class="redLineTop"></div>
+
                 <div class="question">
                   <p class="small">// Survey question goes here: Next are some questions about experiences you may have had with the police in your area during the past 12 months, that is, since October 11, 2018. Please include experiences with police officers, sheriff&rsquo;s deputies, state troopers, or school resource officers, but not with guards or other security personnel who are not part of the police.</p>
 
@@ -53,16 +52,15 @@
 
                 </div>
                 <div class="redLineBottom"></div>
-
                 <div class="start">
 
                   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                    <button type="button" class="btn btn-light button-outlined" id="prev" tabindex="2" aria-hidden="false">&#x3c;&nbsp;&nbsp;Previous</button>
+                    <button type="button" class="btn btn-light button-outlined" id="prev" tabindex="0" aria-hidden="false">&#x3c;&nbsp;&nbsp;Previous</button>
                     <div class="aquaLine"></div>
 
                   </div>
                   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                    <button type="button" class="btn btn-info button-outlined" id="next" tabindex="2" aria-hidden="false">Next&nbsp;&nbsp;&#x3e;</button>
+                    <button type="button" class="btn btn-info button-outlined" id="next" tabindex="0" aria-hidden="false">Next&nbsp;&nbsp;&#x3e;</button>
                     <div class="aquaLine"></div>
 
                   </div>
@@ -74,17 +72,16 @@
           </div>
         </div>
 
-
         <div class="row stickBottomMobile">
           <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
             <div class="center" id="boxes">
 
               <div class="tealBox survey one toggleModal1">
-                <i class="fa fa-angle-up firstAngle" aria-hidden="true"></i><p class="white">FAQ</p>
+                <i class="fa fa-angle-up firstAngle"></i><p class="white">FAQ</p>
               </div>
 
               <div class="tealBox survey toggleModal2">
-                <i class="fa fa-angle-up secondAngle" aria-hidden="true"></i><p class="white">Contact</p>
+                <i class="fa fa-angle-up secondAngle"></i><p class="white">Contact</p>
               </div>
 
             </div>
@@ -107,7 +104,9 @@
             <div class="mask"> </div>
             <div class="modal2">
               <h1 class="modalHeader">Comment</h1>
-              <button class="closeModal" role="button"><i class="fas fa-times"></i></button>
+              <button class="closeModal" role="button">
+                <i class="fas fa-times"></i>
+              </button>
               <div class="comment-container">
                 <textarea placeholder="Give us your feedback"></textarea>
                 <button class="button-default second">Submit</button>
@@ -116,17 +115,17 @@
           </div>
         </div>
 
-  <!-- <a href="#openFAQ" class="sr-only"></a> -->
+
         <div class="row">
           <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
             <div id="slideOut" data-toggle="tab" aria-controls="right-nav-contact" aria-selected="false" href="#slide-it" tabindex="0">
               <div class="slideOutTab one">
 
-                <div id="one" class="bottomShadow" data-toggle="tab" aria-controls="right-nav-contact" aria-selected="false" href="#right-nav-faq" tabindex="0">
+                <div id="one" class="bottomShadow" data-dismiss="modal" aria-label="tab1" tabindex="0">
                     <p class="white">FAQ ?</p>
                   <!-- <img src="images/FAQ_tab_OFF.svg" class="img-responsive faqTab lightBlue" alt="Frequently Asked Questions tab graphic"> -->
                 </div>
-                <div id="two" data-toggle="tab" role="tab" aria-controls="right-nav-faq" aria-selected="false" href="#right-nav-contact" tabindex="0">
+                <div id="two" data-dismiss="modal" aria-label="Close" tabindex="0">
                     <p class="white">Contact <i class="fa fa-envelope-o"></i></p>
                   <!-- <img src="images/Contact_tab_OFF.svg" class="img-responsive contactTab" alt="Contact Us tab graphic"> -->
                 </div>
@@ -134,8 +133,8 @@
 
               <div class="wrapBorder">
                 <div class="modal-content">
-
                   <div class="modal-header">
+                    <a href="closeX" id="closeX">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span id="close" aria-hidden="true">
                         <div class="circCont">
@@ -145,6 +144,7 @@
                         </div>
                       </span>
                     </button>
+                  </a>
                     <br>
                     <center>
                       <h1 class="p1" id="smaller">Frequently Asked Questions</h1>
@@ -153,7 +153,6 @@
                   <div class="modal-body">
                     <div class="row firstBlock">
                       <div class="col-xs-12 col-lg-12">
-
                         <div class="wrapper center-block">
                           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
@@ -255,18 +254,18 @@
                       <div class="col-lg-6 col-md-6 col-sm-6 text-center">
                         <div class="landing-panel small">
                           <div class="vertical2">
-                            <address tabindex="0" aria-hidden="false">
+                            <address>
                               <h2 class="smaller bold">Bureau of Justice Statistics</h2>
                               <hr>
                               <p><span class="blue card">Jennifer Truman</span></p>
                               <p class="blueLight">810 7th ST., NW<br>Washington, DC 20531</p>
                               <div class="center">
                                 <img src="images/phone_icon.svg" class="img-responsive phone" alt="phone icon">
-                                <a class="aqua" href="tel:12023070765">202-307-0765</a>
+                                <a class="aqua" href="tel:12023070765" tabindex="0" aria-hidden="false" id="phoneNumber">202-307-0765</a>
                               </div>
                               <div class="center">
                                 <img src="images/letter_icon.svg" class="img-responsive phone" alt="email icon">
-                                <a class="aqua emailUs" href="mailto:askbjs@usdoj.gov">askbjs@usdoj.gov</a>
+                                <a class="aqua emailUs" href="mailto:askbjs@usdoj.gov" tabindex="0" aria-hidden="false">askbjs@usdoj.gov</a>
                               </div>
                             </address>
                           </div>
@@ -276,18 +275,18 @@
                       <div class="col-lg-6 col-md-6 col-sm-6 text-center">
                         <div class="landing-panel small">
                           <div class="vertical2">
-                            <address tabindex="0" aria-hidden="false">
+                            <address>
                               <h2 class="smaller bold">Westat</h2>
                               <hr>
                               <p><span class="blue card">Jean Hicks, NSCS Help</span></p>
                               <p class="blueLight">1600 Research Blvd<br>Rockville, MD 20850</p>
                               <div class="center">
                                 <img src="images/phone_icon.svg" class="img-responsive phone" alt="phone icon">
-                                <a class="aqua" href="tel:18558496119">1-855-849-6119</a>
+                                <a class="aqua" href="tel:18558496119" tabindex="0" aria-hidden="false" id="phoneNumber">1-855-849-6119</a>
                               </div>
                               <div class="center">
                                 <img src="images/letter_icon.svg" class="img-responsive phone" alt="email icon">
-                                <a class="aqua emailUs" href="mailto:nscs@westat.com">nscs@westat.com</a>
+                                <a class="aqua emailUs" href="mailto:nscs@westat.com" tabindex="0" aria-hidden="false">nscs@westat.com</a>
                               </div>
                             </address>
                           </div>
@@ -296,30 +295,23 @@
 
                     </div>
 
-                    <div class="row thirdBlock hide3" tabindex="0" aria-hidden="false">
-
+                    <div class="row thirdBlock hide3">
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
                         <form method="post" data-form-title="CONTACT US">
-
                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                          <label class="checkbox-inline">
-                            <input type="checkbox" value="">
+                          <label class="checkbox-inline" for="justice">
+                            <input type="checkbox" value="" tabindex="1" aria-hidden="false" id="justice">
                             <p class="contactInfo">Bureau of Justice Statistics</p>
-                          </label>
-
-                          </div>
-
-                          <div class="col-lg-6 col-md-16 col-sm-6 col-xs-12">
-
-                          <label class="checkbox-inline"><input type="checkbox" value="">
+                           </label>
+                           <br>
+                            <label class="checkbox-inline" for="westat">
+                            <input type="checkbox" value="" tabindex="1" aria-hidden="false" id="westat">
                             <p class="contactInfo">Westat</p>
-                          </label>
-
+                            </label>
                           </div>
 
-                          <input type="hidden" data-form-email="true" tabindex="0" aria-hidden="false">
+                          <input type="hidden" data-form-email="true">
                           <div class="form-group">
                             <input type="text" class="form-control secondOne" name="name" required="" placeholder="Name*" data-form-field="Name" tabindex="0" aria-hidden="false">
                           </div>

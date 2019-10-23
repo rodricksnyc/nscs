@@ -24,16 +24,6 @@ p{
 	margin: 0 !important;
 }
 
-a{
-  text-decoration: none !important;
-}
-
-*:focus {
-    outline: none !important;
-}
-
-
-
 .container-fluid{
   padding: 0px;
   margin: 0px;

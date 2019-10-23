@@ -98,8 +98,10 @@ $("[data-toggle=tooltip]").tooltip();
 
     $('#smaller').html('Frequently Asked Questions')
 
-    $('.modal-content').addClass('opened')
+    $('.modal-content').addClass('opened');
+
     $("#slideOut").addClass('showSlideOut');
+
     $('#one').css('background', '#F1F1F1');
     $('#one p.white').css('color', '#008488');
 
@@ -125,7 +127,7 @@ $("[data-toggle=tooltip]").tooltip();
     // $('.thirdBlock').addClass('flexing-scroll');
     // $('.secondBlock').removeClass('unset');
 
-    $('div#one').addClass('tabOpen');
+    $('#one').addClass('tabOpen');
     $('#two').removeClass('tabOpen');
 
   })
@@ -288,21 +290,27 @@ setTimeout(function() {
     $("#slideOut").css("right" , -$('#slideOut').outerWidth() + 15);
 
 
+      // $('#slideOut').on('focus', function(e){
+        $('#slideOut').keyup(function (e) {
+          var code = (e.keyCode ? e.keyCode : e.which);
+          if (code == 9) {
+
+              $("#slideOut").addClass('showSlideOut');
+          }
+        });
+      // });
 
 
 
 
-
-      $("#slideOut").on('focus', function() {
-
-        console.log('sdfiyveiyu')
-
-        $("#slideOut").css("right" , '0');
-        // $(".firstBlock").removeClass('hide1').addClass('animated fadeIn').show();
-
-      })
-
-
+      // $('#closeX').on('focus', function(e){
+        $('#closeX').keydown(function (e) {
+          var code = (e.keyCode ? e.keyCode : e.which);
+          if (code == 13) {
+            $("#slideOut").removeClass('showSlideOut');
+          }
+        });
+      // });
 
 
 

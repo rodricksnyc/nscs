@@ -910,7 +910,7 @@ p.small2 {
 }
 
 .button-default:focus {
-  outline:none;
+  /* outline:none; */
 }
 
 .wrapper{
