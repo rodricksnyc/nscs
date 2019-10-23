@@ -107,6 +107,17 @@ body {
   overflow:hidden;
 }
 
+.hide2, .hide3 {
+  clip-path: inset(100%);
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+ clip: rect(1px, 1px, 1px, 1px);
+ height: 1px;
+ overflow: hidden;
+ position: absolute;
+ white-space: nowrap; /* added line */
+ width: 1px;
+}
+
 #slideOut {
   position: absolute;
   z-index: 102;
@@ -153,6 +164,18 @@ bottom: 0;
 left: -5px;
 background: #ececec;
 } */
+
+.tooltip-inner {
+  background:white;
+  color: #404040;
+}
+
+.tooltip-main {
+  background:white;
+  color: #404040;
+}
+
+
 
 .modal-header {
   padding: 15px;

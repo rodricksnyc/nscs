@@ -2,6 +2,8 @@ $( document ).ready(function() {
 
 
 
+$("[data-toggle=tooltip]").tooltip();
+
   // Click function for show the Modal
 
   $(".show").on("click", function(){
@@ -56,10 +58,7 @@ $( document ).ready(function() {
   $('#prev').on('click', function() {
 
     $('#next').removeClass('activeTeal')
-    // $('#prev').removeClass('clear');
-    // $('#next').addClass('clear');
-    // $('.fa.fa-angle-left').css('color', 'white');
-    // $('.fa.fa-angle-right').css('color', '#008488');
+
   })
 
 
@@ -67,26 +66,11 @@ $( document ).ready(function() {
 
     $('#next').addClass('activeTeal')
 
-    // $('#next').removeClass('clear');
-    // $('#prev').addClass('clear');
+
     $('.fa.fa-angle-right').css('color', 'white');
     $('.fa.fa-angle-left').css('color', '#008488');
   })
 
-
-
-  // resizeDiv();
-  //
-  //
-  // window.onresize = function(event) {
-  //   resizeDiv();
-  // }
-  //
-  // function resizeDiv() {
-  //   vpw = $(window).width();
-  //   vph = $(window).height();
-  //   $('#main-wrapper').css({'height': vph + 'px'});
-  // }
 
   $('#one').on('click', function() {
 
@@ -98,10 +82,15 @@ $( document ).ready(function() {
     $('.modal-content').css('box-shadow', '0 3px 9px rgba(0, 0, 0, .6)')
 
 
-    $('.thirdBlock').addClass('flexing-scroll');
-    $(".firstBlock").addClass('animated fadeIn');
-    $(".secondBlock").removeClass('animated fadeIn');
-    $(".thirdBlock").removeClass('animated fadeIn');
+    // $('.thirdBlock').addClass('flexing-scroll');
+    // $(".firstBlock").addClass('animated fadeIn');
+    // $(".secondBlock").removeClass('animated fadeIn');
+    // $(".thirdBlock").removeClass('animated fadeIn');
+
+    $(".secondBlock").addClass('hide2').removeClass('animated fadeIn').hide();
+
+    $(".firstBlock").addClass('animated fadeIn').show();
+    $(".thirdBlock").addClass('hide3').removeClass('animated fadeIn').hide();
 
 
 
@@ -109,8 +98,7 @@ $( document ).ready(function() {
 
     $('.modal-content').addClass('opened')
     $("#slideOut").addClass('showSlideOut');
-    // $('#one').css('background', '#F1F1F1');
-    // $('#one p.white').css('color', '#008488');
+
     $('#one').css('z-index', '999')
     $('#two').css('z-index', '3')
 
@@ -123,14 +111,11 @@ $( document ).ready(function() {
     $(".faqTab").css('width', '50px');
     $(".contactTab").css('width', '49px');
 
-    //
-    // $('#two').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
-    // $('#two p.white').css('color', '#F1F1F1');
 
-    $('.firstBlock').removeClass('flexing-scroll');
-    $('.secondBlock').addClass('flexing-scroll');
-    $('.thirdBlock').addClass('flexing-scroll');
-    $('.secondBlock').removeClass('unset');
+    // $('.firstBlock').removeClass('flexing-scroll');
+    // $('.secondBlock').addClass('flexing-scroll');
+    // $('.thirdBlock').addClass('flexing-scroll');
+    // $('.secondBlock').removeClass('unset');
 
     // $('div#one').addClass('tabOpen');
     // $('#two').removeClass('tabOpen');
@@ -141,10 +126,10 @@ $( document ).ready(function() {
   $('#two').on('click', function() {
 
 
-    $(".secondBlock").addClass('animated fadeIn');
+    $(".secondBlock").removeClass('hide2').addClass('animated fadeIn').show();
 
-    $(".firstBlock").removeClass('animated fadeIn');
-    $(".thirdBlock").removeClass('animated fadeIn');
+    $(".firstBlock").removeClass('animated fadeIn').hide();
+    $(".thirdBlock").removeClass('animated fadeIn').hide();
 
 
     $('#two').css('right', '8px');
@@ -171,18 +156,12 @@ $( document ).ready(function() {
 
     $("#slideOut").addClass('showSlideOut');
 
-    $('.firstBlock').addClass('flexing-scroll');
-    $('.secondBlock').removeClass('flexing-scroll');
-    $('.thirdBlock').addClass('flexing-scroll');
-    $('.secondBlock').addClass('unset');
+    // $('.firstBlock').addClass('flexing-scroll');
+    // $('.secondBlock').removeClass('flexing-scroll');
+    // $('.thirdBlock').addClass('flexing-scroll');
+    // $('.secondBlock').addClass('unset');
 
-    // $('#one').removeClass('tabOpen');
-    // $('#tab').addClass('tabOpen');
 
-    // $('#one').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
-    // $('#one p.white').css('color', '#F1F1F1');
-    // $('#two').css('background', '#F1F1F1');
-    // $('#two p.white').css('color', '#008488');
     $('#two').css('z-index', '999')
     $('#one').css('z-index', '99')
   })
@@ -194,15 +173,21 @@ $( document ).ready(function() {
 
     $('#smaller').html('Contact Us');
 
-    $(".thirdBlock").addClass('animated fadeIn');
 
-    $(".secondBlock").removeClass('animated fadeIn');
-    $(".firstBlock").removeClass('animated fadeIn');
+    $(".secondBlock").addClass('hide2').removeClass('animated fadeIn').hide();
 
-    $('.firstBlock').addClass('flexing-scroll');
-    $('.secondBlock').addClass('flexing-scroll');
+    $(".firstBlock").removeClass('animated fadeIn').hide();
+    $(".thirdBlock").removeClass('hide3').addClass('animated fadeIn').show();
 
-    $('.thirdBlock').removeClass('flexing-scroll');
+    // $(".thirdBlock").addClass('animated fadeIn');
+    //
+    // $(".secondBlock").removeClass('animated fadeIn');
+    // $(".firstBlock").removeClass('animated fadeIn');
+    //
+    // $('.firstBlock').addClass('flexing-scroll');
+    // $('.secondBlock').addClass('flexing-scroll');
+    //
+    // $('.thirdBlock').removeClass('flexing-scroll');
 
   })
 
@@ -218,7 +203,7 @@ $( document ).ready(function() {
 
   $('#close').on('click', function() {
 
-    $('.firstBlock').addClass('unset');
+    // $('.firstBlock').addClass('unset');
 
 
 
@@ -226,11 +211,11 @@ $( document ).ready(function() {
     $(".firstBlock").removeClass('animated fadeIn');
     $(".thirdtBlock").removeClass('animated fadeIn');
 
-
-    setTimeout(function() {
-      $('.thirdBlock').addClass('flexing-scroll');
-      $('.secondBlock').addClass('flexing-scroll');
-    }, 600)
+    //
+    // setTimeout(function() {
+    //   $('.thirdBlock').addClass('flexing-scroll');
+    //   $('.secondBlock').addClass('flexing-scroll');
+    // }, 600)
 
 
     $(".faqTab").css('width', '54px');
@@ -244,16 +229,10 @@ $( document ).ready(function() {
     $('#one').css('right', '7px');
 
 
-
-
-
     $('.modal-content').css('box-shadow', 'none')
 
     $("#slideOut").removeClass('showSlideOut');
-    // $('#one').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
-    // $('#two').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
-    // $('#one p.white').css('color', 'white');
-    // $('#two p.white').css('color', 'white');
+
     $('#one').css('z-index', '999');
     $('#two').css('z-index', '99');
 
@@ -263,9 +242,6 @@ $( document ).ready(function() {
     $(".contactTab").attr('src',"images/Contact_tab_OFF.svg");
     $(".faqTab").attr('src',"images/FAQ_tab_OFF.svg");
 
-    // $('#one').removeClass('bottomShadowDarker');
-    // $('#one').addClass('bottomShadow');
-    // $('#two').removeClass('topShadow');
 
   })
 
@@ -310,8 +286,6 @@ $( document ).ready(function() {
 
 
   if ($(document).innerWidth() <= 767) {
-
-
 
 
     $(window).on("scroll", function() {
@@ -372,20 +346,9 @@ $( document ).ready(function() {
 
     // console.log(foot2)
 
-    $('.secondBlock').removeClass('flexing-scroll');
-    $('.secondBlock').addClass('flexing-fixed');
+    // $('.secondBlock').removeClass('flexing-scroll');
+    // $('.secondBlock').addClass('flexing-fixed');
 
-
-
-
-
-    // $(".stickBottomMobile").css({
-    // 'bottom': ($('#foot2').height() + 'px')
-    // });
-
-    // $(".stickBottomMobile").css({
-    //   'bottom': 0
-    // });
 
 
 
@@ -408,10 +371,17 @@ $( document ).ready(function() {
 
       }, 200);
 
-      $('.secondBlock').removeClass('flexing-scroll');
-      $('.secondBlock').addClass('flexing-fixed');
+      $(".secondBlock").addClass('hide2').removeClass('animated fadeIn').hide();
 
-      $('.firstBlock').removeClass('flexing-fixed');
+      $(".firstBlock").addClass('animated fadeIn').show();
+      $(".thirdBlock").addClass('hide3').removeClass('animated fadeIn').hide();
+
+
+      //
+      // $('.secondBlock').removeClass('flexing-scroll');
+      // $('.secondBlock').addClass('flexing-fixed');
+      //
+      // $('.firstBlock').removeClass('flexing-fixed');
 
 
       //
@@ -420,25 +390,6 @@ $( document ).ready(function() {
       // $('.secondAngle').addClass('noRotate');
       // $('.firstAngle').removeClass('noRotate');
 
-      // if($("#slideOut").css('opacity') == "1" && $('.secondAngle').hasClass('noRotate')  && $('.firstAngle').hasClass('rotate')) {
-      //
-      //
-      //
-      // setTimeout(function() {
-      //     $("#slideOut").css('opacity', '0')
-      // },500)
-      //
-      //
-      //   $("#slideOut").animate({
-      //
-      //     bottom:-$('#slideOut').height(),
-      //
-      //
-      //   },300);
-      //
-      //
-      //
-      // }
 
 
 
@@ -462,10 +413,12 @@ $( document ).ready(function() {
 
       }, 200);
 
-      $('.secondBlock').removeClass('flexing-scroll');
-      $('.secondBlock').removeClass('flexing-fixed');
 
-      $('.firstBlock').addClass('flexing-fixed');
+          $(".secondBlock").removeClass('hide2').addClass('animated fadeIn').show();
+
+          $(".firstBlock").removeClass('animated fadeIn').hide();
+          $(".thirdBlock").removeClass('animated fadeIn').hide();
+
 
 
       //
@@ -474,25 +427,6 @@ $( document ).ready(function() {
       // $('.firstAngle').addClass('noRotate');
       // $('.secondAngle').removeClass('noRotate')
 
-      // if($("#slideOut").css('opacity') == "1" && $('.firstAngle').hasClass('noRotate')  && $('.secondAngle').hasClass('rotate')) {
-      //
-      //
-      //
-      // setTimeout(function() {
-      //     $("#slideOut").css('opacity', '0')
-      // },500)
-      //
-      //
-      //   $("#slideOut").animate({
-      //
-      //     bottom:-$('#slideOut').height(),
-      //
-      //
-      //   },300);
-      //
-      //
-      //
-      // }
 
 
 
@@ -502,9 +436,15 @@ $( document ).ready(function() {
 
     $('.emailUs').on('click', function() {
 
+
+          $(".secondBlock").addClass('hide2').removeClass('animated fadeIn').hide();
+
+          $(".firstBlock").removeClass('animated fadeIn').hide();
+          $(".thirdBlock").removeClass('hide3').addClass('animated fadeIn').show();
+
       $('#smaller').html('Contact Us')
 
-      $(".thirdBlock").addClass('animated fadeIn')
+
 
 
     })
@@ -513,8 +453,10 @@ $( document ).ready(function() {
 
     $('#close').on('click', function() {
 
-      $(".thirdBlock").removeClass('animated fadeIn');
-      $('.firstBlock').removeClass('flexing-scroll');
+      $(".secondBlock").removeClass('animated fadeIn');
+      $(".firstBlock").removeClass('animated fadeIn');
+      $(".thirdtBlock").removeClass('animated fadeIn');
+
 
 
       $('.wrapper').show();
