@@ -73,6 +73,9 @@ $( document ).ready(function() {
 
   $('#one').on('click', function() {
 
+
+
+
     $(".faqTab").removeClass('lightBlue')
 
     $(".faqTab").attr('src',"images/FAQ_tab_HVR-ON.png");
@@ -82,6 +85,7 @@ $( document ).ready(function() {
 
     $('#one').addClass('bottomShadowDarker');
     $('#one').removeClass('bottomShadow');
+    $('#two').removeClass('bottomShadow');
     $('#two').addClass('bottomDark');
 
     // $('.thirdBlock').addClass('flexing-scroll');
@@ -112,6 +116,9 @@ $( document ).ready(function() {
     // $('#one').css('right', '9px');
 
     $('#two').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
+
+    $('p.white').removeClass('hover hover-1');
+
     $('#two p.white').css('color', '#F1F1F1');
     $('.fa.fa-envelope-o').css('color', 'white');
 
@@ -134,6 +141,8 @@ $( document ).ready(function() {
 
 
   $('#two').on('click', function() {
+
+    $('p.white').removeClass('hover hover-1');
 
     $(".secondBlock").removeClass('hide2').addClass('animated fadeIn').show();
 
@@ -161,6 +170,8 @@ $( document ).ready(function() {
     $('#one').removeClass('bottomShadowDarker');
     $('#one').addClass('bottomDark');
     $('#two').addClass('bottomShadowDarker');
+    $('#one').removeClass('bottomShadow');
+    $('#two').removeClass('bottomShadow');
 
     $(".faqTab").removeClass('lightBlue');
     $(".faqTab").css('width', '50px');
@@ -191,7 +202,7 @@ $( document ).ready(function() {
     e.preventDefault();
 
     $('#smaller').html('Contact Us');
-
+    $('p.white').removeClass('hover hover-1');
 
     $(".secondBlock").addClass('hide2').removeClass('animated fadeIn').hide();
 
@@ -222,6 +233,7 @@ $( document ).ready(function() {
 
     // $('.firstBlock').addClass('unset');
 
+    $('p.white').addClass('hover hover-1');
 
     setTimeout(function() {
       $(".secondBlock").addClass('hide2').removeClass('animated fadeIn').hide();
@@ -244,6 +256,7 @@ $( document ).ready(function() {
     $('#one').removeClass('bottomShadowDarker');
     $('#one').removeClass('bottomDark');
     $('#one').addClass('bottomShadow');
+    $('#two').addClass('bottomShadow');
 
     $('#two').removeClass('bottomShadowDarker');
     $('#two').removeClass('bottomDark');
