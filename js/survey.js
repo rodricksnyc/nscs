@@ -316,6 +316,7 @@ $( document ).ready(function() {
       }
     });
 
+
     $('.checks').on('keypress', function(event) {
       if (event.which === 13) {
         this.checked = !this.checked;
@@ -333,6 +334,19 @@ $( document ).ready(function() {
 
         $(".firstBlock").addClass('hide1').removeClass('animated fadeIn').hide();
         $(".thirdBlock").addClass('hide3').removeClass('animated fadeIn').hide();
+      }
+    });
+
+
+    $('#closeThisPlease').keyup(function (e) {
+      var code = (e.keyCode ? e.keyCode : e.which);
+      if (code == 13) {
+
+        $("#slideOut").removeClass('showSlideOut');
+        $(".secondBlock").removeClass('hide2').removeClass('animated fadeIn').hide();
+
+        $(".firstBlock").removeClass('hide1').addClass('animated fadeIn').show();
+        $(".thirdBlock").removeClass('hide3').removeClass('animated fadeIn').hide();
       }
     });
 
