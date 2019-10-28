@@ -81,6 +81,25 @@ h2.smaller {
 }
 
 
+.bottomModal {
+    margin-top: 0em;
+    margin-bottom: 0em;
+
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+
+.close {
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+
+    filter: alpha(opacity=20);
+    opacity: .75;
+}
+
 .landing {
   background:#f2f4f5;
   font-family: 'Montserrat', sans-serif;
@@ -335,6 +354,18 @@ span.blue.card {
   transition: 0.4s all;
 }
 
+.mb-5 {
+  margin-bottom:.5em;
+  margin-top:.5em;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: none;
+    margin-left:2em;
+    margin-right:2em;
+}
 
 ul.discs {
     list-style: none;
@@ -355,6 +386,13 @@ ul.discs li::before {
     width: 1em;
     font-size:14px;
     margin-left: 0em;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 
@@ -452,6 +490,10 @@ ul.discs li::before {
   transition: all .5s ease-in-out;
   height: 145px;
   margin-top: -170px;
+}
+
+.grayBackground {
+  background-image: linear-gradient(to top, #404040, #505050, #606060, #727272, #838383);
 }
 
 .tealBox:visited {
@@ -1044,6 +1086,10 @@ hr {
   margin-left:8px;
 }
 
+.md-form .form-control {
+  width: 100%;
+}
+
 .westat-footer {
   background-color: #00467F;
 
@@ -1317,6 +1363,14 @@ hr {
 }
 
 @media (max-width: 1024px) {
+
+  .modal-body {
+
+      margin-left: 0em;
+      margin-right: 0em;
+  }
+
+
 
   .landing-panel {
     margin: -6rem auto 0rem;
@@ -1712,6 +1766,10 @@ hr {
 
 @media (max-width:767px) {
 
+
+.md-form .form-control {
+  width: 100%;
+}
 
   .landing-panel.new {
     max-height: none;

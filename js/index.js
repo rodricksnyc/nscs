@@ -1,14 +1,22 @@
 $(document).ready(function () {
 
 
-
-
   //scroll magic
   $('a[href^="#top"]').on('click', function(event) {
 
     $('.circle.first').addClass('activate');
     $('.circle.second').removeClass('activate');
     $('.circle.third').removeClass('activate');
+
+    if ($('.circle.second').hasClass('activate')) {
+      $('.circle.second').removeClass('activate')
+      $('.circle.first').addClass('activate')
+    }
+
+    if ($('.circle.third').hasClass('activate')) {
+      $('.circle.third').removeClass('activate')
+      $('.circle.first').addClass('activate')
+    }
 
     var target = $(this.getAttribute('href'));
 
@@ -27,6 +35,18 @@ $(document).ready(function () {
       $('.circle.first').removeClass('activate');
       $('.circle.second').removeClass('activate');
       $('.circle.third').addClass('activate');
+
+      if ($('.circle.first').hasClass('activate')) {
+        $('.circle.third').addClass('activate')
+        $('.circle.first').removeClass('activate')
+      }
+
+
+      if ($('.circle.second').hasClass('activate')) {
+        $('.circle.second').removeClass('activate')
+        $('.circle.third').addClass('activate')
+
+      }
 
       var target = $(this.getAttribute('href'));
 
@@ -95,6 +115,18 @@ $(document).ready(function () {
     $('.circle.second').addClass('activate');
     $('.circle.third').removeClass('activate');
 
+    if ($('.circle.first').hasClass('activate')) {
+      $('.circle.second').addClass('activate')
+      $('.circle.first').removeClass('activate')
+    }
+
+
+    if ($('.circle.third').hasClass('activate')) {
+      $('.circle.second').addClass('activate')
+      $('.circle.third').removeClass('activate')
+
+    }
+
     var target = $(this.getAttribute('href'));
 
     if( target.length ) {
@@ -151,6 +183,104 @@ $(document).ready(function () {
 
 
 
+$('.circle.first').on('click', function() {
+
+  if ($('.circle.second').hasClass('activate')) {
+    $('.circle.second').removeClass('activate')
+    $('.circle.first').addClass('activate')
+  }
+
+  if ($('.circle.third').hasClass('activate')) {
+    $('.circle.third').removeClass('activate')
+    $('.circle.first').addClass('activate')
+  }
+
+
+})
+
+
+$('.tealBox.first').on('click', function() {
+
+  if ($('.tealBox.second').hasClass('grayBackground')) {
+    $('.tealBox.second').removeClass('grayBackground')
+    $('.tealBox.first').addClass('grayBackground')
+  }
+
+  if ($('.tealBox.third').hasClass('grayBackground')) {
+    $('.tealBox.third').removeClass('grayBackground')
+    $('.tealBox.first').addClass('grayBackground')
+  }
+
+
+})
+
+$('.circle.second').on('click', function() {
+
+  if ($('.circle.first').hasClass('activate')) {
+    $('.circle.second').addClass('activate')
+    $('.circle.first').removeClass('activate')
+  }
+
+
+  if ($('.circle.third').hasClass('activate')) {
+    $('.circle.second').addClass('activate')
+    $('.circle.third').removeClass('activate')
+
+  }
+
+})
+
+$('.tealBox.second').on('click', function() {
+
+  if ($('.tealBox.first').hasClass('grayBackground')) {
+    $('.tealBox.first').removeClass('grayBackground')
+    $('.tealBox.second').addClass('grayBackground')
+  }
+
+  if ($('.tealBox.third').hasClass('grayBackground')) {
+    $('.tealBox.third').removeClass('grayBackground')
+    $('.tealBox.second').addClass('grayBackground')
+  }
+
+
+})
+
+
+$('.circle.third').on('click', function() {
+
+  if ($('.circle.first').hasClass('activate')) {
+    $('.circle.third').addClass('activate')
+    $('.circle.first').removeClass('activate')
+  }
+
+
+  if ($('.circle.second').hasClass('activate')) {
+    $('.circle.second').removeClass('activate')
+    $('.circle.third').addClass('activate')
+
+  }
+
+
+})
+
+
+$('.tealBox.third').on('click', function() {
+
+  if ($('.tealBox.first').hasClass('grayBackground')) {
+    $('.tealBox.first').removeClass('grayBackground')
+    $('.tealBox.third').addClass('grayBackground')
+  }
+
+  if ($('.tealBox.second').hasClass('grayBackground')) {
+    $('.tealBox.second').removeClass('grayBackground')
+    $('.tealBox.third').addClass('grayBackground')
+  }
+
+
+})
+
+
+
   $('.panel-collapse').on('show.bs.collapse', function () {
     $(this).siblings('.panel-heading').addClass('active');
   });
@@ -180,6 +310,7 @@ $(document).ready(function () {
     })
 
     if ($('.block4').hasClass('active')) {
+
 
 
       setTimeout(function() {
@@ -260,6 +391,15 @@ $(document).ready(function () {
 
     if ($('.block44').hasClass('active')) {
 
+      $('.circle.first').addClass('activate');
+      $('.circle.second').removeClass('activate');
+      $('.circle.third').removeClass('activate');
+
+      $('.tealBox.first').addClass('grayBackground')
+      $('.tealBox.second').removeClass('grayBackground')
+      $('.tealBox.third').removeClass('grayBackground')
+
+
 
       setTimeout(function() {
         $('.block44 .content-top').removeClass('transparent-opacity').addClass('animated fadeIn')
@@ -338,6 +478,13 @@ $(document).ready(function () {
 
     if ($('.block444').hasClass('active')) {
 
+      $('.circle.first').addClass('activate');
+      $('.circle.second').removeClass('activate');
+      $('.circle.third').removeClass('activate');
+
+      $('.tealBox.first').addClass('grayBackground')
+      $('.tealBox.second').removeClass('grayBackground')
+      $('.tealBox.third').removeClass('grayBackground')
 
       setTimeout(function() {
         $('.block444 .content-top').removeClass('transparent-opacity').addClass('animated fadeIn')
@@ -454,7 +601,6 @@ $(document).ready(function () {
     })
 
 
-
     $('article').each(function() {
       var elementTop = $(this).offset().top;
       var elementBottom = $(this).offset().top + $(this).outerHeight();
@@ -468,20 +614,24 @@ $(document).ready(function () {
       }
     })
 
-
     if ($('.sticky').hasClass('active3')) {
 
           $("#stickySide").fadeIn()
 
-
         }
-
 
 
         else if ($('.top').hasClass('active2')) {
 
+          $("#stickySide").fadeOut();
+          $('.circle.first').removeClass('activate');
+          $('.circle.third').removeClass('activate');
+          $('.circle.second').removeClass('activate');
 
-          $("#stickySide").fadeOut()
+
+          $('.tealBox.first').removeClass('grayBackground')
+          $('.tealBox.second').removeClass('grayBackground')
+          $('.tealBox.third').removeClass('grayBackground')
 
 
         }
@@ -521,6 +671,14 @@ $(document).ready(function () {
 
     if ($('.block5').hasClass('active')) {
 
+      $('.circle.first').addClass('activate');
+      $('.circle.second').removeClass('activate');
+      $('.circle.third').removeClass('activate');
+
+      $('.tealBox.first').addClass('grayBackground')
+      $('.tealBox.second').removeClass('grayBackground')
+      $('.tealBox.third').removeClass('grayBackground')
+
 
       setTimeout(function() {
         $('.block5 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
@@ -541,6 +699,14 @@ $(document).ready(function () {
 
     if ($('.block11').hasClass('active')) {
 
+      $('.circle.first').removeClass('activate');
+      $('.circle.third').removeClass('activate');
+      $('.circle.second').addClass('activate');
+
+      $('.tealBox.first').removeClass('grayBackground')
+      $('.tealBox.second').addClass('grayBackground')
+      $('.tealBox.third').removeClass('grayBackground')
+
 
       setTimeout(function() {
         $('.block11 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
@@ -560,6 +726,14 @@ $(document).ready(function () {
     }
 
     if ($('.block12').hasClass('active')) {
+
+      $('.circle.first').removeClass('activate');
+      $('.circle.third').removeClass('activate');
+      $('.circle.second').addClass('activate');
+
+      $('.tealBox.first').removeClass('grayBackground')
+      $('.tealBox.second').addClass('grayBackground')
+      $('.tealBox.third').removeClass('grayBackground')
 
 
       setTimeout(function() {
@@ -589,6 +763,13 @@ $(document).ready(function () {
 
     if ($('.block6').hasClass('active')) {
 
+      $('.circle.first').addClass('activate');
+      $('.circle.second').removeClass('activate');
+      $('.circle.third').removeClass('activate');
+
+      $('.tealBox.first').addClass('grayBackground')
+      $('.tealBox.second').removeClass('grayBackground')
+      $('.tealBox.third').removeClass('grayBackground')
 
       setTimeout(function() {
         $('.block6 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
@@ -600,6 +781,13 @@ $(document).ready(function () {
 
         if ($('.block66').hasClass('active')) {
 
+          $('.circle.first').addClass('activate');
+          $('.circle.second').removeClass('activate');
+          $('.circle.third').removeClass('activate');
+
+          $('.tealBox.first').addClass('grayBackground')
+          $('.tealBox.second').removeClass('grayBackground')
+          $('.tealBox.third').removeClass('grayBackground')
 
           setTimeout(function() {
             $('.block66 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
@@ -610,6 +798,12 @@ $(document).ready(function () {
 
     if ($('.block7').hasClass('active')) {
 
+      $('.circle.first').addClass('activate');
+      $('.circle.second').removeClass('activate');
+      $('.circle.third').removeClass('activate');
+      $('.tealBox.first').addClass('grayBackground')
+      $('.tealBox.second').removeClass('grayBackground')
+      $('.tealBox.third').removeClass('grayBackground')
 
       setTimeout(function() {
         $('.block7 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
@@ -620,6 +814,13 @@ $(document).ready(function () {
 
     if ($('.block8').hasClass('active')) {
 
+      $('.circle.first').addClass('activate');
+      $('.circle.second').removeClass('activate');
+      $('.circle.third').removeClass('activate');
+
+      $('.tealBox.first').addClass('grayBackground')
+      $('.tealBox.second').removeClass('grayBackground')
+      $('.tealBox.third').removeClass('grayBackground')
 
       setTimeout(function() {
         $('.block8 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
@@ -631,6 +832,13 @@ $(document).ready(function () {
 
     if ($('.block9').hasClass('active')) {
 
+      $('.circle.first').addClass('activate');
+      $('.circle.second').removeClass('activate');
+      $('.circle.third').removeClass('activate');
+
+      $('.tealBox.first').addClass('grayBackground')
+      $('.tealBox.second').removeClass('grayBackground')
+      $('.tealBox.third').removeClass('grayBackground')
 
       setTimeout(function() {
         $('.block9 .content-top').removeClass('transparent-opacity').addClass('animated fadeInUp')
@@ -640,6 +848,15 @@ $(document).ready(function () {
     }
 
     if ($('.block10').hasClass('active')) {
+
+      $('.circle.first').removeClass('activate');
+      $('.circle.second').removeClass('activate');
+      $('.circle.third').addClass('activate');
+
+      $('.tealBox.first').removeClass('grayBackground')
+      $('.tealBox.second').removeClass('grayBackground')
+      $('.tealBox.third').addClass('grayBackground')
+
 
 
       setTimeout(function() {
@@ -656,17 +873,21 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
   });
 
 
 
 
   // }
+
+
+  $('.checks').on('keypress', function(event) {
+    if (event.which === 13) {
+      this.checked = !this.checked;
+    }
+  });
+
+
 
 
   $('#accessCode1').keydown(function(event) {

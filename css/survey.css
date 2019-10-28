@@ -134,7 +134,7 @@ clip: rect(1px 1px 1px 1px); /* IE 6/7 */
 #slideOut {
   position: absolute;
   z-index: 102;
-  right:-985px;
+  right:-1000px;
   width: 1000px;
   transition-property: all;
   transition-duration: .5s;
@@ -272,7 +272,7 @@ ul.papaya {
 }
 
 .showSlideOut {
-  right: 0px !important;
+  right: 15px !important;
 
 }
 
@@ -346,7 +346,7 @@ ul.papaya {
   /* min-width: 900px; */
 }
 .wrapper {
-  width: 96%;
+  width: 100%;
 }
 .panel-heading a:before {
   font-family: FontAwesome;
@@ -385,7 +385,7 @@ p.small {
 
 .bottomShadow {
   box-shadow: 0 -2px 3px rgba(0,0,0,.2), 0 -4px 9px rgba(0,0,0,.15);
-  
+
 }
 
 .bottomShadowDarker {
@@ -407,7 +407,7 @@ box-shadow: 0 -3px 3px rgba(0,0,0,.2), 0 -5px 5px rgba(0,0,0,.15);
 #one {
   text-align: center;
   position: relative;
-  right: 70px;
+  right: 69px;
   top: 90px;
   background: rgb(0,170,170);
   background: linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%);
@@ -472,7 +472,7 @@ box-shadow: 0 -3px 3px rgba(0,0,0,.2), 0 -5px 5px rgba(0,0,0,.15);
 #two {
   text-align: center;
   position: relative;
-  right: 70px;
+  right: 69px;
   top: 223px;
   z-index: 99;
   border-radius: .5rem .5rem 0 0;
@@ -1753,6 +1753,10 @@ border-top:2px solid transparent;
   .modal-content {
     padding-bottom:10em;
     max-height:690px;
+  }
+
+  .landing-panel.small {
+    max-height: 340px;
   }
 
 

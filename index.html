@@ -182,35 +182,6 @@
 
             <div class="content-top transparent-opacity">
 
-              <!-- <div class="row p35 mb8">
-                <div class="lightGray">
-                  <div class="non-reverse">
-                    <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-12 col-xs-12 padding-0 newBoot">
-                      <div class="landing-panel new reveal-closed" id="box2">
-                        <div class="text">
-                          <h2 class="smaller">What is the National Survey of Crime and Safety?</h2>
-                          <p class="small2">The NSCS is a national survey that is collecting information on crime
-                            and safety issues in communities in the United States.</p>
-                            <p class="small2">The primary goal of the NSCS is to provide information about people&rsquo;s
-                              experiences with victimization and crime in the past year. The NSCS is
-                              adapted from the National Crime Victimization Survey (NCVS), administered by the U.S. Bureau of the Census for the Bureau of Justice Statistics (BJS). The NCVS is the natio&rsquo;s only source of information
-                              about crime victimization not reported to the police.</p>
-                              <p class="small2">Current NCVS content was developed in 1992; our communities and the nature of crime have changed in the years since then; the NSCS has been designed to fill these gaps.</p>
-                              <p class="small2 last">NCVS data, like those shown in Figure 1, are used to track trends in crime and safety and develop policies.</p>
-
-                            </div>
-                            <div class="whiteBar"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                          </div>
-                        </div>
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 grayBox2 padding-0 newBoot">
-                          <img src="images/About_01.svg" class="img-responsive about1" alt="National Crime Victimization Survey (NCVS) US Map Graphic">
-                        </div>
-                      </div>
-
-                </div>
-
-              </div> -->
-
               <div class="row p35">
                 <div class="lightGray">
 
@@ -244,11 +215,7 @@
           </div>
         </section>
 
-
-
           </div>
-
-
 
 
             <article class="sticky">
@@ -729,9 +696,6 @@
 
                                 <h1 class="m2">For more information about this study, please contact:</h1>
 
-
-
-
                                 <div class="col-lg-6 col-md-6 text-center">
                                   <div class="landing-panel small">
                                     <div class="vertical2">
@@ -746,7 +710,7 @@
                                         </div>
                                         <div class="center">
                                           <img src="images/letter_icon.svg" class="img-responsive phone" alt="email icon">
-                                          <a class="aqua" href="mailto:askbjs@usdoj.gov">askbjs@usdoj.gov</a>
+                                          <a data-toggle="modal" data-target="#modalContactForm" class="aqua" href="">askbjs@usdoj.gov</a>
                                         </div>
                                       </address>
                                     </div>
@@ -767,7 +731,7 @@
                                         </div>
                                         <div class="center">
                                           <img src="images/letter_icon.svg" class="img-responsive phone" alt="email icon">
-                                          <a class="aqua" href="mailto:nscs@westat.com">nscs@westat.com</a>
+                                          <a data-toggle="modal" data-target="#modalContactForm" class="aqua" href="">nscs@westat.com</a>
                                         </div>
                                       </address>
                                     </div>
@@ -777,11 +741,70 @@
 
                               </div>
                             </div>
-                          </center>
+
+                    </center>
 
                           </div>
                         </div>
                         </section>
+
+                        <div class="row">
+                          <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header text-center">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                  <h1 class="bottomModal" id="smaller">Contact Us</h1>
+
+                              </div>
+                              <div class="modal-body mx-3">
+
+                                <label class="checkbox-inline" for="mycheckbox1">
+                                  <input type="checkbox" id="mycheckbox1" value="" tabindex="0" aria-hidden="false" class="checks">
+                                  <p class="contactInfo">Bureau of Justice Statistics</p>
+                                </label>
+                                <br>
+                                <label class="checkbox-inline" for="mycheckbox2">
+                                  <input type="checkbox" id="mycheckbox2" value="" tabindex="0" aria-hidden="false" class="checks">
+                                  <p class="contactInfo">Westat</p>
+                                </label>
+                                <div class="md-form mb-5">
+                                  <label data-error="wrong" data-success="right" for="form34"><i class="fa fa-user prefix grey-text"></i> Your name</label>
+                                  <input type="text" id="form34" class="form-control validate">
+                                </div>
+
+                                <div class="md-form mb-5">
+                                  <label data-error="wrong" data-success="right" for="form29"><i class="fa fa-envelope prefix grey-text"></i> Your email</label>
+                                  <input type="email" id="form29" class="form-control validate">
+
+                                </div>
+
+                                <div class="md-form mb-5">
+                                  <label data-error="wrong" data-success="right" for="form32"><i class="fa fa-tag prefix grey-text"></i> Subject</label>
+                                  <input type="text" id="form32" class="form-control validate">
+                                </div>
+
+                                <div class="md-form">
+                                  <label data-error="wrong" data-success="right" for="form8"><i class="fa fa-pencil prefix grey-text"></i> Your message</label> 
+                                  <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+
+                                </div>
+
+                              </div>
+                              <div class="modal-footer d-flex justify-content-center">
+                                <button class="btn btn-unique">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
 
                       <div class="row">
                         <div class="col-xs-12 col-lg-12 bottom">
@@ -812,7 +835,7 @@
                 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
                 crossorigin="anonymous"></script>
 
-                <script src="js/bootstrap.js"></script>
+                <!-- <script src="js/bootstrap.js"></script> -->
                 <script src="js/bootstrap.min.js"></script>
                 <script src="js/index.js"></script>
 

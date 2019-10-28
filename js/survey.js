@@ -74,8 +74,6 @@ $( document ).ready(function() {
   $('#one').on('click', function() {
 
 
-
-
     $(".faqTab").removeClass('lightBlue')
 
     $(".faqTab").attr('src',"images/FAQ_tab_HVR-ON.png");
@@ -117,7 +115,8 @@ $( document ).ready(function() {
 
     $('#two').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
 
-    $('p.white').removeClass('hover hover-1');
+    $('p.white.first').removeClass('hover hover-1');
+    $('p.white.second').addClass('hover hover-1');
 
     $('#two p.white').css('color', '#F1F1F1');
     $('.fa.fa-envelope-o').css('color', 'white');
@@ -142,7 +141,8 @@ $( document ).ready(function() {
 
   $('#two').on('click', function() {
 
-    $('p.white').removeClass('hover hover-1');
+    $('p.white.second').removeClass('hover hover-1');
+    $('p.white.first').addClass('hover hover-1');
 
     $(".secondBlock").removeClass('hide2').addClass('animated fadeIn').show();
 
@@ -317,11 +317,12 @@ $( document ).ready(function() {
     });
 
 
-    $('.checks').on('keypress', function(event) {
-      if (event.which === 13) {
-        this.checked = !this.checked;
-      }
-    });
+    // $('.checks').on('keypress', function(event) {
+    //   if (event.which === 13) {
+    //     this.checked = !this.checked;
+    //   }
+    // });
+
 
 
 
@@ -342,13 +343,44 @@ $( document ).ready(function() {
       var code = (e.keyCode ? e.keyCode : e.which);
       if (code == 13) {
 
-        $("#slideOut").removeClass('showSlideOut');
-        $(".secondBlock").removeClass('hide2').removeClass('animated fadeIn').hide();
+          $("#slideOut").removeClass('showSlideOut');
 
-        $(".firstBlock").removeClass('hide1').addClass('animated fadeIn').show();
-        $(".thirdBlock").removeClass('hide3').removeClass('animated fadeIn').hide();
+        setTimeout(function() {
+
+
+          $(".secondBlock").removeClass('hide2').removeClass('animated fadeIn').hide();
+
+          $(".firstBlock").removeClass('hide1').removeClass('animated fadeIn').hide();
+          $(".thirdBlock").removeClass('hide3').removeClass('animated fadeIn').hide();
+
+        }, 500)
+
+
       }
     });
+
+    $('#submitContact').keyup(function (e) {
+      var code = (e.keyCode ? e.keyCode : e.which);
+      if (code == 9) {
+
+          $("#slideOut").removeClass('showSlideOut');
+
+        setTimeout(function() {
+
+
+          $(".secondBlock").removeClass('hide2').removeClass('animated fadeIn').hide();
+
+          $(".firstBlock").removeClass('hide1').removeClass('animated fadeIn').hide();
+          $(".thirdBlock").removeClass('hide3').removeClass('animated fadeIn').hide();
+
+        }, 500)
+
+
+      }
+    });
+
+
+
 
 
 
