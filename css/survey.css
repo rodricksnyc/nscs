@@ -318,6 +318,25 @@ ul.papaya {
 
 }
 
+.form-control.fourthOne {
+    display: block;
+    width: 100%;
+    height: calc(20rem + 2px);
+    padding: 15px 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .3rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-align: left;
+    margin: 0em;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .panel-title>a, .panel-title>a:active {
   display: block;
   padding: 10px;
@@ -656,8 +675,12 @@ footer{
 }
 
 
+.modalFooter {
+  display:none;
+}
+
 .modal-footer {
-  padding: 15px;
+  padding: 0em 2em;
   text-align: right;
   border-top: none;
 }
@@ -669,7 +692,6 @@ footer{
   right: 0;
   width: 100%;
   opacity: .96;
-
 
 }
 
@@ -684,6 +706,27 @@ h1#smaller {
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
   margin-bottom:0px
+}
+
+.modal-content.secondOne {
+    position: relative;
+    background: rgb(241, 241, 241);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: none;
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .6);
+    box-shadow: none;
+    z-index: 999;
+    padding-bottom: 2em;
+    max-height: 680px;
+}
+
+.modal-dialog {
+    width: 65%;
+    margin: 100px auto;
 }
 
 
@@ -1533,10 +1576,10 @@ input[type="checkbox"].styled:checked + label:after {
   background-position: 0 0px;
 }
 
-.btn-info:focus {
+/* .btn-info:focus {
   background: linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%);
   background-position: 0 0px;
-}
+} */
 
 #next:focus {
   background: linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%);
