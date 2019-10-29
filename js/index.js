@@ -893,7 +893,11 @@ $('.tealBox.third').on('click', function() {
   });
 
 
-
+$('#submitContact').click(function(e) {
+  e.preventDefault();
+$('.modal').hide();
+$('.modal-backdrop').hide();
+})
 
 
   $('.checks').on('keypress', function(event) {
