@@ -561,9 +561,6 @@ $('.tealBox.third').on('click', function() {
     }
 
 
-
-
-
   });
 
 
@@ -888,6 +885,9 @@ $('.tealBox.third').on('click', function() {
   });
 
 
+$('.btn-info').on('click', function() {
+    $('.btn-info').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)')
+})
 
 
   $('#accessCode1').keydown(function(event) {

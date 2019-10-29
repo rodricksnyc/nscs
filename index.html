@@ -763,7 +763,41 @@
                               </div>
                               <div class="modal-body mx-3">
 
-                                <label class="checkbox-inline" for="mycheckbox1">
+
+
+                                  <label class="checkbox-inline" for="mycheckbox1">
+                                    <input type="checkbox" id="mycheckbox1" value="" tabindex="0" aria-hidden="false" class="checks">
+                                    <p class="contactInfo">Bureau of Justice Statistics</p>
+                                  </label>
+                                  <br>
+                                  <label class="checkbox-inline" for="mycheckbox2">
+                                    <input type="checkbox" id="mycheckbox2" value="" tabindex="0" aria-hidden="false" class="checks">
+                                    <p class="contactInfo">Westat</p>
+                                  </label>
+
+
+
+                                  <form method="post" data-form-title="CONTACT US">
+
+                                    <div class="form-group">
+                                      <input type="text" class="form-control secondOne" name="name" required="" placeholder="Name*" data-form-field="Name">
+                                    </div>
+                                    <div class="form-group">
+                                      <input type="email" class="form-control secondOne" name="email" required="" placeholder="Email*" data-form-field="Email">
+                                    </div>
+                                    <div class="form-group">
+                                      <input type="tel" class="form-control secondOne" name="phone" placeholder="Phone" data-form-field="Phone">
+                                    </div>
+                                    <div class="form-group">
+                                      <textarea class="form-control thirdOne" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+                                    </div>
+                                    <div>
+                                      <button type="submit" class="btn btn-info button-outlined" id="submitContact" tabindex="0" aria-hidden="false">Submit</button>
+                                    </div>
+                                  </form>
+
+
+                                <!-- <label class="checkbox-inline" for="mycheckbox1">
                                   <input type="checkbox" id="mycheckbox1" value="" tabindex="0" aria-hidden="false" class="checks">
                                   <p class="contactInfo">Bureau of Justice Statistics</p>
                                 </label>
@@ -789,7 +823,7 @@
                                 </div>
 
                                 <div class="md-form">
-                                  <label data-error="wrong" data-success="right" for="form8"><i class="fa fa-pencil prefix grey-text"></i> Your message</label> 
+                                  <label data-error="wrong" data-success="right" for="form8"><i class="fa fa-pencil prefix grey-text"></i> Your message</label>
                                   <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
 
                                 </div>
@@ -797,7 +831,11 @@
                               </div>
                               <div class="modal-footer d-flex justify-content-center">
                                 <button class="btn btn-unique">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
-                              </div>
+                              </div> -->
+                            </div>
+
+                            <div class="modal-footer">
+                              <p class="smaller">*Required Field</p>
                             </div>
                           </div>
                         </div>

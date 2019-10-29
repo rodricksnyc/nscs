@@ -434,6 +434,94 @@ ul.discs li::before {
   text-align: center;
 }
 
+.form-control.secondOne {
+    display: block;
+    width: 100%;
+    height: calc(2rem + 2px);
+    padding: 15px 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .3rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-align: left;
+    margin: 0em;
+    font-family: 'Montserrat', sans-serif;
+}
+.form-control.thirdOne {
+    display: block;
+    width: 100%;
+    height: calc(8rem + 2px);
+    padding: 15px 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .3rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-align: left;
+    margin: 0em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.btn-info {
+  background-image: linear-gradient(to top, #404040, #505050, #606060, #727272, #838383);
+  font-size:18px;
+  color:white;
+  width:130px;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-info:hover {
+  background-image: linear-gradient(to top, #404040, #505050, #606060, #727272, #838383);
+  font-size:18px;
+  color:white;
+  width:130px;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  background-position: 0 0px;
+}
+
+ .button-outlined:focus {
+  background-color: white !important;
+  border: 1px solid #008488 !important;
+}
+
+.contactInfo {
+    font-weight: 500;
+    color: black;
+    font-size: 18px;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: none;
+}
+
+h1#smaller {
+    font-size: 26px !important;
+    color: #CB4C45;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+}
+
+.modal-content {
+  background: rgb(241, 241, 241);
+  padding-bottom:5em;
+}
+
 .form-control:focus {
   box-shadow: none;
 }
