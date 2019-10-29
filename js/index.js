@@ -878,6 +878,24 @@ $('.tealBox.third').on('click', function() {
   // }
 
 
+
+  $(".mandatoryfields").on("keyup", function () {
+      if(!$('#name').val() == '' && !$('#email').val() =='')    {
+
+        console.log('ergkuberiubgierubgiberierbgiu')
+      $('#submitContact').css('background-image' , 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)')
+    }
+  else{
+    console.log("iiiiii")
+      $('#submitContact').css('background-image' , 'linear-gradient(to top, #404040, #505050, #606060, #727272, #838383);')
+    }
+
+  });
+
+
+
+
+
   $('.checks').on('keypress', function(event) {
     if (event.which === 13) {
       this.checked = !this.checked;
@@ -885,13 +903,13 @@ $('.tealBox.third').on('click', function() {
   });
 
 
-$('.btn-info').on('click', function() {
-    $('.btn-info').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)')
-})
+// $('.btn-info').on('click', function() {
+//     $('.btn-info').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)')
+// })
 
 
   $('#accessCode1').keydown(function(event) {
-    $('.button-default').css('background', '#008488');
+    $('.button-default').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
 
 
     $(".button-default").mouseenter(function() {
@@ -900,7 +918,7 @@ $('.btn-info').on('click', function() {
 
 
     $(".button-default").mouseleave(function() {
-      $(this).css('background', '#008488')
+      $(this).css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)')
     });
 
   });

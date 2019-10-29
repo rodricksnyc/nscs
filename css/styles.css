@@ -493,6 +493,11 @@ ul.discs li::before {
   background-position: 0 0px;
 }
 
+.btn-info:focus {
+  background-position: 0 0px;
+    background-image: linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)
+}
+
  .button-outlined:focus {
   background-color: white !important;
   border: 1px solid #008488 !important;
@@ -1297,6 +1302,13 @@ hr {
     /* top: -110px; */
     /* bottom: 100px; */
 }
+
+
+.modal-dialog {
+    width: 65%;
+    margin: 30px auto;
+}
+
 
 @media (min-width:2700px) {
   .about1 {
