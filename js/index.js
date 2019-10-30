@@ -1068,7 +1068,7 @@ $(document).ready(function () {
   if ($(document).innerWidth() <= 991) {
 
 
-    
+
     $('input, textarea').focus(function () {
       $('html, body').animate({ scrollTop: ($('input, textarea').offset().top - 300) }, 500);
       return false;
