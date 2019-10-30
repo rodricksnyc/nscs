@@ -82,22 +82,22 @@ h2.smaller {
 
 
 .bottomModal {
-    margin-top: 0em;
-    margin-bottom: 0em;
+  margin-top: 0em;
+  margin-bottom: 0em;
 
-    padding-top: .2em;
-    padding-bottom: .2em;
+  padding-top: .2em;
+  padding-bottom: .2em;
 }
 
 .close {
-    float: right;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 1;
-    color: #000;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
 
-    filter: alpha(opacity=20);
-    opacity: .75;
+  filter: alpha(opacity=20);
+  opacity: .75;
 }
 
 .landing {
@@ -360,39 +360,39 @@ span.blue.card {
 }
 
 .modal-footer {
-    padding: 15px;
-    text-align: right;
-    border-top: none;
-    margin-left:2em;
-    margin-right:2em;
+  padding: 15px;
+  text-align: right;
+  border-top: none;
+  margin-left:2em;
+  margin-right:2em;
 }
 
 ul.discs {
-    list-style: none;
-    font-size: 22px;
-    color: #404040;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  font-size: 22px;
+  color: #404040;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul.discs li::before {
 
   content: "\f0da";
-    font-family: "FontAwesome";
+  font-family: "FontAwesome";
 
-    color: #CB4C45;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    font-size:14px;
-    margin-left: 0em;
+  color: #CB4C45;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  font-size:14px;
+  margin-left: 0em;
 }
 
 .modal-body {
-    position: relative;
-    padding: 15px;
-    margin-left: 2em;
-    margin-right: 2em;
+  position: relative;
+  padding: 15px;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 
@@ -435,40 +435,40 @@ ul.discs li::before {
 }
 
 .form-control.secondOne {
-    display: block;
-    width: 100%;
-    height: calc(2rem + 2px);
-    padding: 15px 15px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .3rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    text-align: left;
-    margin: 0em;
-    font-family: 'Montserrat', sans-serif;
+  display: block;
+  width: 100%;
+  height: calc(2rem + 2px);
+  padding: 15px 15px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .3rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  text-align: left;
+  margin: 0em;
+  font-family: 'Montserrat', sans-serif;
 }
 .form-control.thirdOne {
-    display: block;
-    width: 100%;
-    height: calc(8rem + 2px);
-    padding: 15px 15px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .3rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    text-align: left;
-    margin: 0em;
-    font-family: 'Montserrat', sans-serif;
+  display: block;
+  width: 100%;
+  height: calc(8rem + 2px);
+  padding: 15px 15px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .3rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  text-align: left;
+  margin: 0em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -498,28 +498,28 @@ ul.discs li::before {
   background-image: linear-gradient(to top, #404040, #505050, #606060, #727272, #838383);
 }
 
- .button-outlined:focus {
+.button-outlined:focus {
   background-color: white !important;
   border: none;
 }
 
 .contactInfo {
-    font-weight: 500;
-    color: black;
-    font-size: 18px;
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
 }
 
 .modal-header {
-    padding: 15px;
-    border-bottom: none;
+  padding: 15px;
+  border-bottom: none;
 }
 
 h1#smaller {
-    font-size: 26px !important;
-    color: #CB4C45;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 0px;
+  font-size: 26px !important;
+  color: #CB4C45;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0px;
 }
 
 .modal-content {
@@ -1283,30 +1283,30 @@ hr {
 }
 
 .print3 {
-    max-width: 250px;
-    position: absolute;
-    left: 30%;
-    /* top: 705px; */
+  max-width: 250px;
+  position: absolute;
+  left: 30%;
+  /* top: 705px; */
 
-    /* bottom: -500px; */
-    top: -200px;
+  /* bottom: -500px; */
+  top: -200px;
 }
 
 .fingerDiv3 {
-    position: absolute;
-    z-index: -1;
-    /* bottom: 38px; */
-    /* margin-bottom: 10em; */
-    left: -32px;
-    /* top: -90px; */
-    /* top: -110px; */
-    /* bottom: 100px; */
+  position: absolute;
+  z-index: -1;
+  /* bottom: 38px; */
+  /* margin-bottom: 10em; */
+  left: -32px;
+  /* top: -90px; */
+  /* top: -110px; */
+  /* bottom: 100px; */
 }
 
 
 .modal-dialog {
-    width: 65%;
-    margin: 30px auto;
+  width: 65%;
+  margin: 30px auto;
 }
 
 
@@ -1466,8 +1466,8 @@ hr {
 
   .modal-body {
 
-      margin-left: 0em;
-      margin-right: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
   }
 
 
@@ -1591,6 +1591,15 @@ hr {
 
 
 @media (max-width:991px) and (min-width:768px) {
+  section {
+      margin-left: 2em;
+      margin-right: 2em;
+  }
+
+.modal-dialog {
+    width: 90%;
+    margin: 30px auto;
+}
 
   .fingerDiv {
     position: absolute;
@@ -1665,7 +1674,12 @@ hr {
   }
 
   .tealBox {
-    height: 150px;
+    height: 125px;
+    margin-top:-150px;
+  }
+
+  .tealBox:hover {
+    height: 125px;
     margin-top:-150px;
   }
 
@@ -1866,10 +1880,27 @@ hr {
 
 @media (max-width:767px) {
 
+  .w1200 {
+      padding-left: 0em;
+      padding-right: 0em;
+      max-width: 1200px;
+  }
 
-.md-form .form-control {
-  width: 100%;
+  .modal-dialog {
+    width: 100%;
+    margin: 30px auto;
 }
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: none;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+  .md-form .form-control {
+    width: 100%;
+  }
 
   .landing-panel.new {
     max-height: none;
@@ -2400,12 +2431,12 @@ hr {
     color: #404040;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-}
+  }
 
-section {
-  margin-left:1em;
-  margin-right:1em;
-}
+  section {
+    margin-left:1em;
+    margin-right:1em;
+  }
 
 }
 
