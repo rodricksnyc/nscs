@@ -722,6 +722,7 @@ h1#smaller {
   z-index: 999;
   padding-bottom: 2em;
   max-height: 680px;
+  width:auto !important;
 }
 
 .modal-dialog {

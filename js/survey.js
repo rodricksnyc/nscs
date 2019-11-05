@@ -73,6 +73,21 @@ $( document ).ready(function() {
 
   $('#one').on('click', function() {
 
+
+    // if ($('.modal').hasClass('fade in')) {
+    //
+    //   console.log("scuks")
+    //
+    //   $('.modal').hide();
+    //   $('.modal-backdrop').hide();
+    //
+    // }
+    //
+    // else {
+    //   $('.modal').show();
+    //   $('.modal-backdrop').show();
+    // }
+
     $('.modalFooter').hide();
 
     $(".faqTab").removeClass('lightBlue')
@@ -141,6 +156,24 @@ $( document ).ready(function() {
 
 
   $('#two').on('click', function() {
+
+
+
+    // if ($('.modal').hasClass('fade in')) {
+    //
+    //
+    // console.log("scuks2")
+    //
+    //
+    //   $('.modal').hide();
+    //   $('.modal-backdrop').hide();
+    //
+    // }
+    //
+    // else {
+    //   $('.modal').show();
+    //   $('.modal-backdrop').show();
+    // }
 
     $('.modalFooter').hide();
 
@@ -236,6 +269,8 @@ $( document ).ready(function() {
 
   $('#close').on('click', function() {
 
+
+
     $('.modalFooter').hide();
 
     // $('.firstBlock').addClass('unset');
@@ -297,6 +332,11 @@ $( document ).ready(function() {
 
 
   })
+
+
+
+
+
 
   if ($(document).innerWidth() >= 768) {
 

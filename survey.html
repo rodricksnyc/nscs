@@ -322,7 +322,7 @@
                             <textarea class="form-control required thirdOne mandatoryfields" name="message" placeholder="Message*" rows="7" data-form-field="Message" id="message" required/></textarea>
                           </div>
                           <div>
-                            <button type="submit" class="btn btn-info button-outlined" id="submitContact" tabindex="0" aria-hidden="false">Submit</button>
+                          <button type="submit" class="btn btn-info button-outlined" tabindex="0" aria-hidden="false" onclick="setTimeout(function () { window.location.reload(); }, 3)">Submit</button>
                           </div>
                         </form>
 
@@ -426,6 +426,20 @@
 
           $("#submit-form").on("submit",function() {
             console.log('fucker1')
+
+
+            //do ajax
+            $.ajax({
+              url:'survey.html',
+              type:post,
+              success:function() {
+                location.reload();
+              }
+            });
+          });
+
+          $("#theform").on("submit",function() {
+            console.log('fucker2')
 
 
             //do ajax
