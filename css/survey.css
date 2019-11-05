@@ -618,13 +618,21 @@ p.white {
 }
 
 
+.modal {
+  z-index: 99999;
+}
+
+.modal-backdrop {
+  z-index: 99998;
+}
+
 /* expanding line animation */
 .long {
   max-width:52px;
 }
 
 .longer {
-  max-width:94px;
+  max-width:70px;
 }
 .example .hover {
 
@@ -2164,6 +2172,11 @@ border-top:2px solid transparent;
     height: 100%;
     width: 100%;
     right: 0;
+  }
+
+  p.white {
+    color:white;
+    padding: 0;
   }
 
 

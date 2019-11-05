@@ -73,7 +73,7 @@ $( document ).ready(function() {
 
   $('#one').on('click', function() {
 
-
+$('#myModal').modal('hide')
     // if ($('.modal').hasClass('fade in')) {
     //
     //   console.log("scuks")
@@ -157,7 +157,7 @@ $( document ).ready(function() {
 
   $('#two').on('click', function() {
 
-
+    $('#myModal').modal('hide')
 
     // if ($('.modal').hasClass('fade in')) {
     //
@@ -334,6 +334,74 @@ $( document ).ready(function() {
   })
 
 
+  $('.circle.third.show').on('click', function() {
+
+
+
+    $('.modalFooter').hide();
+
+    // $('.firstBlock').addClass('unset');
+
+    $('p.white').addClass('hover hover-1');
+
+    setTimeout(function() {
+      $(".secondBlock").addClass('hide2').removeClass('animated fadeIn').hide();
+      $(".firstBlock").addClass('hide1').removeClass('animated fadeIn').hide();
+      $(".thirdBlock").addClass('hide3').removeClass('animated fadeIn').hide();
+    },600)
+
+
+    //
+    // setTimeout(function() {
+    //   $('.thirdBlock').addClass('flexing-scroll');
+    //   $('.secondBlock').addClass('flexing-scroll');
+    // }, 600)
+
+    $('#one').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
+    $('#two').css('background', 'linear-gradient(180deg, rgba(0,170,170,1) 0%, rgba(0,132,136,1) 100%)');
+    $('#one p.white').css('color', 'white');
+    $('#two p.white').css('color', 'white');
+
+    $('#one').removeClass('bottomShadowDarker');
+    $('#one').removeClass('bottomDark');
+    $('#one').addClass('bottomShadow');
+    $('#two').addClass('bottomShadow');
+
+    $('#two').removeClass('bottomShadowDarker');
+    $('#two').removeClass('bottomDark');
+
+    $('.fa.fa-envelope-o').css('color', 'white');
+
+
+    $(".faqTab").css('width', '54px');
+    $(".contactTab").css('width', '54px');
+    // $('#one').removeClass('dropshad2');
+    // $('#two').removeClass('dropshad');
+    // $('#one').removeClass('dropshad');
+    // $('#two').removeClass('dropshad2');
+
+    // $('#two').css('right', '5px');
+    // $('#one').css('right', '7px');
+
+
+    $('.modal-content').css('box-shadow', 'none')
+
+    $("#slideOut").removeClass('showSlideOut');
+
+    $('#one').css('z-index', '999');
+    $('#two').css('z-index', '99');
+
+
+    $(".faqTab").addClass('lightBlue')
+
+    $(".contactTab").attr('src',"images/Contact_tab_OFF.svg");
+    $(".faqTab").attr('src',"images/FAQ_tab_OFF.svg");
+
+
+  })
+
+
+
 
 
 
@@ -352,6 +420,8 @@ $( document ).ready(function() {
 
     // $('#slideOut').on('focus', function(e){
     $('#one').keyup(function (e) {
+
+      $('#smaller').html('Frequently Asked Questions')
       var code = (e.keyCode ? e.keyCode : e.which);
       if (code == 13) {
 
@@ -410,6 +480,8 @@ $( document ).ready(function() {
     $('#two').keyup(function (e) {
       var code = (e.keyCode ? e.keyCode : e.which);
       if (code == 13) {
+
+          $('#smaller').html('For more information about this study, please contact:')
 
         $("#slideOut").addClass('showSlideOut');
         $(".secondBlock").removeClass('hide2').addClass('animated fadeIn').show();
