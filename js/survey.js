@@ -337,7 +337,6 @@ $('#myModal').modal('hide')
   $('.circle.third.show').on('click', function() {
 
 
-
     $('.modalFooter').hide();
 
     // $('.firstBlock').addClass('unset');

@@ -922,7 +922,7 @@ $(document).ready(function () {
   });
 
 
-
+  
   $('.checks').on('keypress', function(event) {
     if (event.which === 13) {
       this.checked = !this.checked;
