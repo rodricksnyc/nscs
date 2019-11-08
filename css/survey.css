@@ -618,6 +618,34 @@ p.white {
 }
 
 
+#one:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+    opacity: 1;
+}
+
+#one:visited {
+    outline: none;
+}
+
+#one:active {
+    outline: none;
+}
+
+#two:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+    opacity: 1;
+}
+
+#two:visited {
+    outline: none;
+}
+
+#two:active {
+    outline: none;
+}
+
 .modal {
   z-index: 99999;
 }

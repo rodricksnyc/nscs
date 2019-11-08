@@ -73,7 +73,18 @@ $( document ).ready(function() {
 
   $('#one').on('click', function() {
 
-$('#myModal').modal('hide')
+  $('#one').css('outline', 'none')
+  $('#two').css('outline', 'none')
+
+    $('.panel-collapse').each(function() {
+      $(this).attr('tabindex', '0');
+    });
+
+    $('.aqua').attr('tabindex', '0');
+    $('.checks').attr('tabindex', '0');
+    $('#submitContact').attr('tabindex', '0');
+
+    $('#myModal').modal('hide')
     // if ($('.modal').hasClass('fade in')) {
     //
     //   console.log("scuks")
@@ -157,7 +168,19 @@ $('#myModal').modal('hide')
 
   $('#two').on('click', function() {
 
+    $('.panel-collapse').each(function() {
+      $(this).attr('tabindex', '0');
+    });
+
+    $('.aqua').attr('tabindex', '0');
+    $('.checks').attr('tabindex', '0');
+    $('#submitContact').attr('tabindex', '0');
+
     $('#myModal').modal('hide')
+
+
+    $('#one').css('outline', 'none')
+    $('#two').css('outline', 'none')
 
     // if ($('.modal').hasClass('fade in')) {
     //
@@ -269,7 +292,12 @@ $('#myModal').modal('hide')
 
   $('#close').on('click', function() {
 
-
+    $('.panel-collapse').each(function() {
+      $(this).attr('tabindex', '-1');
+    });
+    $('.aqua').attr('tabindex', '-1');
+    $('.checks').attr('tabindex', '-1');
+    $('#submitContact').attr('tabindex', '-1');
 
     $('.modalFooter').hide();
 
@@ -424,6 +452,14 @@ $('#myModal').modal('hide')
       var code = (e.keyCode ? e.keyCode : e.which);
       if (code == 13) {
 
+        $('.panel-collapse').each(function() {
+          $(this).attr('tabindex', '0');
+        });
+
+        $('.aqua').attr('tabindex', '0');
+        $('.checks').attr('tabindex', '0');
+        $('#submitContact').attr('tabindex', '0');
+
         $("#slideOut").addClass('showSlideOut');
         $(".secondBlock").addClass('hide2').removeClass('animated fadeIn').hide();
 
@@ -480,7 +516,15 @@ $('#myModal').modal('hide')
       var code = (e.keyCode ? e.keyCode : e.which);
       if (code == 13) {
 
-          $('#smaller').html('For more information about this study, please contact:')
+        $('.panel-collapse').each(function() {
+          $(this).attr('tabindex', '0');
+        });
+
+        $('.aqua').attr('tabindex', '0');
+        $('.checks').attr('tabindex', '0');
+        $('#submitContact').attr('tabindex', '0');
+
+        $('#smaller').html('For more information about this study, please contact:')
 
         $("#slideOut").addClass('showSlideOut');
         $(".secondBlock").removeClass('hide2').addClass('animated fadeIn').show();
@@ -494,6 +538,14 @@ $('#myModal').modal('hide')
     $('#closeThisPlease').keyup(function (e) {
       var code = (e.keyCode ? e.keyCode : e.which);
       if (code == 13) {
+
+        $('.panel-collapse').each(function() {
+          $(this).attr('tabindex', '-1');
+        });
+
+        $('.aqua').attr('tabindex', '-1');
+        $('.checks').attr('tabindex', '-1');
+        $('#submitContact').attr('tabindex', '-1');
 
         $("#slideOut").removeClass('showSlideOut');
         $("#slideOut").css("right" , -$('#slideOut').outerWidth() + 15);
