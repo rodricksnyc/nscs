@@ -40,41 +40,42 @@
           <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
 
             <div class="surveyContent">
-              <div class="surveyContentInner">
-                <div class="redLineTop"></div>
-
-                <div class="question">
-                  <p class="small">Next are some questions about experiences you may have had with the police in your area during the past 12 months, that is, since October 11, 2018. Please include experiences with police officers, sheriff&rsquo;s deputies, state troopers, or school resource officers, but not with guards or other security personnel who are not part of the police.</p>
-
-                </div>
-                <div class="choices">
-
-                  <label class="checkbox-inline" for="mycheckbox">
-                    <input type="checkbox" id="mycheckbox" value="" tabindex="1" aria-hidden="false" class="checks">
-                    <p class="contactInfo">Choice 1</p>
-                  </label>
-                  <br>
-                  <label class="checkbox-inline" for="mycheckbox0">
-                    <input type="checkbox" id="mycheckbox0" value="" tabindex="1" aria-hidden="false" class="checks">
-                    <p class="contactInfo">Choice 2</p>
-                  </label>
-
-                </div>
-
-
-                <div class="redLineBottom"></div>
-                <div class="start">
-
-                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                    <button type="button" class="btn btn-light button-outlined" id="prev" tabindex="1" aria-hidden="false">&#x3c;&nbsp;&nbsp;Previous</button>
-                    <div class="aquaLine"></div>
+              <div class="surveyVertical">
+                <div class="surveyContentInner">
+                  <div class="redLineTop"></div>
+                  <div class="question">
+                    <p class="small">Next are some questions about experiences you may have had with the police in your area during the past 12 months, that is, since October 11, 2018. Please include experiences with police officers, sheriff&rsquo;s deputies, state troopers, or school resource officers, but not with guards or other security personnel who are not part of the police.</p>
 
                   </div>
-                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                    <button type="button" class="btn btn-info button-outlined" id="next" tabindex="1" aria-hidden="false">Next&nbsp;&nbsp;&#x3e;</button>
-                    <div class="aquaLine"></div>
+                  <div class="choices">
+
+                    <label class="checkbox-inline" for="mycheckbox">
+                      <input type="checkbox" id="mycheckbox" value="" tabindex="1" aria-hidden="false" class="checks">
+                      <p class="contactInfo">Choice 1</p>
+                    </label>
+                    <br>
+                    <label class="checkbox-inline" for="mycheckbox0">
+                      <input type="checkbox" id="mycheckbox0" value="" tabindex="1" aria-hidden="false" class="checks">
+                      <p class="contactInfo">Choice 2</p>
+                    </label>
+
                   </div>
 
+
+                  <div class="redLineBottom"></div>
+                  <div class="start">
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                      <button type="button" class="btn btn-light button-outlined" id="prev" tabindex="1" aria-hidden="false">&#x3c;&nbsp;&nbsp;Previous</button>
+                      <div class="aquaLine"></div>
+
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                      <button type="button" class="btn btn-info button-outlined" id="next" tabindex="1" aria-hidden="false">Next&nbsp;&nbsp;&#x3e;</button>
+                      <div class="aquaLine"></div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
@@ -126,9 +127,9 @@
                 <div class="modal-content" id="thisModal">
                   <div class="modal-header">
 
-                    <a href="#closeThisPlease">
+                    <div class="closeThisPlease" id="close">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeThisPlease" tabindex="0" aria-hidden="false">
-                        <span id="close" aria-hidden="true">
+                        <span aria-hidden="true">
                           <div class="circCont">
                             <div class="circleClose fromMiddle" data-animation="magnify">
                               <span></span>
@@ -136,7 +137,7 @@
                           </div>
                         </span>
                       </button>
-                    </a>
+                    </div>
                     <br>
                     <center>
                       <h1 class="p1" id="smaller">Frequently Asked Questions</h1>

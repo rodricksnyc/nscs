@@ -189,7 +189,7 @@ $( document ).ready(function() {
     $('.modal-content').css('box-shadow', '0 3px 9px rgba(0, 0, 0, .6)')
 
 
-    $('#smaller').html('Support for Victims')
+    $('#smaller').html('Help for Victims')
 
     // $('#smaller').html('For more information about this study, please contact:')
 
@@ -224,8 +224,29 @@ $( document ).ready(function() {
     }
   });
 
+  $('#prev').on('click', function() {
+
+    $('#prev').css('outline', 'none')
+
+  })
+
+
+  $('#next').on('click', function() {
+
+    $('#next').css('outline', 'none')
+
+  })
+
+  $('#close').on('focus', function() {
+
+    $('#closeThisPlease').css('outline', '5px auto -webkit-focus-ring-color')
+
+  })
 
   $('#close').on('click', function() {
+
+    $('#closeThisPlease').css('outline', 'none')
+
 
     $('.panel-collapse').each(function() {
       $(this).attr('tabindex', '-1');
@@ -469,13 +490,16 @@ $( document ).ready(function() {
     });
 
 
-    $('#closeThisPlease').keyup(function (e) {
+
+    $('.closeThisPlease').keyup(function (e) {
       var code = (e.keyCode ? e.keyCode : e.which);
       if (code == 13) {
 
         $('.panel-collapse').each(function() {
           $(this).attr('tabindex', '-1');
         });
+
+
 
         $('.vertical2 a').attr('tabindex', '-1');
 
@@ -689,7 +713,7 @@ $( document ).ready(function() {
 
       $('.wrapper').hide();
 
-      $('#smaller').html('For more information about this study, please contact:')
+      $('#smaller').html('Help for Victims')
 
       $("#slideOut").css('opacity', '1')
 

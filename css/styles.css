@@ -1206,11 +1206,13 @@ hr {
   max-height:80px;
   max-width:80px;
   margin-right:1em;
+  width:100%;
 }
 
 .footer2 {
   max-height:80px;
   max-width:150px;
+  width:100%;
 }
 
 .fadableElement {
@@ -1592,14 +1594,14 @@ hr {
 
 @media (max-width:991px) and (min-width:768px) {
   section {
-      margin-left: 2em;
-      margin-right: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 
-.modal-dialog {
+  .modal-dialog {
     width: 90%;
     margin: 30px auto;
-}
+  }
 
   .fingerDiv {
     position: absolute;
@@ -1881,23 +1883,23 @@ hr {
 @media (max-width:767px) {
 
   .w1200 {
-      padding-left: 0em;
-      padding-right: 0em;
-      max-width: 1200px;
+    padding-left: 0em;
+    padding-right: 0em;
+    max-width: 1200px;
   }
 
   .modal-dialog {
     width: 100%;
     margin: 30px auto;
-}
+  }
 
-.modal-footer {
+  .modal-footer {
     padding: 15px;
     text-align: right;
     border-top: none;
     margin-left: 0em;
     margin-right: 0em;
-}
+  }
   .md-form .form-control {
     width: 100%;
   }
