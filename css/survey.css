@@ -102,6 +102,66 @@ h1.modalHeader {
   z-index: 9999999;
 }
 
+h6.smaller.red {
+  font-size: 18px !important;
+  color: #CB4C45;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0px;
+  text-align: left;
+  margin-top:0px;
+}
+h6.smaller.blue {
+  color: #004568;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 5px;
+  text-align: left;
+  margin-top:0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fas.fa-external-link-alt {
+  color: #00AAAA;
+  font-size:13px;
+}
+
+.vertical2 {
+  margin-top:15px;
+}
+
+.aquaNumber {
+  color: #00AAAA;
+  text-decoration: underline;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0px;
+  text-align: left;
+  margin-top:0px;
+}
+
+.aquaSite {
+  color: #00AAAA;
+  text-decoration: underline;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0px;
+  text-align: left;
+  margin-top:0px;
+  word-break: break-word;
+}
+
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 2px solid #eee;
+  width: 100%;
+}
+
 
 body {
   overflow:hidden;
@@ -141,6 +201,8 @@ body {
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   z-index:9999;
   margin-top:4%;
+  margin-bottom:3em;
+
 }
 .modal-content {
   position: relative;
@@ -155,7 +217,8 @@ body {
   box-shadow: none;
   z-index: 999;
   padding-bottom: 15em;
-  max-height: 680px;
+  max-height: 900px;
+overflow-y: scroll;
 }
 
 .wrapBorder {
@@ -165,6 +228,10 @@ body {
   left: 0px;
   padding: 0px;
   height: 90%;
+}
+
+main {
+  padding-bottom:1em;
 }
 
 a{
@@ -188,7 +255,20 @@ a.emailUs {
   outline:none;
 }
 
-
+.landing-panel.small {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  -webkit-box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
+  -moz-box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
+  box-shadow: 12px 8px 42px -9px rgba(0,0,0,0.54);
+  padding: 2em 2em 1em 2em;
+  background-repeat: no-repeat;
+  background-position: center 1.5rem;
+  transition: 0.4s all;
+  height: auto;
+  width: auto;
+}
 
 .tooltip-inner {
   background:white;
@@ -600,7 +680,7 @@ h2.smaller {
 
 p.white {
   color:white;
-  padding: .2em 0em .2em 0em;
+  padding: .1em 0em .2em 0em;
 }
 
 .cent {
@@ -619,31 +699,31 @@ p.white {
 
 
 #one:focus {
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
-    opacity: 1;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  opacity: 1;
 }
 
 #one:visited {
-    outline: none;
+  outline: none;
 }
 
 #one:active {
-    outline: none;
+  outline: none;
 }
 
 #two:focus {
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
-    opacity: 1;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  opacity: 1;
 }
 
 #two:visited {
-    outline: none;
+  outline: none;
 }
 
 #two:active {
-    outline: none;
+  outline: none;
 }
 
 .modal {
@@ -762,7 +842,7 @@ h1#smaller {
 }
 
 .modal-dialog {
-  width: 65%;
+  width: 80%;
   margin: 100px auto;
 }
 
@@ -1362,7 +1442,7 @@ h1#smaller {
   background: white;
   padding: 5em 3em;
   max-width: 75%;
-
+  margin-bottom: 3em;
 }
 
 
@@ -1839,12 +1919,12 @@ border-top:2px solid transparent;
   }
   .modal-content {
     padding-bottom:10em;
-    max-height:690px;
+    max-height:900px;
   }
 
-  .landing-panel.small {
-    max-height: 340px;
-  }
+  /* .landing-panel.small {
+  max-height: 340px;
+  } */
 
   .modal-content.secondOne {
     width:auto !important;
@@ -2162,15 +2242,12 @@ border-top:2px solid transparent;
     transform: rotate(180deg);
   }
 
-  #mobileModal {
-    /* max-height: calc(100vh - 100px);
-    overflow-y: auto; */
-  }
+
 
   .modal-body {
     height: 100%;
     height: auto;
-    padding: 0em 2em 5em 2em;
+    padding: 0em 1em 5em 1em;
   }
 
   .panel-group .panel {
@@ -2188,7 +2265,12 @@ border-top:2px solid transparent;
   }
 
   .landing-panel.small {
-    padding: .2em 1em .5em 1em;
+    padding: 1em 1em .5em 1em;
+
+  }
+
+  .mmb3 {
+    margin-bottom:3em !important;
   }
 
   .wrapBorder {
