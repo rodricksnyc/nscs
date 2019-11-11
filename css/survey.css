@@ -218,7 +218,7 @@ body {
   z-index: 999;
   padding-bottom: 15em;
   height: 860px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .wrapBorder {

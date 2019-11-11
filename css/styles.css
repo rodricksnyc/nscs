@@ -417,11 +417,16 @@ ul.discs li::before {
   color:#404040 !important;
 }
 
+.form-control:-ms-input-placeholder {
+  color:#404040 !important;
+  font-size: 18px;
+}
+
 .form-control {
   display: block;
   width: 63%;
   height: calc(4rem + 2px);
-  padding: 20px 20px;
+  padding: 0;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
@@ -432,6 +437,22 @@ ul.discs li::before {
   border-radius: .5rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   text-align: center;
+
+}
+
+input::-ms-clear, input::-ms-reveal {
+    display: none;
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   .form-control{
+     height: 42px;
+   }
+   .form-control.secondOne{
+     height: calc(2rem + 25px) !important;
+     padding: 10px 15px !important;
+   }
 }
 
 .form-control.secondOne {
@@ -451,6 +472,7 @@ ul.discs li::before {
   text-align: left;
   margin: 0em;
   font-family: 'Montserrat', sans-serif;
+
 }
 .form-control.thirdOne {
   display: block;
@@ -469,6 +491,7 @@ ul.discs li::before {
   text-align: left;
   margin: 0em;
   font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -1700,7 +1723,7 @@ hr {
   }
 
   .tealBox:hover {
-    height: 150px;
+    height: 125px;
     margin-top:-150px;
   }
 
