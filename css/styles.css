@@ -441,18 +441,18 @@ ul.discs li::before {
 }
 
 input::-ms-clear, input::-ms-reveal {
-    display: none;
+  display: none;
 }
 
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-   .form-control{
-     height: 42px;
-   }
-   .form-control.secondOne{
-     height: calc(2rem + 25px) !important;
-     padding: 10px 15px !important;
-   }
+  .form-control{
+    height: 42px;
+  }
+  .form-control.secondOne{
+    height: calc(2rem + 25px) !important;
+    padding: 10px 15px !important;
+  }
 }
 
 .form-control.secondOne {
@@ -678,9 +678,8 @@ h1#smaller {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-
-
 }
+
 
 .vertical {
   display: -webkit-flex;
@@ -1143,8 +1142,10 @@ hr {
 }
 
 .phone {
-  max-width:22px;
-  max-height:22px
+  max-width: 24px;
+  max-height: 22px;
+  margin-top: 5px;
+
 }
 
 .circle.activate {

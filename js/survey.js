@@ -500,7 +500,6 @@ $( document ).ready(function() {
         });
 
 
-
         $('.vertical2 a').attr('tabindex', '-1');
 
         // $('.aqua').attr('tabindex', '-1');
