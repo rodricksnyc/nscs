@@ -1,0 +1,483 @@
+<!doctype html>
+<html style="overflow-x: hidden;">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/survey.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+  <a href="#content" class="sr-only">Skip to main content</a>
+  <div id="main-wrapper">
+    <a name="content"></a>
+
+    <main style="position:relative">
+      <div class="container-fluid padding-0">
+        <div class="row">
+          <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+            <header class="landing2">
+              <div class="title2 text-center">National Survey of Crime and Safety</div>
+            </header>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+
+            <div class="surveyContent">
+              <div class="surveyVertical">
+                <div class="surveyContentInner">
+                  <div class="redLineTop"></div>
+                  <div class="question">
+                    <p class="small">Next are some questions about experiences you may have had with the police in your area during the past 12 months, that is, since October 11, 2018. Please include experiences with police officers, sheriff&rsquo;s deputies, state troopers, or school resource officers, but not with guards or other security personnel who are not part of the police.</p>
+
+                  </div>
+                  <div class="choices">
+
+                    <label class="checkbox-inline" for="mycheckbox">
+                      <input type="checkbox" id="mycheckbox" value="" tabindex="1" aria-hidden="false" class="checks">
+                      <p class="contactInfo">Choice 1</p>
+                    </label>
+                    <br>
+                    <label class="checkbox-inline" for="mycheckbox0">
+                      <input type="checkbox" id="mycheckbox0" value="" tabindex="1" aria-hidden="false" class="checks">
+                      <p class="contactInfo">Choice 2</p>
+                    </label>
+
+                  </div>
+
+
+                  <div class="redLineBottom"></div>
+                  <div class="start">
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                      <button type="button" class="btn btn-light button-outlined" id="prev" tabindex="1" aria-hidden="false">&#x3c;&nbsp;&nbsp;Previous</button>
+                      <div class="aquaLine"></div>
+
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                      <button type="button" class="btn btn-info button-outlined" id="next" tabindex="1" aria-hidden="false">Next&nbsp;&nbsp;&#x3e;</button>
+                      <div class="aquaLine"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="row stickBottomMobile">
+          <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="center" id="boxes">
+
+              <div class="tealBox survey one toggleModal1">
+                <i class="fa fa-angle-up firstAngle"></i><p class="white">FAQ</p>
+              </div>
+
+              <div class="tealBox survey toggleModal2">
+                <i class="fa fa-angle-up secondAngle"></i><p class="white">Help for Victims</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+            <div id="slideOut">
+              <div class="slideOutTab one">
+                <div id="one" class="bottomShadow example" data-toggle="tab" aria-controls="right-nav-contact" aria-selected="false" tabindex="0">
+                  <center>
+                    <div class="long">
+                      <p class="white first hover hover-1">FAQ ?</p>
+                    </div>
+                  </center>
+                </div>
+
+                <div id="two" class="bottomShadow example" data-dismiss="modal" data-toggle="tab" aria-controls="right-nav-contact" aria-selected="false" tabindex="0">
+                  <center>
+                    <div class="longer">
+                      <p class="white second hover hover-1">Help for Victims</p>
+                    </div>
+                  </center>
+                </div>
+              </div>
+
+              <div class="wrapBorder">
+                <div class="modal-content" id="thisModal">
+                  <div class="modal-header">
+
+                    <div class="closeThisPlease" id="close">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeThisPlease" tabindex="0" aria-hidden="false">
+                        <span aria-hidden="true">
+                          <div class="circCont">
+                            <div class="circleClose fromMiddle" data-animation="magnify">
+                              <span></span>
+                            </div>
+                          </div>
+                        </span>
+                      </button>
+                    </div>
+                    <br>
+                    <center>
+                      <h1 class="p1" id="smaller">Frequently Asked Questions</h1>
+                    </center>
+                  </div>
+
+                  <div class="modal-body">
+
+                    <div class="row firstBlock">
+                      <div class="col-xs-12 col-lg-12">
+                        <div class="wrapper center-block">
+                          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is this survey about?
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" tabindex="-1" aria-hidden="false">
+                                <div class="panel-body">
+                                  <p class="small mobileFont">The NSCS asks about people&rsquo;s experiences with crime in the last 12 months, regardless of whether these experiences were reported to the police. The survey is asked of adults and youth age 12 or older in selected U.S. households.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Who is conducting this survey?
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" tabindex="-1" aria-hidden="false">
+                                <div class="panel-body">
+                                  <p class="small mobileFont">The Bureau of Justice Statistics within the Department of Justice has asked Westat, a research organization based in Rockville, Maryland, to conduct the study.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How is the information collected?
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" tabindex="-1" aria-hidden="false">
+                                <div class="panel-body">
+                                  <p class="small mobileFont">Someone from Westat will come to your home to interview you and other members of your household.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    How was I selected for this study?
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" tabindex="-1" aria-hidden="false">
+                                <div class="panel-body">
+                                  <p class="small mobileFont">Your address was scientifically selected to be a part of our sample.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How long will the interview take?
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive" tabindex="-1" aria-hidden="false">
+                                <div class="panel-body">
+                                  <p class="small mobileFont">Between 20 &ndash; 40 minutes, depending on your experiences with crime.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    How will my privacy be protected?
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix" tabindex="-1" aria-hidden="false">
+                                <div class="panel-body">
+                                  <p class="small mobileFont">All the information you give to this study will be kept private.</p>
+                                  <ul class="papaya">
+                                    <li>Your answers will not be connected with your name.</li>
+                                    <li>Your name and contact information will be kept separately in secure computer files.</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row secondBlock hide2">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
+                        <div class="landing-panel small mmb3">
+                          <address>
+                            <h6 class="smaller red">Counseling Hotlines:</h6>
+                            <hr>
+                            <div class="vertical2">
+                              <h6 class="smaller blue">Victim Connect</h6>
+                              <div class="startNew">
+                                <img src="images/phone_icon3.png" class="img-responsive phone new" alt="phone icon">
+                                <a class="aquaNumber" href="tel:1-855-484-2846" tabindex="-1" aria-hidden="false">1-855-4-VICTIM</a>
+                              </div>
+                              <a class="aquaSite" href="https://victimconnect.org/" target="_blank" tabindex="-1" aria-hidden="false">www.victimconnect.org <span><i class="fas fa-external-link-alt"></i></span></a>
+                            </div>
+                            <div class="vertical2">
+                              <h6 class="smaller blue">National Domestic Violence Hotline </h6>
+                              <div class="startNew">
+                                <img src="images/phone_icon3.png" class="img-responsive phone new" alt="phone icon">
+                                <a class="aquaNumber" href="tel:1-800-799-7233" tabindex="-1" aria-hidden="false">1-800-799-SAFE</a>
+                              </div>
+                              <div class="startNew">
+                                <img src="images/phone_icon3.png" class="img-responsive phone new" alt="phone icon">
+                                <a class="aquaNumber" href="tel:1-800-787-3224" tabindex="-1" aria-hidden="false">1-800-787-3224 (TTY)</a>
+                              </div>
+                              <a class="aquaSite" href="https://www.thehotline.org/" target="_blank" tabindex="-1" aria-hidden="false">www.thehotline.org <span><i class="fas fa-external-link-alt"></i></span></a>
+                            </div>
+                            <div class="vertical2">
+                              <h6 class="smaller blue">Child Help&reg; National Child Abuse Hotline</h6>
+                              <div class="startNew">
+                                <img src="images/phone_icon3.png" class="img-responsive phone new" alt="phone icon">
+                                <a class="aquaNumber" href="tel:1-800-422-4453" tabindex="-1" aria-hidden="false">1-800-4-A-CHILD</a>
+                              </div>
+                              <a class="aquaSite" href="https://www.childhelp.org/" target="_blank" tabindex="-1" aria-hidden="false">www.childhelp.org <span><i class="fas fa-external-link-alt"></i></span></a>
+                            </div>
+                            <div class="vertical2">
+                              <h6 class="smaller blue">Boys Town National Hotline:</h6>
+                              <div class="startNew">
+                                <img src="images/phone_icon3.png" class="img-responsive phone new" alt="phone icon">
+                                <a class="aquaNumber" href="tel:1-800-448-3000" tabindex="-1" aria-hidden="false">1-800-448-3000</a>
+                              </div>
+                              <a class="aquaSite" href="https://www.boystown.org/hotline/Pages/default.aspx" target="_blank" tabindex="-1" aria-hidden="false">www.boystown.org/hotline/Pages <span><i class="fas fa-external-link-alt"></i></span></a>
+                            </div>
+                            <div class="vertical2">
+                              <h6 class="smaller blue">The National Suicide Prevention Lifeline:</h6>
+                              <div class="startNew">
+                                <img src="images/phone_icon3.png" class="img-responsive phone new" alt="phone icon">
+                                <a class="aquaNumber" href="tel:1-800-273-8255" tabindex="-1" aria-hidden="false">1-800-273-8255</a>
+                              </div>
+                              <a class="aquaSite" href="https://suicidepreventionlifeline.org/" target="_blank" tabindex="-1" aria-hidden="false">www.suicidepreventionlifeline.org <span><i class="fas fa-external-link-alt"></i></span></a>
+                            </div>
+                            <div class="vertical2">
+                              <h6 class="smaller blue">The National Sex Assault Hotline:</h6>
+                              <div class="startNew">
+                                <img src="images/phone_icon3.png" class="img-responsive phone new" alt="phone icon">
+                                <a class="aquaNumber" href="tel:1-855-484-2846" tabindex="-1" aria-hidden="false">1-800-656-4673</a>
+                              </div>
+                              <a class="aquaSite" href="https://www.rainn.org/" target="_blank" tabindex="-1" aria-hidden="false">www.www.rainn.org <span><i class="fas fa-external-link-alt"></i></span></a>
+                            </div>
+                          </address>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
+                        <div class="landing-panel small">
+                          <address>
+                            <h6 class="smaller red">Services Targeted to LGBTQ Youth:</h6>
+                            <hr>
+                            <div class="vertical2">
+                              <h6 class="smaller blue">The Trevor Project:</h6>
+                              <div class="startNew">
+                                <img src="images/phone_icon3.png" class="img-responsive phone new" alt="phone icon">
+                                <a class="aquaNumber" href="tel:1-866-488-7386" tabindex="-1" aria-hidden="false">1-866-488-7386</a>
+                              </div>
+                              <a class="aquaSite" href="https://www.thetrevorproject.org/" target="_blank" tabindex="-1" aria-hidden="false">www.thetrevorproject.org <span><i class="fas fa-external-link-alt"></i></span></a>
+                            </div>
+                          </address>
+                        </div>
+                        <br><br>
+                        <div class="landing-panel small">
+                          <address>
+                            <h6 class="smaller red">Service and Information Portals:</h6>
+                            <hr>
+                            <div class="vertical2">
+                              <h6 class="smaller blue">National Center for Victims of Crime</h6>
+                              <div class="startNew">
+                                <img src="images/phone_icon3.png" class="img-responsive phone new" alt="phone icon">
+                                <a class="aquaNumber" href="tel:1-202-467-8700" tabindex="-1" aria-hidden="false"> 1-202-467-8700</a>
+                              </div>
+                              <a class="aquaSite" href="https://victimsofcrime.org/" target="_blank" tabindex="-1" aria-hidden="false">www.victimsofcrime.org <span><i class="fas fa-external-link-alt"></i></span></a>
+                            </div>
+                            <div class="vertical2">
+                              <h6 class="smaller blue">Eldercare Locator</h6>
+                              <div class="startNew">
+                                <img src="images/phone_icon3.png" class="img-responsive phone new" alt="phone icon">
+                                <a class="aquaNumber" href="tel:1-800-677-1116" tabindex="-1" aria-hidden="false">1-800-677-1116</a>
+                              </div>
+                              <a class="aquaSite" href="https://www.eldercare.gov/" target="_blank" tabindex="-1" aria-hidden="false">www.eldercare.gov
+                                <span><i class="fas fa-external-link-alt"></i></span></a>
+                              </div>
+                            </address>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <p class="smaller modalFooter">*Required Field</h3>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="vertical" id="stickySide2">
+                  <a data-toggle="modal" data-toggle="modal" data-target="#myModal" tabindex="1" href="">
+                    <div class="circle third show" data-toggle="tooltip" data-placement="left" title="Feedback">
+                      <img src="images/comment-bubble_icon.svg" class="img-responsive scroll" alt="Leave a Comment bubble icon">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content secondOne">
+                      <div class="modal-header text-center">
+                        <a href="">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            &times;
+                          </button></a>
+                          <h1 class="bottomModal" id="smaller">Give Us Your Feedback</h1>
+
+                        </div>
+                        <div class="modal-body mx-3">
+
+                          <form method="post" data-form-title="Comment" id="submit-form">
+
+                            <div class="form-group">
+                              <textarea class="form-control fourthOne mandatoryfields" name="message" placeholder="Comment on this specific survey question" rows="7" data-form-field="Message" id="comment"></textarea>
+                            </div>
+                            <div>
+                              <button type="submit" class="btn btn-info button-outlined" id="submitComment" tabindex="0" aria-hidden="false" onclick="setTimeout(function () { window.location.reload(); }, 3)">Submit</button>
+                            </div>
+                          </form>
+
+                        </div>
+
+                        <div class="modal-footer">
+                          <p class="smaller">*Required Field</h3>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </main>
+          </div>
+
+          <footer class="el-S">
+            <div class="footer-wrapper">
+              <div class="verticalNew">
+                <div class="center">
+                  <img src="images/doj.svg" class="img-responsive footer1" alt="Department of Justice logo graphic">
+                  <img src="images/Westat_logo_white.svg" class="img-responsive footer2" alt="Westat white logo graphic">
+                </div>
+              </div>
+
+            </footer>
+
+
+
+            <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+            <script src="js/bootstrap.js"></script>
+            <!-- <script src="js/bootstrap.min.js"></script> -->
+            <script src="js/index.js"></script>
+            <script src="js/survey.js"></script>
+
+            <script>
+
+
+            $("#submit-form").on("submit",function() {
+
+
+
+              //do ajax
+              $.ajax({
+                url:'survey.html',
+                type:post,
+                success:function() {
+                  location.reload();
+                }
+              });
+            });
+
+            $("#theform").on("submit",function() {
+
+
+
+              //do ajax
+              $.ajax({
+                url:'survey.html',
+                type:post,
+                success:function() {
+                  location.reload();
+                }
+              });
+            });
+
+
+
+
+            </script>
+
+
+
+          </body>
+          </html>

@@ -1,9 +1,27 @@
-#main-wrapper {
+/* #main-wrapper {
   background: #b3c9d1;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
 
+} */
+
+#main-wrapper {
+    background: #b3c9d1;
+    height: 120vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 50px;
+
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+p {
+    margin: 0;
 }
 .comment-container textarea {
   border: 1px solid lightgray;
@@ -704,8 +722,9 @@ h2.smaller {
 }
 
 p.white {
-  color:white;
-  padding: .1em 0em .2em 0em;
+    color: white;
+    padding: .1em 0em .2em 0em;
+    margin: 0;
 }
 
 .cent {
